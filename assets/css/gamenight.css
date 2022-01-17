@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.gamenight1{
+    background-color:rgb(222,30,44);
+    height: 100vh;
+  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
