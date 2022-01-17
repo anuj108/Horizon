@@ -1,61 +1,101 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-.hackathon1{
-
-    height: 100vh;
-  background: radial-gradient(rgb(222,30,44), rgb(39,51,123) );
+.hackathon1 {
+  height: 100vh;
+  background: radial-gradient(rgb(222, 30, 44), rgb(39, 51, 123));
 }
-.hackathon2{
-
-    height: 100vh;
-    background: radial-gradient(rgb(222,30,44), rgb(39,51,123) );
+.hackathon2 {
+  height: 100vh;
+  background: radial-gradient(rgb(222, 30, 44), rgb(39, 51, 123));
 }
-.hackathon3{
-
-
-    height: 100vh;
-    background: radial-gradient(rgb(222,30,44), rgb(39,51,123) );
+.hackathon3 {
+  height: 100vh;
+  background: radial-gradient(rgb(222, 30, 44), rgb(39, 51, 123));
 }
-
-.message-box {
-    margin: 0px auto;
-    position: relative;
-    top: 15%; 
-    width: 75%;
-    height: 70%;
-    background: rgba(6, 5, 5, 0.75);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-
- }
-
 
 /* Newly added Styles */
 
-
 /* Atharva */
 
-.message-box-title{
-    text-align: center;
-    padding: 15px;
-    font-family: Verdana;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    align-items: center;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
- }
+.side-bar {
+  position: fixed;
+  width: 6%;
+  height: 35%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 
+  background: #b11313;
+  border-radius: 0px 30px 30px 0px;
+}
+
+.message-box {
+  position: relative;
+  top: 15%;
+  left: 8%;
+  width: 90%;
+  min-height: 70%;
+
+  background: rgba(6, 5, 5, 0.75);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.message-box-title {
+  text-align: center;
+  padding: 15px;
+  font-family: Verdana;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1000px) {
+  .side-bar {
+    width: 10%;
+    height: 35%;
+    left: 0;
+    top: 50%;
+    
+  }
+
+  .message-box {
+    top: 15%;
+    left: 14%;
+    width: 81%;
+    min-height: 80%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .side-bar {
+    position: fixed;
+    width: 35%;
+    height: 6%;
+    top: 93.5%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .message-box {
+    top: 15%;
+    left: 0;
+    margin: auto;
+    width: 85%;
+    min-height: 75%;
+  }
+
+}
 
 /* Kingshuk */
 
-
 /* Niharika */
-
-
-
- 
