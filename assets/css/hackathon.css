@@ -104,7 +104,7 @@ img{
     width: 382.24px;
     height: 524px;
     left: 872px;
-    top: -28px;
+    top: -81px;
 }
 
 .message-box1 {
@@ -152,7 +152,7 @@ img{
     width: 271.24px;
     height: 435px;
     left: 346px;
-    top: -28px;
+    top: -81px;
     }
     
 
@@ -184,4 +184,26 @@ img{
     transform: rotate(
         90deg
         );
+}
+
+.avatar {
+
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+  padding:0px;
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
