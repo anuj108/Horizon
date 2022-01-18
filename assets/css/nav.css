@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 100;
   /* added by kingshuk  */
   width: 95%;
   position: fixed;
@@ -90,7 +91,7 @@
   }
   .menu{
     position: relative;
-    
+    z-index: 100;
   }
   .navbar.open ul {
     flex-direction: column;

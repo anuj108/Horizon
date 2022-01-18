@@ -1,36 +1,183 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-.home1{
-    background-color:rgb(222,30,44);
-    height: 100vh;
-  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+.home1 {
+  background-color: rgb(222, 30, 44);
+  height: 100vh;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+
+  /* -------- */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-.home2{
-    background-color:rgb(222,30,44);
-    height: 100vh;
-  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+.home1 .left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 70%;
 }
-.home3{
-    background-color:rgb(222,30,44);
-    height: 130vh;
-  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+.home1 .left .container {
+  margin-right: 10%;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(56, 8, 11);
+  border-radius: 15px;
 }
-.home4{
-    background-color:rgb(222,30,44);
-    height: 130vh;
-  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+.home1 .left .container .content {
+  font-family: Verdana;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 44px;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+  justify-content: center;
+    /* padding: 0% 10%; */
+    width: 70%;
+    display: flex;
+    margin: 0 10%;
+    height: 100%;
+    align-items: center;
 }
-.home5{
-    background-color:rgb(222,30,44);
-    height: 130vh;
-  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+.home1 .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.page.is-active{
-    display:block;
+.home1 .right .img1 {
+  position: absolute;
+  height: 80%;
+  right: 3%;
 }
-.page{
-    display:none;
+.home1 .right .img2 {
+  position: absolute;
+  height: 22%;
+  right: 8%;
+  bottom: 4%;
+}
+@media only screen and (max-width: 2000px) {
+  .home1 .right .img1 {
+    bottom: 8%;
+    height: 70%;
+
+  }
+  .home1 .right .img2 {
+    position: absolute;
+    height: 18%;
+    right: 6%;
+    bottom: 4%;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .home1 .right .img1 {
+    bottom: 8%;
+    height: 60%;
+    width: 50%;
+
+  }
+  .home1 .right .img2 {
+    position: absolute;
+    height: 15%;
+    right: 8%;
+    bottom: 4%;
+  }
+  .home1 .left .container .content{
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    justify-content: center;
+    /* padding: 0% 10%; */
+    width: 60%;
+    display: flex;
+    margin: 0 10%;
+    height: 100%;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .home1 .left .container .content{
+    line-height: 27px;
+  }
+
+}
+@media only screen and (max-width: 750px)
+{
+  .home1 .left .container .content{
+  font-family: Verdana;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+    /* letter-spacing: 0.02em; */
+    color: #ffffff;
+    justify-content: center;
+    /* padding: 0% 10%; */
+    width: 70%;
+    display: flex;
+    margin: 0 10%;
+    height: 100%;
+    align-items: center;
+}
+.home1 .right .img2 {
+  position: absolute;
+  height: 12%;
+  right: 3%;
+  bottom: 6%;
+}
+}
+@media only screen and (max-width: 350px)
+{
+  .home1 .left .container .content{
+  font-family: Verdana;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* letter-spacing: 0.02em; */
+    color: #ffffff;
+    justify-content: center;
+    /* padding: 0% 10%; */
+    width: 70%;
+    display: flex;
+    margin: 0 10%;
+    height: 100%;
+    align-items: center;
+}
+}
+.home2 {
+  background-color: rgb(222, 30, 44);
+  height: 100vh;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+.home3 {
+  background-color: rgb(222, 30, 44);
+  height: 130vh;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+.home4 {
+  background-color: rgb(222, 30, 44);
+  height: 130vh;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+.home5 {
+  background-color: rgb(222, 30, 44);
+  height: 130vh;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+.page.is-active {
+  display: block;
+}
+.page {
+  display: none;
 }

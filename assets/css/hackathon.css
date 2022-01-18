@@ -62,7 +62,6 @@
     height: 35%;
     left: 0;
     top: 50%;
-    
   }
 
   .message-box {
@@ -93,147 +92,132 @@
     width: 85%;
     min-height: 75%;
   }
-
 }
 
 /* Kingshuk */
 
 /* Niharika */
-img{
-    position: absolute;
-    width: 382.24px;
-    height: 524px;
-    left: 872px;
-    top: -81px;
+.hackathon img {
+  position: absolute;
+  width: 382.24px;
+  height: 524px;
+  left: 872px;
+  top: -81px;
 }
 
 .message-box1 {
-    position: relative;
+  position: relative;
+  top: 15%;
+  left: 8%;
+  width: 77%;
+  min-height: 70%;
+
+  background: rgba(6, 5, 5, 0.75);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  .message-box1 {
     top: 15%;
-    left: 8%;
-    width: 77%;
-    min-height: 70%;
-  
-    background: rgba(6, 5, 5, 0.75);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    left: 14%;
+    width: 81%;
+    min-height: 80%;
   }
- @media only screen and (max-width: 1000px) {
-    
-  
-    .message-box1 {
-      top: 15%;
-      left: 14%;
-      width: 81%;
-      min-height: 80%;
-    }
-    img{
-        position: absolute;
+  .hackathon img {
+    position: absolute;
     width: 308.24px;
     height: 552px;
     left: 548px;
     top: -81px;
-    }
-
-    .register{
-      position: absolute;
-      width: 60px;
-      height: 200px;
-      left: 99px;
-      top: 276px;
-      background: #DF1F2D;
-      box-shadow: -3px 14px 9px rgb(45 56 156 / 70%), -2px -15px 9px rgb(45 56 156 / 70%);
-      border-radius: 30px 10px 10px 30px;
-      transform: rotate(
-  270deg
-  );
   }
 
-  }
-
-  @media only screen and (max-width: 650px) {
-
-    .message-box1 {
-        top: 15%;
-        left: 0;
-        margin: auto;
-        width: 85%;
-        min-height: 75%;
-      }
-
-      img{
-        position: absolute;
-        width: 166.24px;
-        height: 477px;
-        left: 211px;
-        top: -137px;
-    }
-
-    .register{
+  .register {
     position: absolute;
     width: 60px;
     height: 200px;
     left: 99px;
     top: 276px;
-    background: #DF1F2D;
-    box-shadow: -3px 14px 9px rgb(45 56 156 / 70%), -2px -15px 9px rgb(45 56 156 / 70%);
+    background: #df1f2d;
+    box-shadow: -3px 14px 9px rgb(45 56 156 / 70%),
+      -2px -15px 9px rgb(45 56 156 / 70%);
     border-radius: 30px 10px 10px 30px;
-    transform: rotate(
-270deg
-);
+    transform: rotate(270deg);
+  }
 }
-    
 
+@media only screen and (max-width: 650px) {
+  .message-box1 {
+    top: 15%;
+    left: 0;
+    margin: auto;
+    width: 85%;
+    min-height: 75%;
   }
 
-  .register{
+  .hackathon img {
+    position: absolute;
+    width: 166.24px;
+    height: 477px;
+    left: 211px;
+    top: -137px;
+  }
+
+  .register {
     position: absolute;
     width: 60px;
     height: 200px;
     left: 99px;
     top: 276px;
-    background: #DF1F2D;
-    box-shadow: -3px 14px 9px rgb(45 56 156 / 70%), -2px -15px 9px rgb(45 56 156 / 70%);
+    background: #df1f2d;
+    box-shadow: -3px 14px 9px rgb(45 56 156 / 70%),
+      -2px -15px 9px rgb(45 56 156 / 70%);
     border-radius: 30px 10px 10px 30px;
-    transform: rotate(
-270deg
-);
+    transform: rotate(270deg);
+  }
+}
+
+.register {
+  position: absolute;
+  width: 60px;
+  height: 200px;
+  left: 99px;
+  top: 276px;
+  background: #df1f2d;
+  box-shadow: -3px 14px 9px rgb(45 56 156 / 70%),
+    -2px -15px 9px rgb(45 56 156 / 70%);
+  border-radius: 30px 10px 10px 30px;
+  transform: rotate(270deg);
 }
 .register_text {
-    text-align: center;
-    padding: 28px;
-    font-family: Verdana;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    align-items: center;
-    letter-spacing: 0.05em;
-    color: #ffffff;
-    transform: rotate(
-        90deg
-        );
+  text-align: center;
+  padding: 28px;
+  font-family: Verdana;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  transform: rotate(90deg);
 }
 
 .avatar {
-
-	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
-  padding:0px;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  padding: 0px;
 }
 @keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
 }
-
-
