@@ -130,10 +130,24 @@ img{
     img{
         position: absolute;
     width: 308.24px;
-    height: 473px;
-    left: 378px;
-    top: -28px;
+    height: 552px;
+    left: 548px;
+    top: -81px;
     }
+
+    .register{
+      position: absolute;
+      width: 60px;
+      height: 200px;
+      left: 99px;
+      top: 276px;
+      background: #DF1F2D;
+      box-shadow: -3px 14px 9px rgb(45 56 156 / 70%), -2px -15px 9px rgb(45 56 156 / 70%);
+      border-radius: 30px 10px 10px 30px;
+      transform: rotate(
+  270deg
+  );
+  }
 
   }
 
@@ -149,11 +163,25 @@ img{
 
       img{
         position: absolute;
-    width: 271.24px;
-    height: 435px;
-    left: 346px;
-    top: -81px;
+        width: 166.24px;
+        height: 477px;
+        left: 211px;
+        top: -137px;
     }
+
+    .register{
+    position: absolute;
+    width: 60px;
+    height: 200px;
+    left: 99px;
+    top: 276px;
+    background: #DF1F2D;
+    box-shadow: -3px 14px 9px rgb(45 56 156 / 70%), -2px -15px 9px rgb(45 56 156 / 70%);
+    border-radius: 30px 10px 10px 30px;
+    transform: rotate(
+270deg
+);
+}
     
 
   }
