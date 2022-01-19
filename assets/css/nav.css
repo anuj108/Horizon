@@ -3,67 +3,96 @@
   padding: 0;
   margin: 0;
 }
+
+html {
+  font-size: 10px;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* added by kingshuk  */
-  width: 95%;
+  width: 100%;
+  height: 6%;
+  min-height: 70px;
   position: fixed;
   top: 0;
   left: 50%;
   transform: translate(-50%);
-  /* END OF edit by kingshuk */
 }
+
 .navbar ul {
-    display: flex;
-    list-style-type: none;
-    /* added by kingshuk  */
-    padding: 0 50px; 
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  height: 100%;
+  width: 80%;
+  padding: 0 50px;
   border-radius: 0px 0px 20px 20px;
   background-color: rgb(56, 8, 11);
 }
 
+.tab
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
 .tab a[data-switcher] {
-  padding: 15px 30px;
+  
   text-decoration: none;
   color: white;
-  /* background-color: rgb(56,8,11); */
   cursor: pointer;
   font-family: Verdana;
   font-style: normal;
   font-weight: normal;
-
-  font-size: 35px;
-  line-height: 55px;
-  /* identical to box height */
-
+  font-size: 3rem;
   letter-spacing: 0.03em;
-
-  color: #ffffff;
 }
 
-.tab a {
-}
-.tab:hover a[data-switcher] {
-  border-bottom: 3px solid #c4c4c4;
-}
-.tab.is-active a[data-switcher] {
-  border-bottom: 3px solid #c4c4c4;
-}
-
-
-@media  only screen and (max-width: 1150px) 
+.underline
 {
-    .tab a[data-switcher]
-    {
-        font-size: 30px;
-    }
+  opacity: 0;
+  background-color: white;
+  width: 80%;
+  height: 15%;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s ease-in-out;
 }
 
-@media  only screen and (max-width: 1000px) 
-{
-    /* navbar becomes into hamburger */
+.tab:hover .underline, 
+.tab.is-active .underline {
+  opacity: 1;
 }
 
+@media only screen and (max-width: 1050px) {
+  .navbar ul
+  {
+    width:90%;
+  }
+}
 
+@media only screen and (max-width: 850px) {
+  .tab a[data-switcher]
+  {
+    font-size: 2.5rem;
+  }
+  .navbar ul
+  {
+    padding: 0 25px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .tab a[data-switcher]
+  {
+    font-size: 2.1rem;
+  }
+}
+
+@media only screen and (max-width: 586px) {
+  /* hamburger menu */
+}
