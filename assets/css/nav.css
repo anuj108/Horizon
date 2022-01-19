@@ -19,6 +19,7 @@ html {
   top: 0;
   left: 50%;
   transform: translate(-50%);
+  z-index: 100;
 }
 
 .menu {
@@ -30,44 +31,66 @@ html {
   padding: 0 50px;
   border-radius: 0px 0px 20px 20px;
   background-color: rgb(56, 8, 11);
+  animation: all 1s ease-in-out;
 }
 
-.logo
-{
-  border:2px solid black;
+.logo {
   height: 100%;
   aspect-ratio: 1/1;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.GDSC-Icon
-{
-  height: 100%;
-  width: 100%;
+.navbar img {
+  height: 650px;
+  border: 2px solid black;
+  display: block;
 }
 
-.hamburger
-{
-  border:2px solid black;
-  height: 100%;
+.hamburger {
+  height: 80%;
   aspect-ratio: 1/1;
+  padding: 12px 10px 12px 0;
   display: flex;
   flex-direction: column;
-  align-items:center;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.line
-{
+.line {
   width: 100%;
-  height: 10%;
+  height: 15%;
   border-radius: 10px;
-  background-color: white; 
+  background-color: white;
+  transition: all 0.7s ease-in-out;
+}
+
+.active-ham .l1 {
+  transform: rotate(-45deg) translate(3px, 14px);
+}
+
+.active-ham .l2 {
+  transform: translate(50px);
+  opacity: 0;
+}
+
+.active-ham .l3 {
+  transform: rotate(45deg) translate(4px, -13px);
 }
 
 .hamburger,
 .logo {
   display: none;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
 }
 
 .tab {
@@ -140,16 +163,75 @@ html {
 @media only screen and (max-width: 586px) {
   /* hamburger menu */
   .menu {
-    width: 80%;
+    padding: 0 35px;
   }
 
-  .hamburger,
   .logo {
     display: block;
   }
 
-  .options
-  {
-    display: none;
+  .hamburger {
+    display: flex;
+  }
+
+  .options {
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    height: 50vh;
+    width: 90%;
+    padding-bottom: 20px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgb(56, 8, 11);
+    transform: translate(-50%, -50vh);
+    transition: all 1s ease-in-out;
+  }
+
+  .outside {
+    transform: translate(-50%, 0);
+  }
+
+  .tab {
+    padding: 0;
+    height: 20%;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .underline {
+    border-radius: 10px;
+    height: 5%;
+  }
+
+  .u1 {
+    width: 12%;
+  }
+
+  .u2 {
+    width: 25%;
+  }
+
+  .u3 {
+    width: 25%;
+  }
+
+  .u4 {
+    width: 21%;
   }
 }
