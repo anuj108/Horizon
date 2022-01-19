@@ -165,39 +165,45 @@
   background-color: rgb(56, 8, 11);
   border-radius: 15px;
 }
-.home2 .container .head{
-  font-family: Verdana;
+.home2 .container .head {
+  /* font-family: Verdana;
   font-style: normal;
   font-weight: bold;
   font-size: 43px;
   line-height: 58px;
   display: flex;
-  padding: 30px;
+
   align-items: center;
   justify-content: center;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #FFFFFF; */
+  padding: 30px;
+  color: #f2f2f2;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .home2 .container .cards {
   display: flex;
-  height:60%;
+  height: 60%;
   justify-content: center;
 }
 .home2 .container .cards .card {
-  background: rgb(196,196,196);
+  background: rgb(196, 196, 196);
   border-radius: 1rem;
   padding: 1.5rem;
   box-shadow: 3px 3px 12px 2px rgba(black, 0.6);
   transition: 0.2s;
   border: 2px solid black;
-  background-color:rgb(196,196,196) ;
+  background-color: rgb(196, 196, 196);
 }
 .home2 .container .cards .card:not(:first-child) {
   margin-left: -2rem;
 }
 .home2 .container .cards .card:hover {
   transform: translateY(-1rem);
-  
 }
 .home3 {
   background-color: rgb(222, 30, 44);
@@ -208,24 +214,33 @@
   justify-content: center;
 }
 .home3 .container {
+  position: relative;
   height: 80%;
   width: 80%;
   margin: auto;
   background-color: rgb(56, 8, 11);
   border-radius: 15px;
 }
-.home3 .container .head{
-  font-family: Verdana;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 43px;
-  line-height: 58px;
-  display: flex;
+.home3 .container .head {
   padding: 30px;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #f2f2f2;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home3 .container .rectangle {
+  left: 50%;
+  right: 50%;
+  height: 70%;
+  position: absolute;
+}
+.home3 .container .left {
+  width: 50%;
+  /* right: 1px; */
+  display: flex;
+  justify-content: end;
 }
 .home4 {
   background-color: rgb(222, 30, 44);
@@ -236,24 +251,27 @@
   justify-content: center;
 }
 .home4 .container {
+  position: relative;
   height: 80%;
   width: 80%;
   margin: auto;
   background-color: rgb(56, 8, 11);
   border-radius: 15px;
 }
-.home4 .container .head{
-  font-family: Verdana;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 43px;
-  line-height: 58px;
-  display: flex;
+.home4 .container .head {
   padding: 30px;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #f2f2f2;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home4 .container img {
+  left: 50%;
+  right: 50%;
+  height: 70%;
+  position: absolute;
 }
 .home5 {
   background-color: rgb(222, 30, 44);
@@ -270,39 +288,34 @@
   background-color: rgb(56, 8, 11);
   border-radius: 15px;
 }
-.home5 .container .head{
-  font-family: Verdana;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 43px;
-  line-height: 58px;
-  display: flex;
+.home5 .container .head {
   padding: 30px;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #f2f2f2;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .home5 .container .cards {
   display: flex;
-  height:60%;
+  height: 60%;
   justify-content: center;
 }
 .home5 .container .cards .card {
-  background: rgb(196,196,196);
+  background: rgb(196, 196, 196);
   border-radius: 1rem;
   padding: 1.5rem;
   box-shadow: 3px 3px 12px 2px rgba(black, 0.6);
   transition: 0.2s;
   border: 2px solid black;
-  background-color:rgb(196,196,196) ;
+  background-color: rgb(196, 196, 196);
 }
 .home5 .container .cards .card:not(:first-child) {
   margin-left: -2rem;
 }
 .home5 .container .cards .card:hover {
   transform: translateY(-1rem);
-  
 }
 .page.is-active {
   display: block;
