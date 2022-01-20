@@ -4,6 +4,65 @@
     margin: 0;
 }
 .speakers1{
-    height: 100vh;
+    min-height: 100vh;
     background: radial-gradient(rgb(222,30,44), rgb(39,51,123) );
+}
+.speakers{
+    min-height: 100vh;
+}
+body{
+    background: radial-gradient(rgb(222,30,44), rgb(39,51,123) );
+}
+.speakersBlackBox{
+    position: relative;
+  top: 120px;
+  margin:auto;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 800px;
+
+  background: rgba(6, 5, 5, 0.75);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.spidey-img{
+    position: absolute;
+    z-index: 2;
+    left: 79%;
+    top: 100px;
+    width: 22vw;
+    max-width: 300px;
+    right:15%;
+}
+.speakers-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 400px;
+    padding-bottom: 50px;
+    background-color: rgb(105, 102, 102);
+    margin: 2em;
+    margin-top: 10em;
+    
+}
+
+.speakers-card img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: black;
+    padding: 5px;
+    margin-top: -120px;
+}
+
+.speakers-card h2{
+    margin: 10px 0;
+}
+@media screen {
+    
 }
