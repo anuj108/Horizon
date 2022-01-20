@@ -175,6 +175,7 @@
     transform: rotate(
 270deg
 );
+
 }
     
 
@@ -207,6 +208,8 @@
     transform: rotate(
         90deg
         );
+        width: max-content;
+        padding-top: 152px;
 }
 
 .avatar {
@@ -236,9 +239,7 @@
   height: 420px;
 }
 
-.body{
-  padding-left: 10px;
-}
+
 
 
 .spider {
@@ -260,6 +261,10 @@
     transform: translateX(45px);
 
 }
+.body{
+  padding-left: 10px;
+  width:665px;
+}
 .content{
   display: flex;
   flex-direction: row-reverse;
@@ -274,3 +279,9 @@
     top: -91px;
     transform: translateX(32px);
 }}
+
+
+  .body{
+    padding-left: 10px;
+    width:759px;
+  }
