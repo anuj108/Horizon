@@ -79,6 +79,7 @@
     height: 35%;
     left: 0;
     top: 50%;
+    
   }
 
   .message-box {
@@ -115,6 +116,7 @@
     width: 85%;
     min-height: 75%;
   }
+
 }
 
 /* Kingshuk */
@@ -122,22 +124,15 @@
 /* Niharika */
 
 .message-box1 {
-  position: relative;
-  top: 15%;
-  left: 8%;
-  width: 77%;
-  min-height: 70%;
-
-  background: rgba(6, 5, 5, 0.75);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-}
-@media only screen and (max-width: 1000px) {
-  .message-box1 {
+    position: relative;
     top: 15%;
-    left: 14%;
-    width: 81%;
-    min-height: 80%;
+    left: 8%;
+    width: 77%;
+    min-height: 70%;
+  
+    background: rgba(6, 5, 5, 0.75);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
   }
  @media only screen and (max-width: 1000px) {
   
@@ -200,22 +195,8 @@
 );
 
 }
+    
 
-@media only screen and (max-width: 650px) {
-  .message-box1 {
-    top: 15%;
-    left: 0;
-    margin: auto;
-    width: 85%;
-    min-height: 75%;
-  }
-
-  .hackathon img {
-    position: absolute;
-    width: 166.24px;
-    height: 477px;
-    left: 211px;
-    top: -137px;
   }
 
   .register{
