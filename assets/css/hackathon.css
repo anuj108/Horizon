@@ -104,13 +104,6 @@
 /* Kingshuk */
 
 /* Niharika */
-img{
-    position: absolute;
-    width: 382.24px;
-    height: 524px;
-    left: 872px;
-    top: -81px;
-}
 
 .message-box1 {
     position: relative;
@@ -124,7 +117,8 @@ img{
     border-radius: 20px;
   }
  @media only screen and (max-width: 1000px) {
-    
+  
+  
   
     .message-box1 {
       top: 15%;
@@ -132,20 +126,15 @@ img{
       width: 81%;
       min-height: 80%;
     }
-    img{
-        position: absolute;
-    width: 308.24px;
-    height: 552px;
-    left: 548px;
-    top: -81px;
-    }
+   
 
     .register{
       position: absolute;
       width: 60px;
-      height: 200px;
-      left: 99px;
-      top: 276px;
+    height: 199px;
+    left: 99px;
+    top: 377px;
+     
       background: #DF1F2D;
       box-shadow: -3px 14px 9px rgb(45 56 156 / 70%), -2px -15px 9px rgb(45 56 156 / 70%);
       border-radius: 30px 10px 10px 30px;
@@ -158,6 +147,12 @@ img{
 
   @media only screen and (max-width: 650px) {
 
+
+    .content{
+      display: flex;
+      flex-direction: row-reverse;
+      height: 420px;
+    }
     .message-box1 {
         top: 15%;
         left: 0;
@@ -166,20 +161,14 @@ img{
         min-height: 75%;
       }
 
-      img{
-        position: absolute;
-        width: 166.24px;
-        height: 477px;
-        left: 211px;
-        top: -137px;
-    }
+     
 
     .register{
     position: absolute;
     width: 60px;
     height: 200px;
     left: 99px;
-    top: 276px;
+    top: 355px;
     background: #DF1F2D;
     box-shadow: -3px 14px 9px rgb(45 56 156 / 70%), -2px -15px 9px rgb(45 56 156 / 70%);
     border-radius: 30px 10px 10px 30px;
@@ -192,17 +181,18 @@ img{
   }
 
   .register{
-    position: absolute;
     width: 60px;
-    height: 200px;
+    height: 199px;
     left: 99px;
-    top: 276px;
+    top: 338px;
     background: #DF1F2D;
     box-shadow: -3px 14px 9px rgb(45 56 156 / 70%), -2px -15px 9px rgb(45 56 156 / 70%);
     border-radius: 30px 10px 10px 30px;
-    transform: rotate(
+    transform: rotate( 
 270deg
-);
+ );
+    position: absolute;
+
 }
 .register_text {
     text-align: center;
@@ -221,24 +211,65 @@ img{
 
 .avatar {
 
-	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
   padding:0px;
 }
 @keyframes float {
 	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		
 		transform: translatey(0px);
 	}
 	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		
 		transform: translatey(-20px);
 	}
 	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		
 		transform: translatey(0px);
 	}
 }
 
+.content{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 420px;
+}
 
+.body{
+  padding-left: 10px;
+}
+
+
+.spider {
+  width: 289.24px;
+  height: 606px;
+  left: -194px;
+  top: -91px;
+  transform: translateX(45px);
+  position: absolute;
+}
+
+@media (max-width:1000px)
+{
+  .spider{
+    width: 227.24px;
+    height: 605px;
+    left: -232px;
+    top: -91px;
+    transform: translateX(45px);
+}
+.content{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 420px;
+}
+}
+@media (max-width: 586px){
+.spider {
+    width: 203.24px;
+    height: 546px;
+    left: -186px;
+    top: -91px;
+    transform: translateX(32px);
+}}
