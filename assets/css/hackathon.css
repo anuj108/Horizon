@@ -253,11 +253,12 @@
 @media (max-width:1000px)
 {
   .spider{
-    width: 227.24px;
+    width: 223.24px;
     height: 605px;
-    left: -232px;
+    left: -218px;
     top: -91px;
     transform: translateX(45px);
+
 }
 .content{
   display: flex;
