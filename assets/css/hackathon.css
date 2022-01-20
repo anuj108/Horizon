@@ -25,17 +25,29 @@
   width: 6%;
   height: 35%;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  
+  bottom: 50%;
+  transform: translateY(+50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background: #b11313;
   border-radius: 0px 30px 30px 0px;
 }
 
 .side-bar-items
 {
+  color: black;
+  font-size: 23px;
+  text-align: center;
+  padding: 7px;
+}
+
+.side-bar-items:hover
+{
   color: white;
 }
+
 
 .message-box {
   position: relative;
@@ -80,15 +92,21 @@
 
 @media only screen and (max-width: 650px) {
   .side-bar {
+    font-size: 10px;
     position: fixed;
-    width: 35%;
-    height: 6%;
-    top: 93.5%;
-    bottom: 0;
+    width: 100rem;
+    height: 8%;
+    z-index: 99;
+    bottom: 100%;
     left: 50%;
-    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
 
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 0;
+  }
+  .side-bar-items{
+    font-size: 20px;
+    padding: 4%;
   }
 
   .message-box {
