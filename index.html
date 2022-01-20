@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="assets/css/hackathon.css">
   <link rel="stylesheet" href="assets/css/gamenight.css">
   <link rel="stylesheet" href="assets/css/speakers.css">
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
   <title>Horizon</title>
 </head>
 
@@ -53,35 +57,28 @@
         </div>
       </div>
       <hr color="black" height="4px">
-      <div class="home2">
-        <div class="container">
-          <div class="head">
-            <h1>Organizers</h1>
-          </div>
-          <div class="cards">
-            <div class="card">
-              <h2><a href="#">LOGO</a></h2>
-              <p>Some article description stuff.</p>
-            </div>
-            <div class="card">
-              <h2><a href="#">LOGO</a></h2>
-              <p>Some article description stuff.</p>
-            </div>
-            <div class="card">
-              <h2><a href="#">LOGO</a></h2>
-              <p>Some article description stuff.</p>
-            </div>
-            <div class="card">
-              <h2><a href="#">LOGO</a></h2>
-              <p>Some article description stuff.</p>
-            </div>
-            <div class="card">
-              <h2><a href="#">LOGO</a></h2>
-              <p>Some article description stuff.</p>
-            </div>
+      <div class="home2"> <div class="sponsors-container">
+        <h1>Organizers</h1>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
+    </div>
       <hr color="black" height="4px">
       <div class="home3">
         <div class="container">
@@ -93,12 +90,12 @@
 
             <img class="rectangle" src="/assets/img/Rectangle 30.png" alt="" srcset="">
 
-          <div class="left">
+          <!-- <div class="left">
             <img src="/assets/img/Group 3.png" alt="" class="image1">
           </div>
           <div class="right">
             <img src="/assets/img/Group 4.png" alt="" class="image1">
-          </div>
+          </div> -->
         </div>
       </div>
       <hr color="black" height="4px">
@@ -113,27 +110,28 @@
         </div>
       </div>
       <hr color="black" height="4px">
-      <div class="home5">
-        <div class="container">
-          <div class="head">
-            <h1>Sponsors</h1>
-          </div>
-          <div class="cards">
-            <div class="card">
-              <h2><a href="#">LOGO</a></h2>
-              <p>Some article description stuff.</p>
-            </div>
-            <div class="card">
-              <h2><a href="#">LOGO</a></h2>
-              <p>Some article description stuff.</p>
-            </div>
-            <div class="card">
-              <h2><a href="#">LOGO</a></h2>
-              <p>Some article description stuff.</p>
-            </div>
+      <div class="home5"> <div class="sponsors-container">
+        <h1>Sponsors</h1>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
+    </div>
     </section>
 
 
@@ -208,6 +206,24 @@
   </main>
   <script src="assets/js/index.js"></script>
   <script src="assets/js/navbar.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		 <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        grabCursor: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      });
+    </script>
 </body>
 
 </html>
