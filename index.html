@@ -5,6 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="assets/css/home.css  " />
   <link rel="stylesheet" href="assets/css/nav.css" />
   <link rel="stylesheet" href="assets/css/hackathon.css">
@@ -15,25 +20,42 @@
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
   <title>Horizon</title>
+
+
 </head>
 
 <body>
   <main>
     <nav class="navbar">
-      <ul class="tabs">
-        <li class="tab is-active"><a data-switcher data-tab="1">Home</a>
-          <div class="underline"></div>
-        </li>
-        <li class="tab"><a data-switcher data-tab="2">Hackathon</a>
-          <div class="underline"></div>
-        </li>
-        <li class="tab"><a data-switcher data-tab="3">Game Night</a>
-          <div class="underline"></div>
-        </li>
-        <li class="tab"><a data-switcher data-tab="4">Speakers</a>
-          <div class="underline"></div>
-        </li>
-      </ul>
+      <div class="menu">
+
+        <div class="logo">
+          <img src="assets/img/GDSC.png" alt="GDSC Icon" class="GDSC-Icon kingshuk">
+        </div>
+        <div class="hamburger">
+          <div class="line l1"></div>
+          <div class="line l2"></div>
+          <div class="line l3"></div>
+        </div>
+
+        <ul class="options">
+          <li class="tab is-active">
+            <a data-switcher data-tab="1">Home</a>
+            <div class="underline u1"></div>
+          </li>
+          <li class="tab">
+            <a data-switcher data-tab="2">Hackathon</a>
+            <div class="underline u2"></div>
+          </li>
+          <li class="tab">
+            <a data-switcher data-tab="3">Game Night</a>
+            <div class="underline u3"></div>
+          </li>
+          <li class="tab"><a data-switcher data-tab="4">Speakers</a>
+            <div class="underline u4"></div>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="menu">
       <div class="menu-btn">
@@ -192,18 +214,19 @@
       <!-- side Bar -->
       <div class="side-bar">
         <div class="side-bar-items">
-          <svg width="77" height="102" viewBox="0 0 65 102" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M32.5 0C15.664 0 2 13.664 2 30.5C2 47.336 15.664 61 32.5 61C49.336 61 63 47.336 63 30.5C63 13.664 49.336 0 32.5 0ZM32.5 9.15C37.563 9.15 41.65 13.237 41.65 18.3C41.65 23.363 37.563 27.45 32.5 27.45C27.437 27.45 23.35 23.363 23.35 18.3C23.35 13.237 27.437 9.15 32.5 9.15ZM32.5 52.46C24.875 52.46 18.1345 48.556 14.2 42.639C14.2915 36.5695 26.4 33.245 32.5 33.245C38.5695 33.245 50.7085 36.5695 50.8 42.639C46.8655 48.556 40.125 52.46 32.5 52.46Z" />
-            <path
-              d="M3.78 86.5V81.96H6.3C8.08 81.96 8.88 82.8 8.88 84.24C8.88 85.64 8.08 86.5 6.3 86.5H3.78ZM11.22 84.24C11.22 81.98 9.6 80.1 6.3 80.1H1.5V94H3.78V88.36H6.3C9.92 88.36 11.22 86.22 11.22 84.24ZM16.0745 88.2C16.0745 85.86 17.1145 85.16 18.7945 85.16H19.3745V82.8C17.8145 82.8 16.7145 83.48 16.0745 84.58V82.98H13.7945V94H16.0745V88.2ZM32.3703 88.48C32.3703 85.02 29.8903 82.8 26.7503 82.8C23.6103 82.8 21.1303 85.02 21.1303 88.48C21.1303 91.94 23.5103 94.18 26.6503 94.18C29.8103 94.18 32.3703 91.94 32.3703 88.48ZM23.4503 88.48C23.4503 85.98 24.9903 84.78 26.7103 84.78C28.4103 84.78 30.0303 85.98 30.0303 88.48C30.0303 90.98 28.3503 92.2 26.6503 92.2C24.9303 92.2 23.4503 90.98 23.4503 88.48ZM35.3042 94H37.6042V84.84H39.6442V82.98H37.6042V82.2C37.6042 80.94 38.0842 80.46 39.4842 80.46V78.56C36.6042 78.56 35.3042 79.66 35.3042 82.2V82.98H34.0042V84.84H35.3042V94ZM42.0648 94H44.3448V82.98H42.0648V94ZM43.2248 81.52C44.0248 81.52 44.6648 80.88 44.6648 80.06C44.6648 79.24 44.0248 78.6 43.2248 78.6C42.4048 78.6 41.7648 79.24 41.7648 80.06C41.7648 80.88 42.4048 81.52 43.2248 81.52ZM47.7383 94H50.0183V79.2H47.7383V94ZM58.0517 84.72C59.7517 84.72 61.0917 85.8 61.1317 87.5H55.0317C55.2717 85.76 56.5117 84.72 58.0517 84.72ZM63.2117 90.72H60.7517C60.3317 91.58 59.5517 92.26 58.1517 92.26C56.4717 92.26 55.1717 91.16 55.0117 89.34H63.4317C63.4917 88.96 63.5117 88.6 63.5117 88.22C63.5117 84.98 61.2917 82.8 58.1517 82.8C54.8917 82.8 52.6517 85.02 52.6517 88.48C52.6517 91.94 54.9917 94.18 58.1517 94.18C60.8517 94.18 62.5917 92.64 63.2117 90.72Z" />
-          </svg>
+          <i class="far fa-id-card"></i>
+          <br>
+          Register 
         </div>
         <div class="side-bar-items">
-
+          <i class="fas fa-puzzle-piece"></i>
+          <br>
+          Problem 
         </div>
         <div class="side-bar-items">
-
+          <i class="far fa-question-circle"></i>
+          <br>
+          FAQ 
         </div>
       </div>
       <!-- side bar end  -->
@@ -214,11 +237,19 @@
           <div class="message-box-title">
             <h1>Hackathon Name</h1>
           </div>
-          <div class="avatar">
-            <img src="assets/img/spider.png">
-          </div>
-          <div class="register">
-            <div class="register_text"> REGISTER</h1>
+          <div class="content">
+
+            <div class="avatar">
+              <img src="assets/img/spider.png" class="spider">
+            </div>
+            <div class="body">
+              <div class="c">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, similique?
+              </div>
+              <button class="register">
+                <div class="register_text"> REGISTER</h1>
+                </button>
+              </div>
             </div>
           </div>
 
