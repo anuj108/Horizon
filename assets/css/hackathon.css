@@ -301,13 +301,12 @@
 }
 @media (max-width: 586px){
 .spider {
-  width: 194.24px;
-  height: 546px;
-  left: -152px;
-  top: -91px;
-  transform: translateX(32px);
+  width: 171.24px;
+    height: 546px;
+    left: -122px;
+    top: -107px;
+    transform: translateX(32px);
 }}
-
 
   .body{
     padding-left: 10px;
