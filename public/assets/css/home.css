@@ -4,57 +4,55 @@
   margin: 0;
 }
 .home1 {
-  background-color: rgb(222, 30, 44);
+  /* background-color: rgb(222, 30, 44); */
   height: 100vh;
-  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
 
+  /* box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset; */
+  background: url(../img/image\ 11.png) no-repeat center center/cover;
+  position: relative;
+  background-attachment: fixed;
   /* -------- */
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 }
 .home1 .left {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 70%;
+
+  width: 50%;
 }
+.home1 .left .horizonlogo {
+  height: 40vh;
+  padding-left: 6%;
+  display: flex;
+  align-items: end;
+}
+
 .home1 .left .container {
   margin-right: 10%;
-  height: 100%;
+  height: 60vh;
   width: 100%;
-  background-color: rgb(56, 8, 11);
   border-radius: 15px;
 }
 .home1 .left .container .content {
-  font-family: Verdana;
+  font-family: Poppins;
+  padding-left: 6%;
   font-style: normal;
   font-weight: normal;
-  font-size: 26px;
-  line-height: 44px;
+  font-size: 20px;
+  line-height: 30px;
   letter-spacing: 0.02em;
 
   color: #ffffff;
-  justify-content: center;
-  /* padding: 0% 10%; */
-  width: 70%;
-  display: flex;
-  margin: 0 10%;
-  height: 100%;
-  align-items: center;
 }
 .home1 .right {
   display: flex;
   justify-content: center;
   align-items: center;
+  width:40%
+  height: 100%;
 }
 .home1 .right .img1 {
-  position: absolute;
-  height: 80%;
-  right: 3%;
+  height: 110%;
 }
 .home1 .right .img2 {
   position: absolute;
@@ -62,7 +60,7 @@
   right: 8%;
   bottom: 4%;
 }
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 2200px) {
   .home1 .right .img1 {
     bottom: 8%;
     height: 70%;
@@ -75,55 +73,57 @@
   }
 }
 @media only screen and (max-width: 1150px) {
-  .home1 .right .img1 {
+  /* .home1 .right .img1 {
     bottom: 8%;
     height: 60%;
     width: 50%;
-  }
+  } */
   .home1 .right .img2 {
     position: absolute;
     height: 15%;
     right: 8%;
     bottom: 4%;
   }
-  .home1 .left .container .content {
-    font-family: Verdana;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 23px;
-    line-height: 37px;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-    justify-content: center;
-    /* padding: 0% 10%; */
-    width: 60%;
-    display: flex;
-    margin: 0 10%;
-    height: 100%;
-    align-items: center;
+  .home1 .left img {
+    height: 70%;
   }
-}
-@media only screen and (max-width: 1150px) {
   .home1 .left .container .content {
-    line-height: 27px;
-  }
-}
-@media only screen and (max-width: 750px) {
-  .home1 .left .container .content {
-    font-family: Verdana;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 17px;
-    /* letter-spacing: 0.02em; */
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
     color: #ffffff;
     justify-content: center;
     /* padding: 0% 10%; */
-    width: 70%;
+    /* width: 60%;
     display: flex;
     margin: 0 10%;
     height: 100%;
-    align-items: center;
+    align-items: center; */
+  }
+}
+@media only screen and (max-width: 1150px) {
+}
+@media only screen and (max-width: 850px) {
+  .home1 .left .container .content {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
+  }
+  .home1 .right .img1 {
+    bottom: 8%;
+    height: 50%;
+  }
+  .home1 .left img {
+    height: 50%;
   }
   .home1 .right .img2 {
     position: absolute;
@@ -131,6 +131,40 @@
     right: 3%;
     bottom: 6%;
   }
+  .home1 .left .container .content{
+    height: 25vh;
+  }
+  
+}
+@media only screen and (max-width: 560px){
+.home1{
+  display: block;
+}
+.home1 .left .container .content {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+.home1 .left{
+  width: 95%;
+}
+.home1 .right{
+  height:50vh;
+}
+.home1 .right .img1{
+  height:80%;
+}
+.home1 .left .horizonlogo{
+  height: 25vh;
+}
+.home1 .left .container{
+  height: 25vh;
+}
 }
 @media only screen and (max-width: 350px) {
   .home1 .left .container .content {
@@ -151,26 +185,27 @@
   }
 }
 .home2 {
-  background-color: rgb(222, 30, 44);
   height: 100vh;
-  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
   display: flex;
   align-items: center;
+  background: url(../img/image\ 11.png) no-repeat center center/cover;
+  position: relative;
+  background-attachment: fixed;
 }
 .home3 {
-  background-color: rgb(222, 30, 44);
   height: fit-content;
-  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url(../img/image\ 11.png) no-repeat center center/cover;
+  position: relative;
+  background-attachment: fixed;
 }
 .home3 .container {
   position: relative;
   height: fit-content;
   width: 80%;
   margin: auto;
-  background-color: rgb(56, 8, 11);
   border-radius: 15px;
 }
 .home3 .container .head {
@@ -211,16 +246,9 @@
   height:80%;
   margin-left:-1px;
 } */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
 }
 
 .timeline {
@@ -232,15 +260,15 @@ body {
 }
 
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 10px;
-  background: rgb(196,196,196);
+  background: rgb(196, 196, 196);
   top: 5%;
   bottom: 5%;
   left: 50%;
-  height:90%;
-  margin-left:-1px;
+  height: 90%;
+  margin-left: -1px;
 }
 
 .contain {
@@ -252,23 +280,24 @@ body {
 
 .contain.left {
   left: 0;
+  margin-top: 50px;
 }
 
 .contain.right {
   left: 50%;
-  margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 
 .contain::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 24px;
   height: 26px;
   top: calc(50% - 8px);
   right: -8px;
   background: #ffffff;
-  border: 2px solid #006E51;
+  border: 2px solid #006e51;
   border-radius: 16px;
   z-index: 1;
 }
@@ -278,13 +307,13 @@ body {
 }
 
 .contain::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 10px;
   top: calc(50% - 1px);
   right: 8px;
-  background: rgb(196,196,196);
+  background: rgb(196, 196, 196);
   z-index: 1;
 }
 
@@ -299,7 +328,7 @@ body {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  color: #006E51;
+  color: #006e51;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -307,11 +336,12 @@ body {
 
 .contain.left .date {
   right: -8px;
-    top: 40px;
+  top: 40px;
 }
-.contain.left .date img{
+.contain.left .date img {
   position: absolute;
   left: 0;
+  top: 57px;
 }
 
 .contain.right .date {
@@ -344,14 +374,14 @@ body {
 }
 
 .contain .content {
-  padding:80px 20px;
-  background: rgb(196,196,196);
+  padding: 80px 20px;
+  background: rgb(196, 196, 196);
   position: relative;
   border-radius: 10px;
 }
 
 .contain.right .content {
-  padding:80px 50px;
+  padding: 80px 50px;
   border-radius: 10px;
 }
 
@@ -359,7 +389,7 @@ body {
   margin: 0 0 10px 0;
   font-size: 18px;
   font-weight: normal;
-  color: #006E51;
+  color: #006e51;
 }
 
 .contain .content p {
@@ -373,9 +403,9 @@ body {
   .timeline::after {
     left: 90px;
   }
-.home3 .container .head{
-  font-size:30px;
-}
+  .home3 .container .head {
+    font-size: 30px;
+  }
   .contain {
     width: 100%;
     padding-left: 120px;
@@ -386,14 +416,14 @@ body {
     left: 0%;
   }
 
-  .contain.left .date img{
+  .contain.left .date img {
     display: none;
   }
-  .contain.right .date img{
+  .contain.right .date img {
     display: none;
   }
 
-  .contain.left::after, 
+  .contain.left::after,
   .contain.right::after {
     left: 82px;
   }
@@ -401,7 +431,7 @@ body {
   .contain.left::before,
   .contain.right::before {
     left: 100px;
-    border-color: transparent #006E51 transparent transparent;
+    border-color: transparent #006e51 transparent transparent;
   }
 
   .contain.left .date,
@@ -422,9 +452,10 @@ body {
   }
 }
 .home4 {
-  background-color: rgb(222, 30, 44);
   height: fit-content;
-  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+  background: url(../img/image\ 11.png) no-repeat center center/cover;
+  position: relative;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -434,7 +465,6 @@ body {
   height: fit-content;
   width: 80%;
   margin: auto;
-  background-color: rgb(56, 8, 11);
   border-radius: 15px;
 }
 .home4 .container .head {
@@ -453,12 +483,14 @@ body {
   position: absolute;
 } */
 .home5 {
-  background-color: rgb(222, 30, 44);
+  /* background-color: rgb(222, 30, 44); */
   height: 100vh;
-  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url(../img/image\ 11.png) no-repeat center center/cover;
+  position: relative;
+  background-attachment: fixed;
 }
 /* .home5 .container {
   height: 80%;
@@ -500,7 +532,7 @@ body {
   margin: auto;
   width: 68vw;
   height: 80vh;
-  background: radial-gradient(circle, #050606, rgb(70, 1, 1));
+  /* background: radial-gradient(circle, #050606, rgb(70, 1, 1)); */
   border-radius: 10px;
 }
 
@@ -514,13 +546,11 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   border: 1px solid rgb(90, 88, 88);
-  background-color:#b9b6b6;
+  background-color: #b9b6b6;
   height: 60vh !important;
   width: 20vw !important;
   margin-top: 2em;
@@ -553,16 +583,16 @@ body {
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 480px) {
-  .sponsors-container{
+  .sponsors-container {
     width: 80vw;
     height: 60vh;
-    margin-top:20vh;
+    margin-top: 20vh;
   }
   .swiper-slide {
     width: 40vw !important;
-    height:40vh !important;
+    height: 40vh !important;
   }
-  .sponsors-container h1{
+  .sponsors-container h1 {
     font-size: 20px;
   }
 }
@@ -570,20 +600,20 @@ body {
 /* Medium devices (tablets, 768px ) */
 
 @media screen and (max-width: 768px) {
-  .sponsors-container{
+  .sponsors-container {
     width: 80vw;
     height: 60vh;
-    margin-top:20vh;
+    margin-top: 20vh;
   }
   .swiper-slide {
     width: 40vw !important;
-    height:40vh !important;
+    height: 40vh !important;
   }
-  .sponsors-container h1{
-    font-size:30px;
+  .sponsors-container h1 {
+    font-size: 30px;
   }
 }
-  
+
 .page.is-active {
   display: block;
 }

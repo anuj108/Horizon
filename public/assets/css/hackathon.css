@@ -176,7 +176,7 @@
   @media only screen and (max-width: 650px) {
 
 
-    .content{
+   .hackathon .content{
       display: flex;
       flex-direction: row-reverse;
       height: 420px;
@@ -261,7 +261,7 @@
 	}
 }
 
-.content{
+.hackathon .content{
   display: flex;
   flex-direction: row-reverse;
   height: 420px;
