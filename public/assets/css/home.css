@@ -14,6 +14,7 @@
   /* -------- */
   display: flex;
   width: 100%;
+  
 }
 .home1 .left {
   position: relative;
@@ -77,14 +78,15 @@
     height: 60%;
     width: 50%;
   } */
-  .home1 .right .img2 {
-    position: absolute;
-    height: 15%;
-    right: 8%;
-    bottom: 4%;
+  .home1 .right .img1 {
+    height: 50%;
   }
   .home1 .left img {
-    height: 70%;
+    height: 25%;
+  }
+  .home1{
+    height: 70vh;
+    justify-content: space-around;
   }
   .home1 .left .container .content {
     font-family: Poppins;
@@ -103,6 +105,8 @@
     height: 100%;
     align-items: center; */
   }
+  .home1 .left .horizonlogo {
+    height: 35vh;}
 }
 @media only screen and (max-width: 1150px) {
 }
@@ -111,17 +115,22 @@
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.02em;
 
     color: #ffffff;
   }
+  .home1 .left img {
+    height: 20%;
+  }
+  .home1 .left .horizonlogo {
+    height: 30vh;}
+  .home1{
+    height: 70vh;
+  }
   .home1 .right .img1 {
     bottom: 8%;
-    height: 50%;
-  }
-  .home1 .left img {
     height: 50%;
   }
   .home1 .right .img2 {
@@ -160,26 +169,26 @@
   .home1 .left .horizonlogo {
     height: 25vh;
   }
+  .home1 .left .horizonlogo img{
+    height: 40%;
+  }
   .home1 .left .container {
     height: 25vh;
+  }
+  .home1{
+    height: 100vh;
   }
 }
 @media only screen and (max-width: 350px) {
   .home1 .left .container .content {
-    font-family: Verdana;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 14px;
-    /* letter-spacing: 0.02em; */
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
     color: #ffffff;
-    justify-content: center;
-    /* padding: 0% 10%; */
-    width: 70%;
-    display: flex;
-    margin: 0 10%;
-    height: 100%;
-    align-items: center;
   }
 }
 .home2 {
