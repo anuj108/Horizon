@@ -53,6 +53,7 @@
 }
 .home1 .right .img1 {
   height: 110%;
+  z-index: 100;
 }
 .home1 .right .img2 {
   position: absolute;
@@ -192,7 +193,7 @@
   }
 }
 .home2 {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   background: url(../img/image\ 11.png) no-repeat center center/cover;
@@ -217,8 +218,8 @@
 }
 .home3 .container .head {
   padding: 0px;
-  color: #f2f2f2;
-  font-size: 40px;
+  color: hsl(0, 0%, 95%);
+  font-size: 30px;
   text-align: center;
   margin-top: 10px;
   color: #fff;
@@ -499,6 +500,9 @@ body {
   position: relative;
   background-attachment: fixed;
 }
+/* .swiper{
+  height: 0vh;
+} */
 /* .home5 .container {
   height: 80%;
   width: 80%;
@@ -536,18 +540,18 @@ body {
   transform: translateY(-1rem);
 } */
 .sponsors-container {
-  margin: auto;
+  margin: 0 auto;
   width: 68vw;
-  height: 80vh;
   /* background: radial-gradient(circle, #050606, rgb(70, 1, 1)); */
   border-radius: 10px;
+  padding:20px;
 }
 
 .sponsors-container h1 {
   color: #f2f2f2;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
-  padding: 20px;
+  padding: 45px;
   margin-top: 10px;
   color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -591,26 +595,7 @@ body {
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 480px) {
   .sponsors-container {
-    width: 80vw;
-    height: 60vh;
-    margin-top: 20vh;
-  }
-  .swiper-slide {
-    width: 40vw !important;
-    height: 40vh !important;
-  }
-  .sponsors-container h1 {
-    font-size: 20px;
-  }
-}
-
-/* Medium devices (tablets, 768px ) */
-
-@media screen and (max-width: 768px) {
-  .sponsors-container {
-    width: 80vw;
-    height: 60vh;
-    margin-top: 20vh;
+    width: 100vw;
   }
   .swiper-slide {
     width: 40vw !important;
@@ -619,6 +604,54 @@ body {
   .sponsors-container h1 {
     font-size: 30px;
   }
+}
+@media screen and (max-width: 350px) {
+  .home2{
+
+  }
+  .sponsors-container {
+    width: 100vw;
+  }
+  .swiper-slide {
+    width: 30vw;
+    height: 30vh ;
+  }
+  .sponsors-container h1 {
+    font-size: 30px;
+  }
+}
+
+.swiper{
+  height: 50vh;
+}
+
+/* Medium devices (tablets, 768px ) */
+
+@media screen and (max-width: 908px) {
+  .sponsors-container {
+    /* width: 80vw; */
+  }
+  .home2{
+    height:70vh;
+  }
+  .swiper-slide {
+    width: 30vw ;
+    height: 30vh;
+  }
+  .sponsors-container h1 {
+    padding: 20px;
+    color: #f2f2f2;
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.swiper{
+  height: 40vh;
+}
+.sponsors-container{
+  width:90vw;
+}
 }
 
 .page.is-active {
