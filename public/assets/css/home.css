@@ -6,7 +6,7 @@
 .home1 {
   /* background-color: rgb(222, 30, 44); */
   height: 100vh;
-
+overflow: hidden;
   /* box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset; */
   background: url(../img/image\ 11.png) no-repeat center center/cover;
   position: relative;
@@ -14,7 +14,7 @@
   /* -------- */
   display: flex;
   width: 100%;
-  
+  z-index: 0;
 }
 .home1 .left {
   position: relative;
@@ -53,7 +53,7 @@
 }
 .home1 .right .img1 {
   height: 110%;
-  z-index: 100;
+  z-index: -1;
 }
 .home1 .right .img2 {
   position: absolute;
