@@ -21,6 +21,7 @@ overflow: hidden;
 }
 .home1 .left {
   position: relative;
+  z-index: -2;
 
   width: 50%;
 }
@@ -53,10 +54,13 @@ overflow: hidden;
   justify-content: center;
   align-items: center;
   height: 110%;
+  transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
 }
 .home1 .right .img1 {
   height: 110%;
   z-index: -1;
+  transition: all 0.4s ease-in-out;
 }
 .home1 .right .img2 {
   position: absolute;
