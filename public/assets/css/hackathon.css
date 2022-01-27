@@ -306,6 +306,7 @@
     left: -122px;
     top: -107px;
     transform: translateX(32px);
+	display:none;
 }}
 
   .body{
