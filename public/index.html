@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="assets/css/gamenight.css">
   <!-- <link rel="stylesheet" href="assets/css/speakers.css"> -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- aos animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <title>Horizon</title>
 
 
@@ -66,7 +69,8 @@
           <div class="horizonlogo"><img src="./assets/img/Group 39.png" alt=""></div>
           <div class="container">
 
-            <p class="content">Horizon is a 3 day technical fest which is an initiative to uplift the youth with
+            <p class="content" data-aos="fade-up" data-aos-duration="1000">Horizon is a 3 day technical fest which is an
+              initiative to uplift the youth with
               technical aid and an attempt to expand the ‘Horizons’ of technology.<br>
               <br>
               The 5 Google Developer Student Clubs (GDSCs), namely GDSC BITS PILANI, LNMIIT JAIPUR, ABES, RTU KOTA, and
@@ -77,13 +81,13 @@
 
         </div>
         <div class="right">
-          <img class="img1" src="assets/img/spidey png.png" alt="">
+          <img class="img1" src="assets/img/spidey png.png" data-aos="fade-left" data-aos-duration="1000"alt="">
           <!-- <img class="img2" src="assets/img/c496c025-427d-4c69-bbdf-8ed860d3f856[1] 2.png" alt=""> -->
         </div>
       </div>
-<!-- <hr color="white" height="1px" width="60%"> -->
+      <!-- <hr color="white" height="1px" width="60%"> -->
       <div class="home2">
-        <div class="sponsors-container">
+        <div class="sponsors-container"data-aos="fade-up" data-aos-duration="1000">
           <h1>Organizers</h1>
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -107,9 +111,9 @@
       </div>
 
       <div class="home3">
-        <div class="container">
+        <div class="container ">
           <div class="head">
-            <h1>Timeline</h1>
+            <h1 data-aos="fade-up" data-aos-duration="1000">Timeline</h1>
 
           </div>
 
@@ -117,7 +121,7 @@
           <!-- <img class="rectangle" src="/assets/img/Rectangle 30.png" alt="" srcset=""> -->
           <div class="timeline">
             <div class="contain left">
-              <div class="date"><img src="assets/img/pngfind 2.png" alt="" srcset=""></div>
+              <div class="date"><img src="assets/img/pngfind 2.png" data-aos="fade-left" data-aos-duration="1000"alt="" srcset=""></div>
               <div class="content">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>
@@ -146,7 +150,7 @@
               </div>
             </div>
             <div class="contain right">
-              <div class="date"><img src="assets/img/spiderman-png-47353 1.png" alt="" srcset=""></div>
+              <div class="date"><img src="assets/img/spiderman-png-47353 1.png"data-aos="fade-right" data-aos-duration="1000" alt="" srcset=""></div>
               <div class="content">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>
@@ -174,7 +178,7 @@
               </div>
             </div>
             <div class="contain left">
-              <div class="date"><img src="assets/img/pngfind 2.png" alt="" srcset=""></div>
+              <div class="date"><img src="assets/img/pngfind 2.png" data-aos="fade-left" data-aos-duration="1000"alt="" srcset=""></div>
               <div class="content">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>
@@ -387,6 +391,9 @@
       }
     });
   </script>
+  <script>
+		AOS.init();
+	</script>
 </body>
 
 </html>
