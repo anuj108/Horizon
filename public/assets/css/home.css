@@ -74,7 +74,7 @@ overflow: hidden;
   height: 3px;
   width:55%;
  background-color: white;
- bottom: 0;
+ bottom: 8%;
 }
 @media only screen and (max-width: 2200px) {
   .home1 .right .img1 {
