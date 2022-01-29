@@ -24,7 +24,6 @@ function SwitchPage(page_id){
 
 
 // Navbar Animation
-const menu = document.querySelector('.menu');
 const hamburger = document.querySelector('.hamburger');
 const dropdown = document.querySelector('.options');
 const options = document.querySelectorAll('.options li');
@@ -32,10 +31,6 @@ hamburger.addEventListener('click',() =>
 {
     hamburger.classList.toggle('active-ham');
     dropdown.classList.toggle('outside');
-    if(menu.style.borderRadius)
-        menu.style.borderRadius= '';
-    else    
-        menu.style.borderRadius = '0';
 
     options.forEach((link, index) =>{
         if(link.style.animation)

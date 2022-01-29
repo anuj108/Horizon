@@ -135,5 +135,10 @@
   .options
   {
     width: 100vw;
+    transform: translateX(-100vw);
+  }
+
+  .outside {
+    transform: translateX(0);
   }
 }
