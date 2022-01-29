@@ -41,6 +41,6 @@ hamburger.addEventListener('click',() =>
         if(link.style.animation)
             link.style.animation= '';
         else    
-            link.style.animation = `navLinkFade 0.5s ease forwards ${index/4 + 0.85}s`;
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index/4 + 0.45}s`;
     });
 });
