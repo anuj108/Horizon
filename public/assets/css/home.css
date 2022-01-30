@@ -21,7 +21,7 @@ overflow: hidden;
 }
 .home1 .left {
   position: relative;
-  z-index: -2;
+  z-index: 1;
 
   width: 50%;
 }
@@ -72,9 +72,10 @@ overflow: hidden;
   content: "";
   position: absolute;
   height: 3px;
-  width:55%;
+  width:45%;
  background-color: white;
  bottom: 8%;
+ z-index: -1;
 }
 @media only screen and (max-width: 2200px) {
   .home1 .right .img1 {
@@ -208,9 +209,10 @@ overflow: hidden;
   }
 }
 .home2 {
-  height: 80vh;
+  height: 90vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   background: url(../img/image\ 11.png) no-repeat center center/cover;
   position: relative;
   background-attachment: fixed;
@@ -572,10 +574,10 @@ body {
   transform: translateY(-1rem);
 } */
 .sponsors-container {
-  margin: 0 auto;
-  width: 68vw;
+  width: 100%;
   /* background: radial-gradient(circle, #050606, rgb(70, 1, 1)); */
   border-radius: 10px;
+  height: 100%;
   padding:20px;
 }
 
