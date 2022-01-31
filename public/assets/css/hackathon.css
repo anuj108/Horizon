@@ -164,11 +164,7 @@
       flex-direction: row-reverse;
       height: 420px;
     } */
-  .gamenight1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   .message-box {
     height: 70%;
   }
