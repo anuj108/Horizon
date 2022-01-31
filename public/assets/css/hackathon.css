@@ -1,15 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 .hackathon1 {
   height: 100vh;
   background: radial-gradient(rgb(222, 30, 44), rgb(39, 51, 123));
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hackathon2 {
   height: 100vh;
   background: radial-gradient(rgb(222, 30, 44), rgb(39, 51, 123));
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hackathon3 {
   height: 100vh;
@@ -35,7 +43,7 @@
   border-radius: 0px 30px 30px 0px;
 }
 
-.side-bar-items
+/* .side-bar-items
 {
   color: black;
   font-size: 5rem;
@@ -54,27 +62,32 @@
   border-left: 0.8rem solid white;
 
 }
-
+ */
 
 .message-box {
   position: relative;
-  top: 15%;
-  left: 8%;
   width: 90%;
-  min-height: 70%;
-
+  height: 90%;
+  justify-content: 90%;
+  margin: auto;
   background: rgba(6, 5, 5, 0.75);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   border-radius: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
 }
 
-.message-box-title {
-  text-align: center;
-  padding: 15px;
-  font-family: Verdana;
+.message-box-title h1 {
+  font-family: Alata sans-serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 66px;
+  display: flex;
+  padding: 40px 60px;
   align-items: center;
   letter-spacing: 0.05em;
   color: #ffffff;
@@ -84,19 +97,11 @@
   .side-bar {
     width: 10%;
     height: 40%;
-    
   }
   /* .side-bar-items{
     border-left: 5rem;
     font-size: 5rem;
   } */
-
-  .message-box {
-    top: 15%;
-    left: 14%;
-    width: 81%;
-    min-height: 80%;
-  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -114,19 +119,10 @@
     border-radius: 0; */
     display: none;
   }
-  .side-bar-items{
+  .side-bar-items {
     font-size: 20px;
     padding: 4%;
   }
-
-  .message-box {
-    top: 15%;
-    left: 0;
-    margin: auto;
-    width: 85%;
-    min-height: 75%;
-  }
-
 }
 
 /* Kingshuk */
@@ -134,151 +130,134 @@
 /* Niharika */
 
 .message-box1 {
-    position: relative;
-    top: 15%;
-    left: 8%;
-    width: 77%;
-    min-height: 70%;
-  
-    background: rgba(6, 5, 5, 0.75);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-  }
- @media only screen and (max-width: 1100px) {
-  
-  
-  
-    .message-box1 {
-      top: 15%;
-      left: 14%;
-      width: 81%;
-      min-height: 80%;
-    }
-   
+  position: relative;
+  width: 90%;
 
-    .register{
-      position: absolute;
-      width: 60px;
-    height: 199px;
-    left: 99px;
-    top: 377px;
-     
-      background: #DF1F2D;
-      box-shadow: -3px 14px 9px rgb(45 56 156 / 70%), -2px -15px 9px rgb(45 56 156 / 70%);
-      border-radius: 30px 10px 10px 30px;
-      transform: rotate(
-  270deg
-  );
-  }
-
-  }
-
-  @media only screen and (max-width: 650px) {
-
-
-   .hackathon .content{
-      display: flex;
-      flex-direction: row-reverse;
-      height: 420px;
-    }
-    .message-box1 {
-        top: 15%;
-        left: 0;
-        margin: auto;
-        width: 85%;
-        min-height: 75%;
-      }
-
-      .spider{
-        height: 114%;
-    width: 211px;
-    left: -143px;
-      }
-
-     .c{
-    font-size:96%;
-     }
-    
-
-     .register{
-      position: absolute;
-      width: 60px;
-      height: 200px;
-      left: 99px;
-      top: 355px;
-      background: #DF1F2D;
-      box-shadow: -3px 14px 9px rgb(45 56 156 / 70%), -2px -15px 9px rgb(45 56 156 / 70%);
-      border-radius: 30px 10px 10px 30px;
-      transform: rotate(
-  270deg
-  );
-  
+  background: rgba(6, 5, 5, 0.75);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
 }
-    
+.register h1 {
+  transform: rotate(-270deg);
+  color: white;
+}
 
-  }
-
-  .register{
+@media only screen and (max-width: 1100px) {
+  .register {
+    position: absolute;
     width: 60px;
     height: 199px;
     left: 99px;
-    top: 338px;
-    background: #DF1F2D;
-    box-shadow: -3px 14px 9px rgb(45 56 156 / 70%), -2px -15px 9px rgb(45 56 156 / 70%);
-    border-radius: 30px 10px 10px 30px;
-    transform: rotate( 
-270deg
- );
-    position: absolute;
+    top: 377px;
 
+    background: #df1f2d;
+    box-shadow: -3px 14px 9px rgb(45 56 156 / 70%),
+      -2px -15px 9px rgb(45 56 156 / 70%);
+    border-radius: 30px 10px 10px 30px;
+    transform: rotate(270deg);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  /* .hackathon .content{
+      display: flex;
+      flex-direction: row-reverse;
+      height: 420px;
+    } */
+  .gamenight1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .message-box {
+    height: 70%;
+  }
+  .message-box1 {
+  
+  }
+
+  .spider {
+    height: 114%;
+    width: 211px;
+    left: -143px;
+  }
+
+  .c {
+    font-size: 96%;
+  }
+
+  .register {
+    position: absolute;
+    width: 60px;
+    height: 200px;
+    left: 99px;
+    background: #df1f2d;
+    box-shadow: -3px 14px 9px rgb(45 56 156 / 70%),
+      -2px -15px 9px rgb(45 56 156 / 70%);
+    border-radius: 30px 10px 10px 30px;
+    transform: rotate(270deg);
+  }
+  .message-box1 .content{
+    font-size:16px !important;
+  }
+}
+
+.register {
+  bottom: 0px;
+  width: 60px;
+  height: 199px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #df1f2d;
+  box-shadow: -3px 14px 9px rgb(45 56 156 / 70%),
+    -2px -15px 9px rgb(45 56 156 / 70%);
+  border-radius: 30px 10px 10px 30px;
+  transform: rotate(270deg);
+  position: absolute;
+  left: 137px;
 }
 .register_text {
-    text-align: center;
-    padding: 28px;
-    font-family: Verdana;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    align-items: center;
-    letter-spacing: 0.05em;
-    color: #ffffff;
-    transform: rotate(
-        90deg
-        );
-        width: max-content;
-        padding-top: 152px;
+  text-align: center;
+  padding: 28px;
+  font-family: Verdana;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  transform: rotate(90deg);
+  width: max-content;
+  padding-top: 152px;
 }
 
 .avatar {
-
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 118%;
-    transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 118%;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
 }
 @keyframes float {
-	0% {
-		
-		transform: translatey(0px);
-	}
-	50% {
-		
-		transform: translatey(-20px);
-	}
-	100% {
-		
-		transform: translatey(0px);
-	}
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
-.hackathon .content{
+.hackathon .content {
   display: flex;
   flex-direction: row-reverse;
   height: 420px;
   font-family: Poppins;
-  padding-left: 6%;
+  padding-left: 60px;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -287,9 +266,6 @@
 
   color: #ffffff;
 }
-
-
-
 
 .spider {
   width: 289.24px;
@@ -300,20 +276,18 @@
   position: absolute;
 }
 
-@media (max-width:1000px)
-{
-  .spider{
+@media (max-width: 1000px) {
+  .spider {
     height: 118%;
     width: 238px;
     left: -177px;
+  }
 
-}
-
-.content{
-  display: flex;
-  flex-direction: row-reverse;
-  height: 420px;
-  font-family: Poppins;
+  .content {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 420px;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -322,85 +296,106 @@
 
     color: #ffffff;
     justify-content: center;
+  }
+  .c {
+    width: 69%;
+    font-size: 91%;
+  }
 }
-.c{
-  
-  width: 69%;
-  font-size:91%;
-  
-}
-}
-@media (max-width: 586px){
-.spider {
-  width: 171.24px;
+@media (max-width: 586px) {
+  .hackathon2 .message-box{
+    font-size: 24px !important;
+  }
+  .spider {
+    width: 171.24px;
     height: 546px;
     left: -122px;
     top: -107px;
     transform: translateX(32px);
-	display:none;
-}
-
-.c{
-    
-  margin-right: 10%;
-  height: 60vh;
-  width: 100%;
-  border-radius: 15px;
-}
-.container{
-  font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.02em;
-
-color: #ffffff;
-
-}}
-
-  .body{
-    padding-left: 10px;
-    width:759px;
+    display: none;
   }
 
- @media (min-width:1001px)
- {
-   .c{
-     width:82%;
-     font-size:128%;
-   }
- }
-@media (max-width:394px)
-{
+  .c {
+    margin-right: 10%;
+    height: 60vh;
+    width: 100%;
+    border-radius: 15px;
+  }
+  .container {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
+  }
+}
+
+.body {
+  padding-left: 10px;
+  width: 759px;
+}
+
+@media (min-width: 1001px) {
+  .c {
+    width: 82%;
+    font-size: 128%;
+  }
+}
+@media (max-width: 415px) {
   .register {
     width: 34px;
     height: 33%;
     left: 78px;
-    top: 388px;
-    background: #DF1F2D;
-    box-shadow: -3px 14px 9px rgb(45 56 156 / 70%), -2px -15px 9px rgb(45 56 156 / 70%);
+    background: #df1f2d;
+    box-shadow: -3px 14px 9px rgb(45 56 156 / 70%),
+      -2px -15px 9px rgb(45 56 156 / 70%);
     border-radius: 30px 10px 10px 30px;
-    transform: rotate( 
-270deg
- );
- position:absolute;
+    transform: rotate(270deg);
+    position: absolute;
+  }
+  .message-box-title h1 {
+    font-family: Alata sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 66px;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #ffffff;
 }
-
-.register_text {
-  text-align: center;
-  padding: 16px;
-  font-family: Verdana;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  align-items: center;
-  letter-spacing: 0.05em;
-  color: #ffffff;
-  transform: rotate( 
-90deg
-);
-  width: max-content;
-  padding-top: 124px;
+.hackathon .content{
+  padding: 18px;
 }
+  .register_text {
+    text-align: center;
+    padding: 16px;
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    transform: rotate(90deg);
+    width: max-content;
+    padding-top: 124px;
+  }
+  .hackathon2 .message-box{
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 281px)
+{
+  .message-box-title h1
+  {
+    font-size:25px;
+  }
+  .message-box1 .content{
+    font-size:12px!important;
+  }
 }
