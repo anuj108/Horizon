@@ -1,3 +1,8 @@
+const hamburger = document.querySelector('.hamburger');
+const dropdown = document.querySelector('.options');
+const options = document.querySelectorAll('.options li');
+
+
 window.onload=()=>{
     const tab_switchers=document.querySelectorAll('[data-switcher');
     for(let i=0;i<tab_switchers.length;i++)
@@ -10,6 +15,14 @@ window.onload=()=>{
             tab_switcher.parentNode.classList.add('is-active');
 
             SwitchPage(page_id);
+            hamburger.classList.remove('active-ham');
+            dropdown.classList.remove('outside');
+            options.forEach((link, index) =>{
+                if(link.style.animation)
+                    link.style.animation= '';
+                else    
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index/4 + 0.45}s`;
+            });
         })
     }
 }
@@ -24,9 +37,7 @@ function SwitchPage(page_id){
 
 
 // Navbar Animation
-const hamburger = document.querySelector('.hamburger');
-const dropdown = document.querySelector('.options');
-const options = document.querySelectorAll('.options li');
+
 hamburger.addEventListener('click',() =>
 {
     hamburger.classList.toggle('active-ham');
@@ -39,3 +50,16 @@ hamburger.addEventListener('click',() =>
             link.style.animation = `navLinkFade 0.5s ease forwards ${index/4 + 0.45}s`;
     });
 });
+// const links = querySelectorAll('.tab');
+// links.forEach(link => {
+//     link.addEventListener('click', () => {
+ 
+//     })
+// })
+// window.addEventListener('mouseup',function(event){
+//     if(event.target!=dropdown&&event.target!=hamburger)
+//     {
+//         hamburger.classList.remove('active-ham');
+//         dropdown.classList.remove('outside');
+//     }
+// })
