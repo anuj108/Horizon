@@ -14,13 +14,13 @@
 
 
 
-.gamenight1 h1 {
+.gamenight1 .inner-content h1 {
+  display: flex;
   color: #ffffff;
   font-family: Verdana;
   font-size: 30px;
   padding-top: 6vh;
-  margin-left: 25%;
-  display: inline-block;
+  justify-content: center;
 }
 .gamenight1 .image img{
   top: 17%;
@@ -46,6 +46,7 @@
   border-radius: 10px 10px 25px 25px;
   border: 1px solid #000000;
   box-shadow: -8px 6px 15px rgb(31, 15, 105), 8px 6px 15px rgb(31, 15, 105);
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -78,15 +79,32 @@
     margin-left: 25%;
     margin-top: 4vh;
   }
+  .gamenight1 .image img{
+  top: 17%;
+    position: absolute;
+    height: 50%;
+    width: 142%;
+    left: -36%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .gamenight1 h1 {
-    margin-left: 15%;
-    display: block;
-  }
+  .gamenight1 .inner-content h1 {
+    margin: auto;
+    /* display: block; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 22px;
+}
   #form {
-    margin-left: 15%;
-    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    /* margin: 14px; */
+    /* padding: 21px; */
+    margin: auto;
+    margin-top: 20px;
   }
 }
