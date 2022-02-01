@@ -60,6 +60,8 @@ overflow: hidden;
 .home1 .right .img1 {
   height: 110%;
   z-index: -1;
+  position: absolute;
+  left: 100px;
   transition: all 0.4s ease-in-out;
 }
 .home1 .right .img2 {
@@ -71,15 +73,15 @@ overflow: hidden;
 .home1::after{
   content: "";
   position: absolute;
-  height: 3px;
-  width:45%;
+  height: 1px;
+  width:40%;
  background-color: white;
  bottom: 8%;
  z-index: -1;
 }
 @media only screen and (max-width: 2200px) {
   .home1 .right .img1 {
-    bottom: 8%;
+    bottom: 15%;
     height: 70%;
   }
   .home1 .right .img2 {
