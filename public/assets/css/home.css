@@ -27,7 +27,7 @@ overflow: hidden;
 }
 .home1 .left .horizonlogo {
   height: 40vh;
-  padding-left: 6%;
+  padding-left: 13%;
   display: flex;
   align-items: end;
 }
@@ -40,7 +40,7 @@ overflow: hidden;
 }
 .home1 .left .container .content {
   font-family: Poppins;
-  padding-left: 6%;
+  padding-left: 13%;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -73,11 +73,12 @@ overflow: hidden;
 .home1::after{
   content: "";
   position: absolute;
-  height: 1px;
-  width:40%;
- background-color: white;
- bottom: 8%;
- z-index: -1;
+  height: 2px;
+  width: 40%;
+  background-color: white;
+  bottom: 70px;
+  left: 8%;
+  z-index: -1;
 }
 @media only screen and (max-width: 2200px) {
   .home1 .right .img1 {
@@ -103,9 +104,11 @@ overflow: hidden;
   .home1 .left img {
     height: 25%;
   }
+  .home1::after{
+    bottom: -5px;
+  }
   .home1{
     height: 70vh;
-    justify-content: space-around;
   }
   .home1 .left .container .content {
     font-family: Poppins;
