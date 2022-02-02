@@ -15,11 +15,11 @@ html
 
 
 /* bring sidebar to top */
+/* darken navbar after sometime */
 .navbar {
   width: 100%; 
-  height: 5vh;
-  padding: 0 30px;
-  margin-top: 20px;
+  height: 10vh;
+  padding: 10px 30px;
   position: fixed;
   top: o;
   left: 50%;
@@ -29,6 +29,7 @@ html
   display: flex ;
   justify-content: space-between;
   align-items: center;
+  /* background-color: rgb(6, 11, 21, 0.9); */
 }
 
 .hamburger {
