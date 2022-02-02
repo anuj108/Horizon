@@ -309,6 +309,7 @@ bottom: 0;
     color: #ffffff;
     justify-content: center;
   }
+
   .c {
     width: 69%;
     font-size: 91%;
@@ -413,5 +414,180 @@ bottom: 0;
   }
   .message-box1 .content{
     font-size:12px!important;
+  }
+}
+.hack {
+  /* background-color: rgb(222, 30, 44); */
+  height: 100vh;
+overflow: hidden;
+  /* box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset; */
+  background: url(../img/wallpaperflare\ 1.png) no-repeat center center/cover;
+  position: relative;
+  background-attachment: fixed;
+  /* -------- */
+  display: flex;
+  width: 100%;
+  z-index: 0;
+}
+.hack .left {
+  position: relative;
+  z-index: 1;
+
+  width: 50%;
+}
+.hack .left .horizonlogo {
+  height: 40vh;
+  padding-left: 13%;
+  display: flex;
+  align-items: end;
+}
+
+.hack .left .container {
+  margin-right: 10%;
+  height: 100vh;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.hack .left .container .content {
+  height: 33%;
+  width: 95%;
+  font-family: Poppins;
+  padding-left: 13%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.hack .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110%;
+  transform: translatey(0px);
+  width:50vw;
+	animation: float 6s ease-in-out infinite;
+}
+.hack .right .img1 {
+  height: 110%;
+  z-index: -1;
+  position: absolute;
+  left: 100px;
+  transition: all 0.4s ease-in-out;
+}
+.hack .right .img2 {
+  position: absolute;
+  height: 22%;
+  right: 8%;
+  bottom: 4%;
+}
+/* .hack::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 40%;
+  background-color: white;
+  bottom: 70px;
+  left: 8%;
+  z-index: -1;
+} */
+@media only screen and (max-width: 2200px) {
+  .hack .right .img1 {
+    height: 79%;
+  }
+  .hack .right .img2 {
+    position: absolute;
+    height: 18%;
+    right: 6%;
+    bottom: 4%;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .hack .right .img1 {
+    height: 57%;
+  }
+  .hack .left .container .content {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
+  }
+}
+@media only screen and (max-width: 912px) {
+  .hack .right .img1 {
+    height: 38%;
+    left:28px;
+  }
+  .hack .left .container .content {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .hack {
+    justify-content: center;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hack .left .container .content {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
+  }
+  .hack .left {
+    width: 95%;
+    top: 0;
+  }
+  .hack .right {
+    height: 50vh;
+  }
+  .hack .right .img1 {
+    height: 80%;
+    left: 10%;
+    bottom:-7%;
+  }
+  .hack .left .horizonlogo {
+    height: 25vh;
+  }
+  .hack .left .horizonlogo img{
+    height: 40%;
+  }
+  .hack .left .container {
+    height: 25vh;
+  }
+  .hack{
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .hack .left .container .content {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
   }
 }
