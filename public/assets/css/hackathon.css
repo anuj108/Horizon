@@ -13,6 +13,7 @@
   align-items: center;
 }
 .hackathon2 {
+  position: relative;
   height: 100vh;
   background: url(../img/peakpx\ 1.png) no-repeat
     center center/cover;
@@ -423,7 +424,6 @@ overflow: hidden;
   /* box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset; */
   background: url(../img/wallpaperflare\ 1.png) no-repeat center center/cover;
   position: relative;
-  background-attachment: fixed;
   /* -------- */
   display: flex;
   width: 100%;

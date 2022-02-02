@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .footer {
-  background-color: black;
+  background-color: rgb(28,38,51);
   display: flex;
   padding: 15px;
   height: 40vh;
@@ -85,6 +85,9 @@
   position: relative;
   justify-content: center;
   align-items: center;
+}
+.footer .right .head{
+  display: none;
 }
 .footer .right .vertical {
   font-family: Google Sans Display;
