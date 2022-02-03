@@ -693,7 +693,7 @@ body {
 }
 }
 
-.page.is-active {
+.page.is-active-page {
   display: block;
 }
 .page {
