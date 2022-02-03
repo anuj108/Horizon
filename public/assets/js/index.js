@@ -35,9 +35,6 @@ function SwitchPage(page_id){
     next_page.classList.add('is-active');
 }
 
-
-// Navbar Animation
-
 hamburger.addEventListener('click',() =>
 {
     hamburger.classList.toggle('active-ham');
@@ -50,16 +47,3 @@ hamburger.addEventListener('click',() =>
             link.style.animation = `navLinkFade 0.5s ease forwards ${index/4  }s`;
     });
 });
-// const links = querySelectorAll('.tab');
-// links.forEach(link => {
-//     link.addEventListener('click', () => {
- 
-//     })
-// })
-// window.addEventListener('mouseup',function(event){
-//     if(event.target!=dropdown&&event.target!=hamburger)
-//     {
-//         hamburger.classList.remove('active-ham');
-//         dropdown.classList.remove('outside');
-//     }
-// })
