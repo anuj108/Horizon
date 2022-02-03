@@ -139,9 +139,15 @@ text-shadow: 1.86486px 1.86486px 9.32432px rgba(255, 190, 71, 0.75);
         box-shadow: inset 2px 2px 2px 0px rgb(255 255 255 / 50%), 7px 7px 20px 0px rgb(0 0 0 / 10%), 4px 4px 5px 0px rgb(0 0 0 / 10%);
         outline: none;
         position: absolute;
+<<<<<<< HEAD
         left: 65px;
         margin-top: 448px;
     }
+=======
+        left: 47px;
+        margin-top: 385px;
+}
+>>>>>>> d43838b ( register button added)
 
 .btn-3 {
     width: 189px;

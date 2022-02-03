@@ -432,6 +432,8 @@ overflow: hidden;
 .hack .left {
   position: relative;
   z-index: 1;
+  display:flex;
+  flex-direction: column;
 
   width: 50%;
 }
@@ -565,6 +567,7 @@ overflow: hidden;
     height: 80%;
     left: 10%;
     bottom:-7%;
+    display:none;
   }
   .hack .left .horizonlogo {
     height: 25vh;
