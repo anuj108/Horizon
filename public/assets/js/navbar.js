@@ -32,7 +32,7 @@ optionsList.forEach((option) =>
         activePage.classList.remove('is-active-page');
         activeTab.forEach(tab => {
             tab.classList.remove('is-active-tab');
-        });
+        });A
 
         //finding the data-tab value of option clicked
         const tabNumber = option.dataset.tab;
