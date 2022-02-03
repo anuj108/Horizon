@@ -155,12 +155,13 @@ bottom: 0;
   color: white;
 }
 
+
 @media only screen and (max-width: 1100px) {
   .register {
     position: absolute;
     width: 60px;
     height: 199px;
-    left: 99px;
+    left: 705px;
     top: 377px;
 
     background: #df1f2d;
@@ -238,7 +239,7 @@ bottom: 0;
   color: #ffffff;
   transform: rotate(90deg);
   width: max-content;
-  padding-top: 152px;
+  padding-top:25px;
 }
 
 .avatar {
@@ -432,6 +433,8 @@ overflow: hidden;
 .hack .left {
   position: relative;
   z-index: 1;
+  display:flex;
+  flex-direction: column;
 
   width: 50%;
 }
@@ -565,6 +568,7 @@ overflow: hidden;
     height: 80%;
     left: 10%;
     bottom:-7%;
+    display:none;
   }
   .hack .left .horizonlogo {
     height: 25vh;
