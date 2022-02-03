@@ -1,4 +1,194 @@
+/* KINGSHUK */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html
+{
+  --inner-width : 25vw;
+  --outer-width : 50%;
+}
+
+/* darken navbar after sometime */
+/* hamburger size correction */
+.navbar {
+  width: 100%; 
+  height: 10vh;
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 100;
+
+  display: flex ;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgb(6, 11, 21, 0.9); */
+}
+
+.hamburger {
+  height: 20px;
+  aspect-ratio: 3/2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.line {
+  width: 100%;
+  height: 15%;
+  border-radius: 10px;
+  background-color: white;
+  transition: all 0.7s ease-in-out;
+}
+
+/* change length in mobile view */
+.active-ham .l1 {
+  transform: rotate(-45deg) translate(3px, 18px);
+}
+
+.active-ham .l2 {
+  transform: translate(-50px);
+  opacity: 0;
+}
+
+.active-ham .l3 {
+  transform: rotate(45deg) translate(4px, -17px);
+}
+
+.outer-options
+{
+  width: 45%;
+  display: flex;
+}
+
+.inner-options {
+  background-color: rgb(6, 11, 21, 0.9);
+  height: 100vh;
+  width: var(--inner-width);
+  padding: 6vh 30px 30px 30px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  transform: translateX(-42vw);
+  transition: all 0.5s ease-in-out;
+}
+
+.outside {
+  transform: translateX(0);
+}
+
+.tab {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.inner-options .tab
+{
+  opacity: 0;
+}
+
+.tab a[data-switcher] {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.inner-options .tab a[data-switcher]
+{
+  font-size: 24px;
+}
+
+.tab:hover a,
+.tab.is-active a {
+  color: #ff0000;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1100px)
+{
+  html
+  {
+    --inner-width: 30vw;
+    --outer-width: 60%;
+  }
+}
+
+@media only screen and (max-width: 800px)
+{
+  .options
+  {
+    width: 33vw;
+  }
+
+}
+
+@media only screen and (max-width: 800px)
+{
+  .options
+  {
+    width: 38vw;
+  }
+}
+
+@media only screen and (max-width: 610px)
+{
+  .options
+  {
+    width: 42vw;
+  }
+}
+
+@media only screen and (max-width: 480px)
+{
+  .options
+  {
+    width: 100vw;
+    transform: translateX(-100vw);
+  }
+
+  .outside {
+    transform: translateX(0);
+  }
+}
+
+
+
+
+
+/* ANUJ */
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -141,4 +331,4 @@
   .outside {
     transform: translateX(0);
   }
-}
+} */
