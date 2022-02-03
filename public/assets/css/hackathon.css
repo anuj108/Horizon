@@ -155,12 +155,13 @@ bottom: 0;
   color: white;
 }
 
+
 @media only screen and (max-width: 1100px) {
   .register {
     position: absolute;
     width: 60px;
     height: 199px;
-    left: 99px;
+    left: 705px;
     top: 377px;
 
     background: #df1f2d;
@@ -238,7 +239,7 @@ bottom: 0;
   color: #ffffff;
   transform: rotate(90deg);
   width: max-content;
-  padding-top: 152px;
+  padding-top:25px;
 }
 
 .avatar {
