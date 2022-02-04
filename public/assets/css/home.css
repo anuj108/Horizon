@@ -443,7 +443,7 @@ border-radius: 47px;
     left: 90px;
   }
   .home3 .container .head {
-    font-size: 20px;
+    font-size: 40px;
   }
   .contain {
     width: 100%;
@@ -592,14 +592,17 @@ border-radius: 47px;
   padding:20px;
 }
 
-.sponsors-container h1 {
-  color: #f2f2f2;
+.sponsors-container .head {
   font-size: 50px;
   text-align: center;
   padding: 45px;
   margin-top: 10px;
-  color: #fff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    width: 100%;
 }
 
 .swiper-slide {
@@ -646,8 +649,8 @@ border-radius: 47px;
     width: 40vw !important;
     height: 40vh !important;
   }
-  .sponsors-container h1 {
-    font-size: 30px;
+  .sponsors-container .head {
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 350px) {
