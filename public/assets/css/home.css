@@ -443,7 +443,7 @@ border-radius: 47px;
     left: 90px;
   }
   .home3 .container .head {
-    font-size: 20px;
+    font-size: 40px;
   }
   .contain {
     width: 100%;
@@ -649,8 +649,8 @@ border-radius: 47px;
     width: 40vw !important;
     height: 40vh !important;
   }
-  .sponsors-container h1 {
-    font-size: 30px;
+  .sponsors-container .head {
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 350px) {
