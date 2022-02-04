@@ -26,20 +26,12 @@ html
 
 .valorant-heading
 {
-  font-family: 'Bebas Neue', cursive; 
   font-size: 6rem;
-  letter-spacing: 1px;
-  color: #FFFFFF;
-  text-transform: uppercase;
-}
-
-.red 
-{
-
 }
 
 .valorant-content
 {
+  
   font-family: 'Poppins', sans-serif;
 }
 
