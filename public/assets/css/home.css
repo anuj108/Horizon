@@ -343,7 +343,7 @@ body {
   height: 10px;
   top: calc(50% - 1px);
   right: 8px;
-  background: rgb(196, 196, 196);
+  background: black;
   z-index: 1;
 }
 
