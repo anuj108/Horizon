@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+  border-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.glass {
+  position: absolute; 
+  padding: 50px;
+background: rgba(196, 196, 196, 0.1);
+box-shadow: inset 63.1333px -63.1333px 63.1333px rgba(149, 149, 149, 0.1 ),inset -63.1333px 63.1333px 63.1333px rgba(255, 255, 255, 0.1);
+backdrop-filter: blur( 59.27px );
+-webkit-backdrop-filter: blur( 59.27px );
+  color: rgb(255, 254, 254);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  border-radius: 47px;
+}
+.com_soon{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+
+.table{
+  margin-top: 5%;
+  position:relative;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    border-radius: 47px;
+    
+  }
+  .row{
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:row;
+    justify-content:space-around;
+ 
+  }
+          .row:nth-child(odd) {
+              background-color: #A10000;
+              opacity:.8;
+          }
+          /* .row:nth-child(even){
+              background-color: #ffffff;
+            
+              } */
+  
+  .leaderboard{
+    background-image: url(../img/Group43.png);
+     background-repeat: no-repeat;
+     background-color: black;
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 100vh;
+      min-width: 100vw;
+    }
+    .rowitem,#tabhead,#tabhead2{
+        color:#ffffff;
+    }
+    .rowitem{
+  font-size:20px;
+
+}
+#tabhead{
+  padding-top: 10%; 
+}
+
+
+.size{
+    max-width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+
+/* .glass {
+  pointer-events: none;
+   position: relative;
+   box-shadow: 0 25px 50px rgba(0,0,0, 0.2);
+  backdrop-filter:blur(15px);
+  background:transparent;
+  width: 90%;
+
+  } */
+
+@media only screen and (max-width:530px){
+    #num{
+      display:none;
+    }
+  }
+   
+          
