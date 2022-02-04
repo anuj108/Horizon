@@ -70,7 +70,7 @@ overflow: hidden;
   right: 8%;
   bottom: 4%;
 }
-.home1::after{
+/* .home1::after{
   content: "";
   position: absolute;
   height: 2px;
@@ -79,7 +79,7 @@ overflow: hidden;
   bottom: 70px;
   left: 8%;
   z-index: -1;
-}
+} */
 @media only screen and (max-width: 2200px) {
   .home1 .right .img1 {
     bottom: 15%;
@@ -294,7 +294,7 @@ body {
   content: "";
   position: absolute;
   width: 10px;
-  background: rgb(196, 196, 196);
+  background: black;
   top: 5%;
   bottom: 5%;
   left: 50%;
@@ -326,8 +326,8 @@ body {
   height: 26px;
   top: calc(50% - 8px);
   right: -8px;
-  background: #ffffff;
-  border: 2px solid #006e51;
+  background: black;
+  border: 1px solid white;
   border-radius: 16px;
   z-index: 1;
 }
@@ -405,24 +405,27 @@ body {
 
 .contain .content {
   padding: 80px 50px;
-  background: rgb(196, 196, 196);
   position: relative;
   border-radius: 10px;
   display: flex;
     flex-direction: column;
     height:fit-content;
+    background: rgba(196, 196, 196, 0.1);
+box-shadow: inset 63.1333px -63.1333px 63.1333px rgba(149, 149, 149, 0.1), inset -63.1333px 63.1333px 63.1333px rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(59.27px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 47px;
 }
 
 .contain.right .content {
   padding: 80px 50px;
-  border-radius: 10px;
 }
 
 .contain .content h2 {
   margin: 0 0 10px 0;
   font-size: 18px;
   font-weight: normal;
-  color: #006e51;
+  color: white;
 }
 
 .contain .content p {
