@@ -320,7 +320,7 @@ bottom: 0;
     top: 0;
   }
 }
-@media (max-width: 586px) {
+@media (max-width: 560px) {
   .hackathon2 .message-box{
     font-size: 24px !important;
   }
@@ -344,10 +344,10 @@ bottom: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 19px;
     letter-spacing: 0.02em;
-
     color: #ffffff;
+    margin-top: -70px;
   }
 }
 
@@ -432,6 +432,8 @@ overflow: hidden;
 .hack .left {
   position: relative;
   z-index: 1;
+  display:flex;
+  flex-direction: column;
 
   width: 50%;
 }
@@ -443,13 +445,13 @@ overflow: hidden;
 }
 
 .hack .left .container {
-  margin-right: 10%;
-  height: 100vh;
-  width: 100%;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items:center;
+  margin-right: 32%;
+    height: 367vh;
+    width: 100%;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 33px;
 }
 .hack .left .container .content {
   height: 33%;
@@ -565,6 +567,7 @@ overflow: hidden;
     height: 80%;
     left: 10%;
     bottom:-7%;
+    display:none;
   }
   .hack .left .horizonlogo {
     height: 25vh;
@@ -579,7 +582,7 @@ overflow: hidden;
     height: 100vh;
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 365px) {
   .hack .left .container .content {
     font-family: Poppins;
     font-style: normal;
@@ -587,7 +590,6 @@ overflow: hidden;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.02em;
-
     color: #ffffff;
   }
 }
