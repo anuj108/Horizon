@@ -19,7 +19,6 @@
 .box{
     width: 18%;
     height: 75%;
-    background-color: Rgb(196,196,196);
     border-radius: 5px;
     padding: 20px;
     /* padding-top: 80px; */
@@ -28,8 +27,17 @@
     letter-spacing: 1px;
     box-shadow: 0 3px 5px rgb(0 0 0);
     overflow: hidden;
-    position: relative;
     z-index: 0;
+    position: relative;
+    border-radius: 10px;
+      background: rgba(196, 196, 196, 0.1);
+  box-shadow: inset 63.1333px -63.1333px 63.1333px rgba(149, 149, 149, 0.1), inset -63.1333px 63.1333px 63.1333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(59.27px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 47px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .box h3{
@@ -56,7 +64,7 @@
     letter-spacing: 2px;
     opacity: 0.8;
 }
-
+/* 
 .box::before{
     width: 100%;
     height: 100%;
@@ -78,7 +86,7 @@
     z-index: -2;
     clip-path: circle(15% at 90% 10%);
     transition: 0.2s;
-}
+} */
 
 .box .count{
     position: absolute;
@@ -88,7 +96,14 @@
     font-weight:bolder;
     color:#fff;
 }
-
+.box a{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.box a img{
+    width:100%;
+}
 .box:nth-child(1):after{
     background-color: #4285F4;
 
