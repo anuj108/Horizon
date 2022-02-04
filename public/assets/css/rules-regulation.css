@@ -1,4 +1,21 @@
+.rules-regulation
+{
+    background-image: url(../img/rules-regulation-wallpaper.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.head, .ru{
+ 
+    font-family: 'Bebas Neue', cursive; 
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
 .ru{
+
     color:red;
 }
 
@@ -7,19 +24,17 @@
     color: #ffffff;
     padding-bottom: 100%;
 }
-.head{
- 
+
+.rules-heading
+{
     height: 92px;
     left: 391px;
     top: 188px;
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: normal;
     font-size: 47px;
-    letter-spacing: 0.02em;
-    color: #ffffff;
     width: 100%;
 }
+
+
 
 .rules{
     height: 100%;
