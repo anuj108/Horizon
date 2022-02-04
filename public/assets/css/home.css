@@ -23,7 +23,7 @@ overflow: hidden;
   position: relative;
   z-index: 1;
 
-  width: 50%;
+  width: 60%;
 }
 .home1 .left .horizonlogo {
   height: 40vh;
@@ -53,22 +53,21 @@ overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40%;
   height: 110%;
   transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
 }
 .home1 .right .img1 {
-  height: 110%;
   z-index: -1;
   position: absolute;
   left: 100px;
+  width:100%;
   transition: all 0.4s ease-in-out;
 }
 .home1 .right .img2 {
   position: absolute;
-  height: 22%;
   right: 8%;
-  bottom: 4%;
 }
 /* .home1::after{
   content: "";
@@ -82,14 +81,10 @@ overflow: hidden;
 } */
 @media only screen and (max-width: 2200px) {
   .home1 .right .img1 {
-    bottom: 15%;
-    height: 70%;
   }
   .home1 .right .img2 {
     position: absolute;
-    height: 18%;
-    right: 6%;
-    bottom: 4%;
+
   }
 }
 @media only screen and (max-width: 1150px) {
@@ -99,10 +94,10 @@ overflow: hidden;
     width: 50%;
   } */
   .home1 .right .img1 {
-    height: 50%;
+
   }
   .home1 .left img {
-    height: 25%;
+ 
   }
   .home1::after{
     bottom: -5px;
@@ -152,8 +147,6 @@ overflow: hidden;
     height: 70vh;
   }
   .home1 .right .img1 {
-    bottom: 8%;
-    height: 50%;
   }
   .home1 .right .img2 {
     position: absolute;
@@ -167,9 +160,11 @@ overflow: hidden;
 }
 @media only screen and (max-width: 560px) {
   .home1 {
-    display: block;
+    height:70vh;
   }
   .home1 .left .container .content {
+    position: absolute;
+    top: 100px;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
@@ -186,7 +181,7 @@ overflow: hidden;
     height: 50vh;
   }
   .home1 .right .img1 {
-    height: 80%;
+    display: none;
   }
   .home1 .left .horizonlogo {
     height: 25vh;
@@ -196,6 +191,7 @@ overflow: hidden;
   }
   .home1 .left .container {
     height: 25vh;
+    position: relative;
   }
   .home1{
     height: 100vh;
