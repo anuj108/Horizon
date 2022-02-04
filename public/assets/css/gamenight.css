@@ -1,4 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+
+html
+{
+  font-size: 10px;
+}
+
 .game-night
 {
-  background: url(../img/image\ 11.png) no-repeat center center/cover;
+  background-image: url(../img/valorant.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
 }
+
+.game-night-inner
+{
+  border: 2px solid white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 90px;
+  width: 45%;
+}
+
+.valorant-heading
+{
+  font-family: 'Bebas Neue', cursive; 
+  font-size: 6rem;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.red 
+{
+
+}
+
+.valorant-content
+{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+

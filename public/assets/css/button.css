@@ -1,5 +1,5 @@
 .custom-btn {
-    width: 130px;
+    width: 200px;
     height: 40px;
     color: #fff;
     border-radius: 5px;
@@ -15,9 +15,12 @@
     position: absolute;
     margin-top: 65%;
     left: 83px;
+
   }
   .btn-3 {
-    width: 189px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    border-radius: 2px;
+    width: 200px;
     height: 55px;
     line-height: 42px;
     padding: 0;
