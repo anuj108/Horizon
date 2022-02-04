@@ -53,18 +53,19 @@ padding-top: 79px;
     height: 116px;
     left: 317px;
     top: 183px;
-    width: 200px;
+    width: 100%;
     font-family: Bebas Neue;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 35px;
+    font-size: 38px;
+    line-height: 42px;
     letter-spacing: 0.02em;
     color: rgb(250, 253, 250);
     text-align: center;
     padding-bottom: 33px;
-    padding-left: 53px;
-}
+    padding-left: 20%;
+    padding-right: 15%;
+   }
 
 .bodyrules {
     font-size: 15px;

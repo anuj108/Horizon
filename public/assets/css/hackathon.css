@@ -540,11 +540,11 @@ overflow: hidden;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 23px;
     letter-spacing: 0.02em;
-
     color: #ffffff;
+    margin-top: -26px;
   }
 }
 @media only screen and (max-width: 560px) {
@@ -589,7 +589,7 @@ overflow: hidden;
     height: 100vh;
   }
 }
-@media only screen and (max-width: 365px) {
+@media only screen and (max-width: 368px) {
   .hack .left .container .content {
     font-family: Poppins;
     font-style: normal;
