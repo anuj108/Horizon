@@ -667,9 +667,9 @@ body {
 /* Medium devices (tablets, 768px ) */
 
 @media screen and (max-width: 908px) {
-  .sponsors-container {
-    /* width: 80vw; */
-  }
+  /* .sponsors-container {
+    /* width: 80vw; 
+  } */
   .home2{
     height:70vh;
   }
