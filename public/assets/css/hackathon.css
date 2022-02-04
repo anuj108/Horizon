@@ -600,3 +600,9 @@ overflow: hidden;
     color: #ffffff;
   }
 }
+
+.listt{
+  list-style-image: url('/public/assets/img/Web.png');
+  }
+
+  
