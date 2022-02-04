@@ -16,24 +16,29 @@ html
 
 .game-night-inner
 {
-  border: 2px solid white;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 90px;
-  width: 45%;
+  left: 0;
+  margin: 90px;
+  width: 55%;
 }
 
 .valorant-heading
 {
-  font-size: 6rem;
+  font-size: 7.5rem;
 }
 
 .valorant-content
 {
-  
   font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+
+  margin: 10px 0;
 }
+
 
 
 
