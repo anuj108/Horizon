@@ -242,11 +242,14 @@ overflow: hidden;
 .home3 .container .head {
   padding: 20px;
   margin-top: 10%;
-  color: hsl(0, 0%, 95%);
-  font-size: 30px;
   text-align: center;
-  color: #fff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 47px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    width: 100%;
 }
 .home3 .container .rectangle {
   left: 50%;
