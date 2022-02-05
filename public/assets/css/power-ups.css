@@ -20,7 +20,7 @@ html{
     color: white;
   }
   .powers{
-   background-image: url("./images/background_powers.png");
+   background-image: url("../img/background_powers.png");
    background-repeat: no-repeat;
    background-color: black;
     background-size: cover;
@@ -75,6 +75,7 @@ html{
   z-index: 1;
   border-radius: 47px;
   text-align:center;
+  overflow:hidden;
   }
   .hoverinfo2{
     display:none;
@@ -86,12 +87,13 @@ html{
    -webkit-backdrop-filter: blur(57.7px);
   color: rgb(255, 254, 254);
   top: 70vh;
-  left:41vw;
+  left:42vw;
   max-width: 15vw;
   z-index: 1;
   border-radius: 47px;
   text-align:center;
-  }
+  overflow:hidden;
+}
   
   .hoverinfo3{
     display:none;
@@ -103,12 +105,13 @@ html{
    -webkit-backdrop-filter: blur(57.7px);
   color: rgb(255, 254, 254);
   top: 70vh;
-  left:75vw;
+  left:76vw;
   max-width: 15vw;
   z-index: 1;
   border-radius: 47px;
   text-align:center;
   font-size: 1rem;
+  overflow:hidden;
   }
 
   .hoverimg1:hover + .hoverinfo1{
@@ -133,3 +136,4 @@ html{
   .xitem3 h3{
     font-size: 2rem;
   }
+  

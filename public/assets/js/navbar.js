@@ -61,3 +61,11 @@ window.addEventListener('scroll', function ()
     let windowPosition =  window.scrollY > 10;
     navbar.classList.toggle('change-bg', windowPosition);
 });
+
+const header = document.querySelector('.valorant-heading');
+const button = document.querySelector('.btn-3')
+
+window.addEventListener('load', (event) => {
+   header.classList.add('appears');
+   button.classList.add('visible');
+});
