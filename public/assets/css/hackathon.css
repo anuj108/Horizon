@@ -53,7 +53,7 @@
 {
     font-family: Poppins;
     font-size: 20px;
-    text-align: justify;
+    text-align: left;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -61,5 +61,22 @@
 
 .faq-section
 {
-    padding-bottom: 50px ;
+    padding: 50px 0 ;
+}
+
+
+@media only screen and (max-width: 550px)
+{
+    .spidey-swing-image
+    {
+        display: none;
+    }
+    .opening-content-view
+    {
+        margin-left: 0;
+        padding-right: 0;
+        width: 70%;
+        margin: auto;
+    }
+
 }
