@@ -7,10 +7,11 @@ const optionsList = document.querySelectorAll('.tab a');
 
 hamburger.addEventListener('click',() =>
 {
+
     hamburger.classList.toggle('active-ham');
     innerOptions.classList.toggle('outside');
     innerOptionsList.forEach((link, index) =>{
-        if(link.style.animation)
+        if(hamburger.classList!='hamburger active-ham')
             link.style.animation= '';
         else    
             link.style.animation = `navLinkFade 0.5s ease forwards ${index/4 }s`;
@@ -30,6 +31,7 @@ optionsList.forEach((option) =>
         hamburger.classList.remove('active-ham');
         innerOptions.classList.remove('outside');
         innerOptionsList.forEach((link, index) =>{
+
             if(link.style.animation)
                 link.style.animation= '';
             else    
