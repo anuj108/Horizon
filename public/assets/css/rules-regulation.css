@@ -41,8 +41,9 @@
 {
     display: flex;
     gap: 25px;
-    margin:25px 0;
+    margin-top:25px;
 }
+
 
 .spidey-pointer
 {
