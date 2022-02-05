@@ -4,6 +4,10 @@ const innerOptions = document.querySelector('.inner-options');
 const innerOptionsList = document.querySelectorAll('.inner-options li');
 const optionsList = document.querySelectorAll('.tab a');
 
+const header = document.querySelector('.valorant-heading');
+const button = document.querySelector('.btn-3');
+const audio = document.querySelector('.valo-audio');
+
 hamburger.addEventListener('click',() =>
 {
 
@@ -55,20 +59,20 @@ optionsList.forEach((option) =>
         const nextPage=document.querySelector(`[data-page="${tabNumber}"]`);
         nextPage.classList.add('is-active-page');
 
-        if(optionsList.dataset.tab == 6)
+
+        // Game Night Navbar
+        if(tabNumber == 6)
         {
             header.classList.add('appears');
             button.classList.add('visible');
             audio.currentTime = 0;
             audio.play();
         }
-
-        if(optionsList.dataset.tab != "6")
+        else
         {
             audio.pause();
             audio.currentTime = 0;
         }
-
     });
 });
 
@@ -77,29 +81,3 @@ window.addEventListener('scroll', function ()
     let windowPosition =  window.scrollY > 10;
     navbar.classList.toggle('change-bg', windowPosition);
 });
-
-const gameNightTab = document.querySelectorAll('[data-tab="6"]');
-const header = document.querySelector('.valorant-heading');
-const button = document.querySelector('.btn-3');
-const audio = document.querySelector('.valo-audio');
-var isPlaying = false;
-
-gameNightTab.forEach(tab =>{
-    tab.addEventListener('click', e =>
-    {
-        header.classList.add('appears');
-        button.classList.add('visible');
-        audio.currentTime = 0;
-        audio.play();
-
-    });
-
-});
-
-// stop audio when on other tabs
-if(gameNightTab[0].parentNode.classList.contains('is-active-tab') === false)
-{
-    audio.pause();
-    audio.currentTime = 0;
-}
-
