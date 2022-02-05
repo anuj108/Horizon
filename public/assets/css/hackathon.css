@@ -452,12 +452,12 @@ overflow: hidden;
 }
 
 .hack .left .container {
-  margin-right: 32%;
+  
     height: 367vh;
     width: 100%;
     border-radius: 15px;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: flex-start;
     padding-top: 33px;
 }
 .hack .left .container .content {
@@ -584,6 +584,8 @@ overflow: hidden;
   }
   .hack .left .container {
     height: 25vh;
+    margin-left: -4%;
+  
   }
   .hack{
     height: 100vh;
