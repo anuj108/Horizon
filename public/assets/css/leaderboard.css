@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+html{
+  font-size: 10px;
+}
+
 *{
   border-sizing:border-box;
   margin: 0;
@@ -25,7 +29,8 @@ backdrop-filter: blur( 59.27px );
 .com_soon{
   position: absolute;
   top: 40%;
-  left: 40%;
+  left: 30vw;
+  font-size: 4rem;
 }
 
 
@@ -65,13 +70,16 @@ backdrop-filter: blur( 59.27px );
     }
     .rowitem,#tabhead,#tabhead2{
         color:#ffffff;
+
     }
     .rowitem{
   font-size:20px;
 
 }
+
 #tabhead{
   padding-top: 10%; 
+  font-size: 4rem;
 }
 
 
@@ -92,10 +100,16 @@ backdrop-filter: blur( 59.27px );
 
   } */
 
-@media only screen and (max-width:530px){
+@media only screen and (max-width:550px){
     #num{
       display:none;
     }
+  .com_soon{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 3rem;
+  }
   }
    
           
