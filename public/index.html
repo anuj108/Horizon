@@ -40,7 +40,7 @@
 
 <body>
   <div class="preloader">
-    <video id="background-video" autoplay   >
+    <video id="background-video" autoplay controls  >
         <source src="preloader.mp4" type="video/mp4">
       </video>
     </div>
@@ -677,7 +677,7 @@
     AOS.init();
   </script>
   <script>
-    var loader= document.querySelector(".preloader");
+   var loader= document.querySelector(".preloader");
     window.addEventListener("load",function(){
        loader.style.display="none";
      }) 
