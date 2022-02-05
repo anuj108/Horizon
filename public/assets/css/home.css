@@ -462,7 +462,7 @@ border-radius: 47px;
     left: 90px;
   }
   .home3 .container .head {
-    font-size: 40px;
+    font-size: 5rem;
   }
   .contain {
     width: 100%;
@@ -614,7 +614,6 @@ border-radius: 47px;
 .sponsors-container .head {
   font-size: 84px;
   text-align: center;
-  padding: 45px;
   margin-top: 10px;
   font-family: Bebas Neue;
     font-style: normal;
@@ -669,7 +668,7 @@ border-radius: 47px;
     height: 40vh !important;
   }
   .sponsors-container .head {
-    font-size: 40px;
+    font-size: 5rem;
   }
 }
 @media screen and (max-width: 350px) {

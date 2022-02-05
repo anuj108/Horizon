@@ -151,7 +151,7 @@
 @media screen and (max-width: 1400px)
 {
     .home2{
-        height: 120vh;
+        height: 100vh;
     }
     .box{
         width: 24%;
@@ -185,7 +185,7 @@
         height:43%;
     }
     .home2{
-        height: 200vh;
+        height: 170vh;
     }
     .box h3{
         font-size:25px;

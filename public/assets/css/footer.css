@@ -205,9 +205,17 @@
     font-size: 14px;
   }
   .footer .upper .left .head {
-    padding: 8px;
-    font-size: 36px;
+    font-size: 24px;
   }
+  .footer .upper .left {
+    padding:0;
+  }
+  .footer .upper .left p{
+    text-align:center;
+  }
+  .footer .upper .right .head {
+    font-size: 24px;
+}
 }
 @media (max-width: 550px) {
   .footer .upper .right .vertical {
@@ -273,7 +281,7 @@
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 10px;
     color: red;
     letter-spacing: 0.02em;
 }
