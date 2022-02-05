@@ -169,7 +169,7 @@
   height:80%;
   margin-left:-1px;
 } */
-.footer .lower::before{
+/* .footer .lower::before{
   content: '';
   position: absolute;
   width: 10px;
@@ -179,7 +179,7 @@
   left: 50%;
   height:80%;
   margin-left:-1px;
-}
+} */
 .footer .lower{
   height: 10vh;
   background-color: rgb(28,38,51);
