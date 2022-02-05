@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 * {
   box-sizing: border-box;
@@ -123,7 +123,7 @@ html
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
