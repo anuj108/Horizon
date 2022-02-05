@@ -249,7 +249,7 @@
   .footer .upper .left .head {
     line-height: normal;
     padding: 12px 0px;
-    font-size: 18px;
+    font-size: 11px;
     
   }
   .footer .upper .right {
@@ -260,11 +260,11 @@
     text-align: center;
   }
   .right .upper .head{
-    font-size:16px;
+    font-size:11px;
     padding: 10px 0;
   }
   .footer .upper .right .outer .inner {
-    font-size: 14px;
+    font-size: 10px;
     padding: 4px 0px;
   }
   .footer .upper .right .head {
@@ -276,5 +276,9 @@
     font-size: 18px;
     color: red;
     letter-spacing: 0.02em;
+}
+.footer .upper .left p{
+  font-size:10px;
+  line-height:normal;
 }
 }
