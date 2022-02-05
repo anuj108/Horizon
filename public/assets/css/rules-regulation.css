@@ -25,8 +25,6 @@
   padding: 15vh 0 5vh 0; 
 }
 
-
-
 .rules-heading
 {
     font-size: 47px;
@@ -34,6 +32,7 @@
     margin-bottom: 5vh; 
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .hackathon-heading
 {
@@ -52,6 +51,8 @@
     padding: 0 10%;
 }
 >>>>>>> e9503d7aa98661ee37b11fb483eda571f2ed9616
+=======
+>>>>>>> parent of 86ad124 ( responsive)
 
 .rule-each-point
 {
@@ -63,6 +64,7 @@
 <<<<<<< HEAD
 .rules{
     height: 100%;
+<<<<<<< HEAD
     padding: auto;
     text-align: left;
     width: 100%;
@@ -73,6 +75,14 @@
 {
     height: 75px;
     aspect-ratio: 1/1;
+=======
+padding: auto;
+
+text-align: center;
+width:100%;
+padding-top: 79px;
+    
+>>>>>>> parent of 86ad124 ( responsive)
 }
 
 .pointer-img
@@ -88,9 +98,9 @@
     letter-spacing: 0.02em;
 <<<<<<< HEAD
     color: rgb(250, 253, 250);
-    text-align: left;
+    text-align: center;
     padding-bottom: 31px;
-   margin-left: 0;
+    padding-left: 2%;
     padding-right: 37%;
    }
 
@@ -99,46 +109,8 @@
     color: #ffffff;
     width: 94%;
 }
-.rules {
-    height: 100%;
-    padding: auto;
-    text-align: left;
-    width: 100%;
-    padding-top: 79px;
-    padding-left: 9%;
-  
 }
-
-.ruless {
-    height: 100%;
-    padding: auto;
-    text-align: left;
-    width: 100%;
-    padding-top: 79px;
-    padding-left: 9%;
-  
-}
-}
-@media (max-width:2000px) and(min-width:561px)
-{
-    .hackathon-heading {
-        height: 92px;
-        left: 391px;
-        top: 188px;
-        font-size: 47px;
-        width: 100%;
-        padding-left: 4%;
-    }
-    .rul{
-        height: 54%;
-        padding: auto;
-        text-align: left;
-        width: 100%;
-        padding-top: 79px;
-        margin-left: 14%;
-    
-    }
-}
+<<<<<<< HEAD
 
 
 .ruless{
@@ -158,3 +130,5 @@
 
 
 >>>>>>> e9503d7aa98661ee37b11fb483eda571f2ed9616
+=======
+>>>>>>> parent of 86ad124 ( responsive)
