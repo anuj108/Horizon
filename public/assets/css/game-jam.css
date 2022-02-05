@@ -1,4 +1,25 @@
 .game-jam
 {
-    background-color: hotpink;
+    background-image: url(../img/game-jam.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.game-jam-page-view
+{
+    overflow:hidden
+}
+
+.game-jam-image-div
+{
+    left: 100%;
+    transform: translate(-70%);
+}
+
+.game-jam-content
+{
+    margin-left: 0;
+    padding-right:0; 
+    padding-left: 7%;
 }

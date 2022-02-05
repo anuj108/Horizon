@@ -1,0 +1,82 @@
+.hackathon
+{
+    background-image: url(../img/hackathon-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.opening-page-view
+{
+    height: 100vh;
+    padding-top: 10vh;
+    position: relative;
+}
+
+.spidey-swing-image
+{
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+.spidey-swing-image img
+{
+    height: 100%;
+}
+
+.opening-content-view
+{
+    margin-left: 50%;
+    padding-right: 7%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hackathon-heading
+{
+    font-size: 70px;
+}
+
+.hackathon-sub-heading
+{
+    font-size: 50px;
+    text-align:center;
+}
+
+.opening-info-container 
+{
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.faq-section
+{
+    padding: 50px 0 ;
+}
+
+
+@media only screen and (max-width: 550px)
+{
+    .spidey-swing-image
+    {
+        display: none;
+    }
+    .opening-content-view
+    {
+        margin-left: 0;
+        padding-right: 0;
+        width: 70%;
+        margin: auto;
+    }
+
+}
