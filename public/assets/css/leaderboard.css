@@ -19,10 +19,10 @@ box-shadow: inset 63.1333px -63.1333px 63.1333px rgba(149, 149, 149, 0.1 ),inset
 backdrop-filter: blur( 59.27px );
 -webkit-backdrop-filter: blur( 59.27px );
   color: rgb(255, 254, 254);
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  left: 7%;
+  right: 7%;
+  top: 18%;
+  bottom: 19%;
   z-index: 1;
   border-radius: 47px;
 }
@@ -36,12 +36,10 @@ backdrop-filter: blur( 59.27px );
 
 .table{
   margin-top: 5%;
-  position:relative;
     display:flex;
     flex-direction:column;
     flex-wrap:nowrap;
     border-radius: 47px;
-    
   }
   .row{
     display:flex;
@@ -50,7 +48,7 @@ backdrop-filter: blur( 59.27px );
     justify-content:space-around;
  
   }
-          .row:nth-child(odd) {
+          .row:nth-child(even) {
               background-color: #A10000;
               opacity:.8;
           }
@@ -66,7 +64,7 @@ backdrop-filter: blur( 59.27px );
       background-size: cover;
       background-attachment: fixed;
       min-height: 100vh;
-      min-width: 100vw;
+      
     }
     .rowitem,#tabhead,#tabhead2{
         color:#ffffff;
@@ -78,7 +76,7 @@ backdrop-filter: blur( 59.27px );
 }
 
 #tabhead{
-  padding-top: 10%; 
+  padding-top: 10vh; 
   font-size: 4rem;
 }
 
@@ -109,6 +107,9 @@ backdrop-filter: blur( 59.27px );
     top: 40%;
     left: 20%;
     font-size: 3rem;
+  }
+  .rowitem{
+    font-size: 1.5rem;
   }
   }
    
