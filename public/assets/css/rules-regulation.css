@@ -51,7 +51,7 @@ padding-top: 79px;
    .head{
  
     height: 116px;
-    left: 317px;
+    left: 312px;
     top: 183px;
     width: 100%;
     font-family: Bebas Neue;
@@ -62,9 +62,9 @@ padding-top: 79px;
     letter-spacing: 0.02em;
     color: rgb(250, 253, 250);
     text-align: center;
-    padding-bottom: 33px;
-    padding-left: 20%;
-    padding-right: 15%;
+    padding-bottom: 31px;
+    padding-left: 2%;
+    padding-right: 37%;
    }
 
 .bodyrules {
