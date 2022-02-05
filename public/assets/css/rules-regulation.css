@@ -1,9 +1,10 @@
 .rules-regulation
 {
-    background-image: url(../img/rules-regulation-wallpaper.png);
+    background-image: url(../img/hackathon-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center 30%;
+    background-attachment: fixed;
     min-height: 100vh;
 }
 
@@ -27,7 +28,7 @@
 
 .rules-heading
 {
-    font-size: 47px;
+    font-size: 72px;
     text-align-last: center;
     margin-bottom: 5vh; 
 }
@@ -62,6 +63,8 @@
     font-size: 20px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    font-weight:300;
+    text-transform:none;
     text-align: justify;
 }
 

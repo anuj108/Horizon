@@ -14,28 +14,27 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 40%;
-
+  background-attachment: fixed;
   position: relative;
 }
 
 .inner-game-night
 {
+  width: 95%;
     text-align: center;
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 50%;
-    transform: translate(-50%,-80%);
+    transform: translate(-50%,-90%);
 }
 
 .valorant-heading
 {
   font-family: 'Bebas Neue', cursive;
-  font-size: 75px;
+  font-size: 72px;
   color: white;
   letter-spacing: 2.5px;
   transition: all 1.5s ease-in-out;
-  transform: translateY(-60px);
-  opacity:0;
 }
 
 .first-letter
@@ -45,14 +44,18 @@
   color: red;
 }
 
-.appears
+.game-night-content
 {
-  transform: translateY(0);
-  opacity: 1;
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
 }
 
 .custom-btn {
-    
+    margin-top: 20px;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     padding: 1em 2em;
@@ -82,12 +85,6 @@
   padding: 0;
   border: none;
 
-  opacity: 0;
-}
-
-.visible
-{
-    opacity: 1;
 }
 
 .btn-3 a{
