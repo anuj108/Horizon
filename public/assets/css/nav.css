@@ -135,7 +135,7 @@ html
 }
 
 .tab:hover a,
-.tab.is-active-tab a {
+.tab.is-active-tab a, .inner.is-active-tab{
   color: #ff0000;
 }
 
