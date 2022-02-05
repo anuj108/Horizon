@@ -4,7 +4,9 @@
     background-image: url(../img/hackathon-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center 30%;
+    background-attachment: fixed;
+    overflow:hidden;
 }
 
 .opening-page-view

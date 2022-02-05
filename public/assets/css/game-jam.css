@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
+    background-attachment: fixed;
 }
 
 .game-jam-page-view

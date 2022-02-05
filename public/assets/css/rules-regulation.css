@@ -1,9 +1,10 @@
 .rules-regulation
 {
-    background-image: url(../img/rules-regulation-wallpaper.png);
+    background-image: url(../img/hackathon-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center 30%;
+    background-attachment: fixed;
     min-height: 100vh;
 }
 
