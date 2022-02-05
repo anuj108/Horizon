@@ -1,15 +1,16 @@
 .rules-regulation
 {
     background-image: url(../img/rules-regulation-wallpaper.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    min-height: 100vh;
 }
 
 .head, .ru{
  
     font-family: 'Bebas Neue', cursive; 
-    letter-spacing: 0.02em;
+    letter-spacing: 2px;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -19,23 +20,21 @@
     color:red;
 }
 
-.bodyrules{
-    font-size: 19px;
-    color: #ffffff;
-    padding-bottom: 100%;
+.rules-content
+{
+  padding: 15vh 0 5vh 0; 
 }
 
 
 
 .rules-heading
 {
-    height: 92px;
-    left: 391px;
-    top: 188px;
     font-size: 47px;
-    width: 100%;
+    text-align-last: center;
+    margin-bottom: 5vh; 
 }
 
+<<<<<<< HEAD
 .hackathon-heading
 {
     height: 92px;
@@ -47,8 +46,21 @@
    
 }
 
+=======
+.rules-body
+{
+    padding: 0 10%;
+}
+>>>>>>> e9503d7aa98661ee37b11fb483eda571f2ed9616
 
+.rule-each-point
+{
+    display: flex;
+    gap: 25px;
+    margin:25px 0;
+}
 
+<<<<<<< HEAD
 .rules{
     height: 100%;
     padding: auto;
@@ -56,22 +68,25 @@
     width: 100%;
     padding-top: 79px;
     padding-left: 14%;
+=======
+.spidey-pointer
+{
+    height: 75px;
+    aspect-ratio: 1/1;
 }
 
-@media (max-width: 560px)
+.pointer-img
 {
-   .head{
- 
-    height: 116px;
-    left: 312px;
-    top: 183px;
-    width: 100%;
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 38px;
-    line-height: 42px;
+    height: 100%;
+>>>>>>> e9503d7aa98661ee37b11fb483eda571f2ed9616
+}
+
+.rule-info
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
     letter-spacing: 0.02em;
+<<<<<<< HEAD
     color: rgb(250, 253, 250);
     text-align: left;
     padding-bottom: 31px;
@@ -134,3 +149,12 @@
     padding-top: 79px;
     padding-left: 3%;
 }
+=======
+    color: #FFFFFF;
+    text-align: justify;
+}
+
+
+
+
+>>>>>>> e9503d7aa98661ee37b11fb483eda571f2ed9616
