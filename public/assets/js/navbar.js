@@ -9,7 +9,6 @@ hamburger.addEventListener('click',() =>
 {
     hamburger.classList.toggle('active-ham');
     innerOptions.classList.toggle('outside');
-
     innerOptionsList.forEach((link, index) =>{
         if(link.style.animation)
             link.style.animation= '';
@@ -28,7 +27,14 @@ optionsList.forEach((option) =>
 
         // tab active 
         const activeTab = document.querySelectorAll('.is-active-tab');
-
+        hamburger.classList.remove('active-ham');
+        innerOptions.classList.remove('outside');
+        innerOptionsList.forEach((link, index) =>{
+            if(link.style.animation)
+                link.style.animation= '';
+            else    
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index/4 + 0.45}s`;
+        });
         // removing the active class
         activePage.classList.remove('is-active-page');
         activeTab.forEach(tab => {
