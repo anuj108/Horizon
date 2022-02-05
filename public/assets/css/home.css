@@ -164,7 +164,7 @@ overflow: hidden;
   }
   .home1 .left .container .content {
     position: absolute;
-    top: 100px;
+    top: 10%;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
