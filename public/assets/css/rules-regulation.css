@@ -25,6 +25,8 @@
     padding-bottom: 100%;
 }
 
+
+
 .rules-heading
 {
     height: 92px;
@@ -34,16 +36,26 @@
     width: 100%;
 }
 
+.hackathon-heading
+{
+    height: 92px;
+    left: 391px;
+    top: 188px;
+    font-size: 47px;
+    width: 100%;
+    text-align: left;
+   
+}
+
 
 
 .rules{
     height: 100%;
-padding: auto;
-
-text-align: center;
-width:100%;
-padding-top: 79px;
-    
+    padding: auto;
+    text-align: left;
+    width: 100%;
+    padding-top: 79px;
+    padding-left: 14%;
 }
 
 @media (max-width: 560px)
@@ -61,9 +73,9 @@ padding-top: 79px;
     line-height: 42px;
     letter-spacing: 0.02em;
     color: rgb(250, 253, 250);
-    text-align: center;
+    text-align: left;
     padding-bottom: 31px;
-    padding-left: 2%;
+   margin-left: 0;
     padding-right: 37%;
    }
 
@@ -72,4 +84,53 @@ padding-top: 79px;
     color: #ffffff;
     width: 94%;
 }
+.rules {
+    height: 100%;
+    padding: auto;
+    text-align: left;
+    width: 100%;
+    padding-top: 79px;
+    padding-left: 9%;
+  
+}
+
+.ruless {
+    height: 100%;
+    padding: auto;
+    text-align: left;
+    width: 100%;
+    padding-top: 79px;
+    padding-left: 9%;
+  
+}
+}
+@media (max-width:2000px) and(min-width:561px)
+{
+    .hackathon-heading {
+        height: 92px;
+        left: 391px;
+        top: 188px;
+        font-size: 47px;
+        width: 100%;
+        padding-left: 4%;
+    }
+    .rul{
+        height: 54%;
+        padding: auto;
+        text-align: left;
+        width: 100%;
+        padding-top: 79px;
+        margin-left: 14%;
+    
+    }
+}
+
+
+.ruless{
+    height: 100%;
+    padding: auto;
+    text-align: center;
+    width: 100%;
+    padding-top: 79px;
+    padding-left: 3%;
 }
