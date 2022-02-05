@@ -68,6 +68,7 @@ const gameNightTab = document.querySelectorAll('[data-tab="6"]');
 const header = document.querySelector('.valorant-heading');
 const button = document.querySelector('.btn-3');
 const audio = document.querySelector('.valo-audio');
+var isPlaying = false;
 
 gameNightTab.forEach(tab =>{
     tab.addEventListener('click', e =>
@@ -76,5 +77,15 @@ gameNightTab.forEach(tab =>{
         button.classList.add('visible');
         audio.currentTime = 0;
         audio.play();
+
     });
+
 });
+
+// stop audio when on other tabs
+if(gameNightTab[0].parentNode.classList.contains('is-active-tab') === false)
+{
+    audio.pause();
+    audio.currentTime = 0;
+}
+
