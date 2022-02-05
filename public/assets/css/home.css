@@ -672,6 +672,9 @@ border-radius: 47px;
   height: 50vh;
 }
 
+.home2{
+  height:120vh;
+}
 /* Medium devices (tablets, 768px ) */
 
 @media screen and (max-width: 908px) {
