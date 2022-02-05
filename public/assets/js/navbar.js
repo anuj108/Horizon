@@ -64,10 +64,17 @@ window.addEventListener('scroll', function ()
     navbar.classList.toggle('change-bg', windowPosition);
 });
 
+const gameNightTab = document.querySelectorAll('[data-tab="6"]');
 const header = document.querySelector('.valorant-heading');
-const button = document.querySelector('.btn-3')
+const button = document.querySelector('.btn-3');
+const audio = document.querySelector('.valo-audio');
 
-window.addEventListener('load', (event) => {
-   header.classList.add('appears');
-   button.classList.add('visible');
+gameNightTab.forEach(tab =>{
+    tab.addEventListener('click', e =>
+    {
+        header.classList.add('appears');
+        button.classList.add('visible');
+        audio.currentTime = 0;
+        audio.play();
+    });
 });
