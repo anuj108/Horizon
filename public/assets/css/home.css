@@ -406,7 +406,7 @@ body {
 }
 
 .contain .content {
-  padding: 80px 50px;
+  padding: 65px 50px;
   position: relative;
   border-radius: 10px;
   display: flex;
@@ -420,21 +420,21 @@ border-radius: 47px;
 }
 
 .contain.right .content {
-  padding: 80px 50px;
+  padding: 65px 50px;
 }
 
 .contain .content h2 {
   margin: 0 0 10px 0;
   font-size: 18px;
   font-weight: normal;
-  color: white;
+  color: red;
 }
 
 .contain .content p {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: #000000;
+  color: white;
 }
 
 @media (max-width: 767.98px) {
