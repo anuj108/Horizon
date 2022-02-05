@@ -35,8 +35,6 @@
   color: white;
   letter-spacing: 2.5px;
   transition: all 1.5s ease-in-out;
-  transform: translateY(-60px);
-  opacity:0;
 }
 
 .first-letter
@@ -44,12 +42,6 @@
   font-family: 'Bebas Neue', cursive;
   font-size: 1em;
   color: red;
-}
-
-.appears
-{
-  transform: translateY(0);
-  opacity: 1;
 }
 
 .game-night-content
@@ -93,12 +85,6 @@
   padding: 0;
   border: none;
 
-  opacity: 0;
-}
-
-.visible
-{
-    opacity: 1;
 }
 
 .btn-3 a{
