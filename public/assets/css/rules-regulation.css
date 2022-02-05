@@ -1,15 +1,16 @@
 .rules-regulation
 {
     background-image: url(../img/rules-regulation-wallpaper.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    min-height: 100vh;
 }
 
 .head, .ru{
  
     font-family: 'Bebas Neue', cursive; 
-    letter-spacing: 0.02em;
+    letter-spacing: 2px;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -19,57 +20,50 @@
     color:red;
 }
 
-.bodyrules{
-    font-size: 19px;
-    color: #ffffff;
-    padding-bottom: 100%;
+.rules-content
+{
+  padding: 15vh 0 5vh 0; 
 }
 
 .rules-heading
 {
-    height: 92px;
-    left: 391px;
-    top: 188px;
     font-size: 47px;
-    width: 100%;
+    text-align-last: center;
+    margin-bottom: 5vh; 
 }
 
-
-
-.rules{
-    height: 100%;
-padding: auto;
-
-text-align: center;
-width:100%;
-padding-top: 79px;
-    
-}
-
-@media (max-width: 560px)
+.rules-body
 {
-   .head{
- 
-    height: 116px;
-    left: 312px;
-    top: 183px;
-    width: 100%;
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 38px;
-    line-height: 42px;
-    letter-spacing: 0.02em;
-    color: rgb(250, 253, 250);
-    text-align: center;
-    padding-bottom: 31px;
-    padding-left: 2%;
-    padding-right: 37%;
-   }
+    padding: 0 10%;
+}
 
-.bodyrules {
-    font-size: 15px;
-    color: #ffffff;
-    width: 94%;
+.rule-each-point
+{
+    display: flex;
+    gap: 25px;
+    margin:25px 0;
 }
+
+.spidey-pointer
+{
+    height: 75px;
+    aspect-ratio: 1/1;
 }
+
+.pointer-img
+{
+    height: 100%;
+}
+
+.rule-info
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-align: justify;
+}
+
+
+
+

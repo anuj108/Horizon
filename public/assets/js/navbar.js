@@ -4,6 +4,9 @@ const innerOptions = document.querySelector('.inner-options');
 const innerOptionsList = document.querySelectorAll('.inner-options li');
 const optionsList = document.querySelectorAll('.tab a');
 
+const header = document.querySelector('.valorant-heading');
+const button = document.querySelector('.btn-3');
+const audio = document.querySelector('.valo-audio');
 
 hamburger.addEventListener('click',() =>
 {
@@ -55,6 +58,21 @@ optionsList.forEach((option) =>
         // adding classes to appropriate page
         const nextPage=document.querySelector(`[data-page="${tabNumber}"]`);
         nextPage.classList.add('is-active-page');
+
+
+        // Game Night Navbar
+        if(tabNumber == 6)
+        {
+            header.classList.add('appears');
+            button.classList.add('visible');
+            audio.currentTime = 0;
+            audio.play();
+        }
+        else
+        {
+            audio.pause();
+            audio.currentTime = 0;
+        }
     });
 });
 
@@ -62,12 +80,4 @@ window.addEventListener('scroll', function ()
 {
     let windowPosition =  window.scrollY > 10;
     navbar.classList.toggle('change-bg', windowPosition);
-});
-
-const header = document.querySelector('.valorant-heading');
-const button = document.querySelector('.btn-3')
-
-window.addEventListener('load', (event) => {
-   header.classList.add('appears');
-   button.classList.add('visible');
 });

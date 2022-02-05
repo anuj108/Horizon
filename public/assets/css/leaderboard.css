@@ -19,10 +19,10 @@ box-shadow: inset 63.1333px -63.1333px 63.1333px rgba(149, 149, 149, 0.1 ),inset
 backdrop-filter: blur( 59.27px );
 -webkit-backdrop-filter: blur( 59.27px );
   color: rgb(255, 254, 254);
-  left: 7%;
-  right: 7%;
-  top: 18%;
-  bottom: 19%;
+  left: 0;
+  right: 0;
+  top: 0vh;
+  bottom: 0vh;
   z-index: 1;
   border-radius: 47px;
 }
@@ -36,10 +36,14 @@ backdrop-filter: blur( 59.27px );
 
 .table{
   margin-top: 5%;
+  position:relative;
     display:flex;
     flex-direction:column;
     flex-wrap:nowrap;
     border-radius: 47px;
+    overflow-y: auto;
+    max-height: 60vh;
+   padding-bottom: 10vh;
   }
   .row{
     display:flex;
@@ -48,7 +52,7 @@ backdrop-filter: blur( 59.27px );
     justify-content:space-around;
  
   }
-          .row:nth-child(even) {
+          .row:nth-child(odd) {
               background-color: #A10000;
               opacity:.8;
           }
@@ -109,8 +113,10 @@ backdrop-filter: blur( 59.27px );
     font-size: 3rem;
   }
   .rowitem{
-    font-size: 1.5rem;
+    font-size: 2rem;
+    padding-left: 6%;
   }
+
   }
    
           

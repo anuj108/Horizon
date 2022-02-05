@@ -9,8 +9,8 @@
 
 html
 {
-  --inner-width : 25vw;
-  --outer-width : 50%;
+  --inner-width : 33vw;
+  --outer-width : 56%;
 }
 
 .navbar {
@@ -18,6 +18,7 @@ html
   height: 10vh;
   padding: 15px 30px;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 50%;
   transform: translate(-50%);
@@ -41,6 +42,9 @@ html
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+
+  position:relative;
+  z-index:10;
 }
 
 .line {
@@ -51,7 +55,6 @@ html
   transition: all 0.7s ease-in-out;
 }
 
-/* change length in mobile view */
 .active-ham .l1 {
   transform: rotate(-45deg) translate(3px, 16px);
 }
@@ -69,9 +72,9 @@ html
   background-color: rgb(6, 11, 21, 0.9);
   height: 100vh;
   width: var(--inner-width);
-  padding: 15vh 30px 30px 30px;
+  padding: 12vh 30px 30px 30px;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   top: 0;
   left: 0;
 
@@ -149,8 +152,8 @@ html
 {
   html
   {
-    --inner-width: 40vw;
-    --outer-width: 55%;
+    --inner-width: 37vw;
+    --outer-width: 65%;
   }
 }
 
@@ -158,7 +161,23 @@ html
 {
   html
   {
+    --inner-width: 40vw;
     --outer-width: 70%;
+  }
+  .inner-options .tab a[data-switcher]
+  {
+    font-size: 18px;
+  }
+  .outer-options .tab a[data-switcher] {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 880px)
+{
+  html
+  {
+    --outer-width: 78%; 
   }
 }
 
@@ -166,13 +185,12 @@ html
 {
   html
   {
-    --inner-width: 45vw;
-    --outer-width: 70%;
+    --inner-width: 48vw;
+    --outer-width: 85%;
   }
-  .tab a[data-switcher] {
+  .outer-options .tab a[data-switcher] {
     font-size: 13px;
   }
-
 }
 
 @media only screen and (max-width: 620px)
