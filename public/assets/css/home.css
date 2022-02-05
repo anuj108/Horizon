@@ -179,12 +179,15 @@ overflow: hidden;
   }
   .home1 .right {
     height: 50vh;
+    width: 0;
   }
   .home1 .right .img1 {
     display: none;
   }
   .home1 .left .horizonlogo {
     height: 25vh;
+    padding-left:10%;
+    justify-content: center;
   }
   .home1 .left .horizonlogo img{
     height: 40%;
@@ -194,7 +197,7 @@ overflow: hidden;
     position: relative;
   }
   .home1{
-    height: 100vh;
+    height: 85vh;
   }
 }
 @media only screen and (max-width: 350px) {
