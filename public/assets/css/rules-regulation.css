@@ -1,16 +1,15 @@
 .rules-regulation
 {
     background-image: url(../img/rules-regulation-wallpaper.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .head, .ru{
  
     font-family: 'Bebas Neue', cursive; 
-    letter-spacing: 2px;
+    letter-spacing: 0.02em;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -20,20 +19,23 @@
     color:red;
 }
 
-.rules-content
-{
-  padding: 15vh 0 5vh 0; 
+.bodyrules{
+    font-size: 19px;
+    color: #ffffff;
+    padding-bottom: 100%;
 }
+
+
 
 .rules-heading
 {
+    height: 92px;
+    left: 391px;
+    top: 188px;
     font-size: 47px;
-    text-align-last: center;
-    margin-bottom: 5vh; 
+    width: 100%;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .hackathon-heading
 {
     height: 92px;
@@ -45,62 +47,35 @@
    
 }
 
-=======
-.rules-body
-{
-    padding: 0 10%;
-}
->>>>>>> e9503d7aa98661ee37b11fb483eda571f2ed9616
-=======
->>>>>>> parent of 86ad124 ( responsive)
 
-.rule-each-point
-{
-    display: flex;
-    gap: 25px;
-    margin:25px 0;
-}
 
-<<<<<<< HEAD
 .rules{
     height: 100%;
-<<<<<<< HEAD
     padding: auto;
     text-align: left;
     width: 100%;
     padding-top: 79px;
     padding-left: 14%;
-=======
-.spidey-pointer
-{
-    height: 75px;
-    aspect-ratio: 1/1;
-=======
-padding: auto;
-
-text-align: center;
-width:100%;
-padding-top: 79px;
-    
->>>>>>> parent of 86ad124 ( responsive)
 }
 
-.pointer-img
+@media (max-width: 560px)
 {
-    height: 100%;
->>>>>>> e9503d7aa98661ee37b11fb483eda571f2ed9616
-}
-
-.rule-info
-{
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+   .head{
+ 
+    height: 116px;
+    left: 312px;
+    top: 183px;
+    width: 100%;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 42px;
     letter-spacing: 0.02em;
-<<<<<<< HEAD
     color: rgb(250, 253, 250);
-    text-align: center;
+    text-align: left;
     padding-bottom: 31px;
-    padding-left: 2%;
+   margin-left: 0;
     padding-right: 37%;
    }
 
@@ -109,8 +84,46 @@ padding-top: 79px;
     color: #ffffff;
     width: 94%;
 }
+.rules {
+    height: 100%;
+    padding: auto;
+    text-align: left;
+    width: 100%;
+    padding-top: 79px;
+    padding-left: 9%;
+  
 }
-<<<<<<< HEAD
+
+.ruless {
+    height: 100%;
+    padding: auto;
+    text-align: left;
+    width: 100%;
+    padding-top: 79px;
+    padding-left: 9%;
+  
+}
+}
+@media (max-width:2000px) and(min-width:561px)
+{
+    .hackathon-heading {
+        height: 92px;
+        left: 391px;
+        top: 188px;
+        font-size: 47px;
+        width: 100%;
+        padding-left: 4%;
+    }
+    .rul{
+        height: 54%;
+        padding: auto;
+        text-align: left;
+        width: 100%;
+        padding-top: 79px;
+        margin-left: 14%;
+    
+    }
+}
 
 
 .ruless{
@@ -119,16 +132,5 @@ padding-top: 79px;
     text-align: center;
     width: 100%;
     padding-top: 79px;
-    padding-left: 3%;
+    padding-left: 8%;
 }
-=======
-    color: #FFFFFF;
-    text-align: justify;
-}
-
-
-
-
->>>>>>> e9503d7aa98661ee37b11fb483eda571f2ed9616
-=======
->>>>>>> parent of 86ad124 ( responsive)
