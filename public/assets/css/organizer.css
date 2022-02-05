@@ -110,9 +110,10 @@
 .box a .down{
     height: 100%;
     width: 100%;
+    opacity:0;
 }
 .box a .down:hover{
-    opacity:0;
+    opacity: 1;
 }
 .box:nth-child(1):after{
     background-color: #4285F4;
