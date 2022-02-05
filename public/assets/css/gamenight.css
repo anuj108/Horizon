@@ -20,17 +20,18 @@
 
 .inner-game-night
 {
+  width: 95%;
     text-align: center;
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 50%;
-    transform: translate(-50%,-80%);
+    transform: translate(-50%,-90%);
 }
 
 .valorant-heading
 {
   font-family: 'Bebas Neue', cursive;
-  font-size: 75px;
+  font-size: 72px;
   color: white;
   letter-spacing: 2.5px;
   transition: all 1.5s ease-in-out;
@@ -51,8 +52,18 @@
   opacity: 1;
 }
 
+.game-night-content
+{
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
 .custom-btn {
-    
+    margin-top: 20px;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     padding: 1em 2em;
