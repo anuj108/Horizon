@@ -50,16 +50,14 @@
   justify-content: center;
 }
 .footer .upper .left p{
-  font-family: Google Sans Display;
+  font-family: Poppins;
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  /* line-height: 33px; */
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.05em;
-
-  color: #ffffff;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  
+  color: #FFFFFF;
 }
 .footer .upper .left .outer .inner {
   padding: 10px;
