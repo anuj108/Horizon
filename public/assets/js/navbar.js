@@ -67,6 +67,7 @@ optionsList.forEach((option) =>
             button.classList.add('visible');
             audio.currentTime = 0;
             audio.play();
+            audio.volume = 0.2;
         }
         else
         {
