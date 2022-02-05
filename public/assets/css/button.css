@@ -1,8 +1,5 @@
 /* General Button Style */
 
-
-
-
 .button {
   position: relative;
   display: block;
@@ -41,24 +38,24 @@
 
 /* Button Border Style */
 
-.button:before,
-.button:after {
+.button.border:before,
+.button.border:after {
   background: linear-gradient(
     159.37deg
     , rgba(90, 177, 255, 0.3) -153.34%, rgba(90, 177, 255, 0.3) 53.43%);
         border: 2.7973px solid #5AB1FF;
 }
-.button:before {
+.button.border:before {
   border-bottom: none; /* to prevent the border-line showing up in the middle of the shape */
 }
-.button:after {
+.button.border:after {
   border-top: none; /* to prevent the border-line showing up in the middle of the shape */
 }
 
 /* Button hover styles */
 
-.button:hover:before,
-.button:hover:after {
+.button.border:hover:before,
+.button.border:hover:after {
   background: transparent;
 }
 .button.border:hover {
