@@ -12,10 +12,9 @@
     overflow:hidden
 }
 
-.game-jam-image-div
+.game-jam-page-view .image
 {
-    left: 100%;
-    transform: translate(-70%);
+    left: 47%;
 }
 
 .game-jam-content

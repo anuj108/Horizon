@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
 .rules-regulation
 {
     background-image: url(../img/hackathon-bg.png);
@@ -80,7 +78,7 @@ html
 {
     line-height: var(--height-spidey-image); 
     cursor: pointer;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .sub-points

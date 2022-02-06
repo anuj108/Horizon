@@ -301,7 +301,7 @@ overflow: hidden;
 } */
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .timeline {
@@ -546,7 +546,7 @@ border-radius: 47px;
   text-align: center;
   margin-top: 10px;
   color: #fff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 /* .home4 .container img {
   left: 50%;
@@ -713,7 +713,7 @@ border-radius: 47px;
     text-align: center;
     margin-top: 10px;
     color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 .swiper{
   height: 40vh;
