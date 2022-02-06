@@ -1,106 +1,90 @@
-/* General Button Style */
-
 .button {
-  position: relative;
   display: block;
-  background: transparent;
-  width: 169px;
-  height: 126px;
-  line-height: 57px;
-  text-align: center;
-  font-size: 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-top: 30px;
-  left: 83px;
-  font-family: Helvetica, Arial, sans-serif;
-  box-sizing: border-box;
-  margin-bottom: 201px;
-}
-.button:before,
-.button:after {
-  position: absolute;
-  content: '';
-  width: 141px;
-  left: 7px;
-  height: 21px;
-  z-index: -5;
-}
-
-.button:before {
-  transform: perspective(4px) rotateX(3deg);
-}
-.button:after {
-  top: 28px;
-  transform: perspective(4px) rotateX(-3deg);
-}
-
-/* Button Border Style */
-
-.button.border:before,
-.button.border:after {
-  background: linear-gradient(
-    159.37deg
-    , rgba(90, 177, 255, 0.3) -153.34%, rgba(90, 177, 255, 0.3) 53.43%);
-        border: 2.7973px solid #5AB1FF;
-}
-.button.border:before {
-  border-bottom: none; /* to prevent the border-line showing up in the middle of the shape */
-}
-.button.border:after {
-  border-top: none; /* to prevent the border-line showing up in the middle of the shape */
-}
-
-/* Button hover styles */
-
-.button.border:hover:before,
-.button.border:hover:after {
-  background: transparent;
-}
-.button.border:hover {
-  color: rgb(170, 221, 245);
-}
-
-@media (max-width: 912px) and (min-width: 561px)
-{
-  .button{
     position: relative;
-    display: block;
-    background: transparent;
-    width: 169px;
-    height: 126px;
-    line-height: 57px;
+    width: 176px;
+    height: 65px;
+    line-height: 60px;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #ffffff;
-    margin-top: 30px;
-    left: 52px;
+    color: #f8f9fa;
+    margin: 40px 20px;
     font-family: Helvetica, Arial, sans-serif;
     box-sizing: border-box;
-    margin-bottom: 201px;
-  }
+
+}
+/* Button Border Style */
+
+.button.border {
+  border-top: 2.7973px solid #5AB1FF;
+  border-bottom: 2.7973px solid #5AB1FF;
+}
+.button.border:hover {
+ 
+  color: #5AB1FF
+}
+
+.button.ribbon-outset.border:after,
+.button.ribbon-outset.border:before {
+  top: 56%;
+    content: " ";
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    pointer-events: none;
+ 
+}
+.button.ribbon-outset.border:after {
+  left: -1px;
+  margin-top: -36px;
+  transform-origin: 0 0;
+  box-sizing: border-box;
+  border-bottom: 2.7973px solid #5AB1FF;
+  border-left: 2.7973px solid #5AB1FF;
+  transform: rotate( 
+57deg
+) skew( 
+26deg
+);
+
+}
+.button.ribbon-outset.border:before {
+  right: -38px;
+    margin-top: -37px;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-top: 2.7973px solid #5AB1FF;
+    border-right: 2.7973px solid #5AB1FF;
+    transform: rotate( 
+57deg
+ ) skew( 
+26deg
+ );
+
+
+}
+.button.ribbon-outset.border:hover:after {
+ 
+}
+.button.ribbon-outset.border:hover:before {
+ 
 }
 @media (max-width: 560px)
 {
   .button{
-    position: relative;
     display: block;
-    background: transparent;
-    width: 169px;
-    height: 51px;
-    line-height: 53px;
+    position: relative;
+    width: 176px;
+    height: 65px;
+    line-height: 60px;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #ffffff;
-    margin-top: 183px;
-    left: 48px;
+    color: #f3f5f7;
+    margin: 40px 20px;
     font-family: Helvetica, Arial, sans-serif;
     box-sizing: border-box;
-    margin-bottom: 61px;
   }
 }
