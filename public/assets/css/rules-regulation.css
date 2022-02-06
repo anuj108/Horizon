@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 .rules-regulation
 {
     background-image: url(../img/hackathon-bg.png);
@@ -6,6 +8,11 @@
     background-position: center 30%;
     background-attachment: fixed;
     min-height: 100vh;
+}
+
+html
+{
+    --height-spidey-image: 50px;
 }
 
 .head, .ru{
@@ -41,14 +48,14 @@
 .rule-each-point
 {
     display: flex;
-    gap: 25px;
+    gap: 15px;
     margin-top:25px;
 }
 
 
 .spidey-pointer
 {
-    height: 75px;
+    height: var(--height-spidey-image);
     aspect-ratio: 1/1;
 }
 
@@ -66,8 +73,43 @@
     font-weight:300;
     text-transform:none;
     text-align: justify;
+    /* border: 2px solid white; */
 }
 
+.rule-info p
+{
+    line-height: var(--height-spidey-image); 
+    cursor: pointer;
+    font-weight: 900;
+}
 
+.sub-points
+{
+ /* border: 2px solid white; */
+ padding: 0 30px;
+ list-style-type: '->';
+ display: none;
+ /* border: 2px solid white; */
+ transition: all 2s ease-in-out;
+}
 
+.sub-points-visible
+{
+    display: block;
+}
 
+.sub-points li
+{
+    padding: 10px; 
+    opacity: 0;
+}
+
+@keyframes subOptionsFade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
