@@ -59,7 +59,8 @@
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     padding: 1em 2em;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    font-weight: 900; 
     text-transform: uppercase;
     color: #fff;
     border-radius: 2px;
