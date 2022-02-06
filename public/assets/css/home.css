@@ -66,7 +66,7 @@ overflow: hidden;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.02em;
-
+  font-weight:300;
   color: #ffffff;
 }
 .home1 .right {
@@ -445,7 +445,7 @@ border-radius: 47px;
 
 .contain .content h2 {
   margin: 0 0 10px 0;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: normal;
   color: red;
 }
