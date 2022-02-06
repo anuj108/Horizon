@@ -82,3 +82,27 @@ window.addEventListener('scroll', function ()
     let windowPosition =  window.scrollY > 10;
     navbar.classList.toggle('change-bg', windowPosition);
 });
+
+// Rules and Regulation
+const heading = document.querySelectorAll('.rule-info p');
+// const subHeader = document.querySelectorAll('.sub-points');
+// const subPoints = document.querySelectorAll('.sub-points li'); 
+
+heading.forEach(header =>
+{
+    header.addEventListener('click', () =>
+    {
+        const subPointsDiv = header.parentNode.querySelector('.sub-points');
+        const subPoints = subPointsDiv.querySelectorAll('li');
+        const numSubPoints = subPoints.length;
+
+        subPointsDiv.classList.toggle('sub-points-visible');
+
+        subPoints.forEach((link, index) =>{
+            if(subPointsDiv.classList != 'sub-points sub-points-visible')
+                link.style.animation= '';
+            else    
+                link.style.animation = `subOptionsFade 0.5s ease forwards ${index/numSubPoints +0.1 }s`;
+        });
+    });
+});
