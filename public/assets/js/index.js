@@ -4,10 +4,6 @@ const innerOptions = document.querySelector('.inner-options');
 const innerOptionsList = document.querySelectorAll('.inner-options li');
 const optionsList = document.querySelectorAll('.tab a');
 
-const header = document.querySelector('.valorant-heading');
-const button = document.querySelector('.btn-3');
-const audio = document.querySelector('.valo-audio');
-
 hamburger.addEventListener('click',() =>
 {
 
@@ -60,23 +56,50 @@ optionsList.forEach((option) =>
         nextPage.classList.add('is-active-page');
 
 
-        // Game Night Navbar
+        // Game Night Navbar Audio
+        const header = document.querySelector('.valorant-heading');
+        const button = document.querySelector('.btn-3');
+        const audio = document.querySelector('.valo-audio');
         if(tabNumber == 6)
         {
             header.classList.add('appears');
             button.classList.add('visible');
             audio.currentTime = 0;
             audio.play();
-            audio.volume = 0.2;
+            audio.volume = 0.3;
         }
         else
         {
             audio.pause();
             audio.currentTime = 0;
         }
+
+        //Rules and Regulation
+        if(tabNumber == 5)
+        {
+            const upDownIndicator = document.querySelector('.rotate-indicator');
+            if(upDownIndicator != null)
+                upDownIndicator.classList.remove('rotate-indicator');
+             removeVisPoint();
+        }
+
     });
 });
 
+//Function to remove open points 
+function removeVisPoint()
+{
+    
+
+   // at a time only one should be visble
+   const visiblePoint = document.querySelector('.visible-yes');
+
+   //Removing class from visible point if any
+   if(visiblePoint != null)
+        visiblePoint.classList.remove('visible-yes');
+}
+
+//Navbar darken on scroll
 window.addEventListener('scroll', function ()
 {
     let windowPosition =  window.scrollY > 10;
@@ -84,31 +107,45 @@ window.addEventListener('scroll', function ()
 });
 
 // Rules and Regulation
+//Selecting headings
 const heading = document.querySelectorAll('.rule-info .inner');
-
 heading.forEach(header =>
 {
     header.addEventListener('click', () =>
     { 
+        // For updown indicator animation
+        // remove all visble indicator
+        const visIndicator = document.querySelector('.rotate-indicator');
+        if(visIndicator != null)
+            visIndicator.classList.remove('rotate-indicator');
+
+        // adding class if current point click was not the previous point
         const upDownIndicator = header.querySelector('.indicator');
+        if(visIndicator != upDownIndicator)
+        upDownIndicator.classList.toggle('rotate-indicator');
 
-        if(upDownIndicator.style.transform == '')
-            upDownIndicator.style.transform = 'scale(1, 1)';
-        else
-            upDownIndicator.style.transform = '';
+        // actual animation when clicked 
 
-        const allSubpoints = document.querySelectorAll('.sub-points');
-        
+        // at a time only one should be visble
+        const visiblePoint = document.querySelector('.visible-yes');
 
-
+        //header has neading but we want the next div so using parentNode
         const subPointsDiv = header.parentNode.querySelector('.sub-points');
+
+        //removes open points if present
+        removeVisPoint();
+        
+        //adding class if visible point is not equal to clicked point  
+        if(visiblePoint != subPointsDiv)
+            subPointsDiv.classList.add('visible-yes');
+
+        //getting all the lis of sub-points Node and its length
         const subPoints = subPointsDiv.querySelectorAll('li');
-        const numSubPoints = subPoints.length;
+        const numSubPoints = subPoints.length;    
 
-        subPointsDiv.classList.toggle('sub-points-visible');
-
+        //load animation for each point like in Navbar
         subPoints.forEach((link, index) =>{
-            if(subPointsDiv.classList != 'sub-points sub-points-visible')
+            if(subPointsDiv.classList != 'sub-points visible-yes')
                 link.style.animation= '';
             else    
                 link.style.animation = `subOptionsFade 0.5s ease forwards ${index/numSubPoints +0.1 }s`;

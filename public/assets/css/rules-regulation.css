@@ -80,6 +80,11 @@ html {
     transition: all 0.4s ease-in-out;
 }
 
+.rotate-indicator
+{
+    transform: scale(1, 1);
+}
+
 .sub-points {
   padding: 0 10px;
   list-style-type: ">";
@@ -87,7 +92,7 @@ html {
   transition: all 2s ease-in-out;
 }
 
-.sub-points-visible {
+.visible-yes {
   display: block;
 }
 
