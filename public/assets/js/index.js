@@ -6,6 +6,7 @@ const optionsList = document.querySelectorAll('.tab a');
 
 hamburger.addEventListener('click',() =>
 {
+    const lengthList = innerOptionsList.length;
 
     hamburger.classList.toggle('active-ham');
     innerOptions.classList.toggle('outside');
@@ -13,7 +14,7 @@ hamburger.addEventListener('click',() =>
         if(hamburger.classList!='hamburger active-ham')
             link.style.animation= '';
         else    
-            link.style.animation = `navLinkFade 0.5s ease forwards ${index/4 }s`;
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index/lengthList + 0.4}s`;
     });
 });
 

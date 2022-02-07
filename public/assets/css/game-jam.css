@@ -9,7 +9,8 @@
 
 .game-jam-page-view
 {
-    overflow:hidden
+    overflow:hidden;
+    justify-content: flex-start;
 }
 
 .game-jam-page-view .image
@@ -23,3 +24,13 @@
     padding-right:0; 
     padding-left: 7%;
 }
+
+@media only screen and (max-width: 610px)
+{
+    .game-jam-content
+    {
+        padding-left: 0;
+        margin:auto;
+    }
+}
+
