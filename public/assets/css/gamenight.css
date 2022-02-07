@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap');
 *
 {
   padding: 0;
@@ -9,7 +8,6 @@
 .opening
 {
   height: 100vh;
-  width: 100vw;
   background-image: url('../img/valorant.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -60,7 +58,7 @@
     font-size: 15px;
     padding: 1em 2em;
     letter-spacing: 2px;
-    font-weight: 900; 
+    font-weight: 700; 
     text-transform: uppercase;
     color: #fff;
     border-radius: 2px;
