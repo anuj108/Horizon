@@ -84,14 +84,23 @@ window.addEventListener('scroll', function ()
 });
 
 // Rules and Regulation
-const heading = document.querySelectorAll('.rule-info p');
-// const subHeader = document.querySelectorAll('.sub-points');
-// const subPoints = document.querySelectorAll('.sub-points li'); 
+const heading = document.querySelectorAll('.rule-info .inner');
 
 heading.forEach(header =>
 {
     header.addEventListener('click', () =>
-    {
+    { 
+        const upDownIndicator = header.querySelector('.indicator');
+
+        if(upDownIndicator.style.transform == '')
+            upDownIndicator.style.transform = 'scale(1, 1)';
+        else
+            upDownIndicator.style.transform = '';
+
+        const allSubpoints = document.querySelectorAll('.sub-points');
+        
+
+
         const subPointsDiv = header.parentNode.querySelector('.sub-points');
         const subPoints = subPointsDiv.querySelectorAll('li');
         const numSubPoints = subPoints.length;

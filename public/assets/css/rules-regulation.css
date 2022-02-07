@@ -1,113 +1,125 @@
-.rules-regulation
+.rules-regulation {
+  background-image: url(../img/hackathon-bg-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+html {
+  --height-spidey-image: 50px;
+}
+
+.head,
+.ru {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.ru {
+  font-size: 1em;
+  color: red;
+}
+
+.rules-content {
+  padding: 11vh 0 5vh 0;
+}
+
+.rules-heading {
+  font-size: 72px;
+  text-align: center;
+  margin-bottom: 5vh;
+  padding: 0 20px;
+}
+
+.rules-body {
+  padding: 0 10%;
+}
+
+.rule-each-point {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.spidey-pointer {
+  height: var(--height-spidey-image);
+  aspect-ratio: 1/1;
+}
+
+.pointer-img {
+  height: 100%;
+}
+
+.rule-info {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  font-weight: 300;
+  text-transform: none;
+  text-align: justify;
+}
+
+.rule-info .inner {
+  line-height: var(--height-spidey-image);
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+}
+
+.indicator
 {
-    background-image: url(../img/hackathon-bg-min.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 30%;
-    background-attachment: fixed;
-    min-height: 100vh;
+    transform: scale(1, -1);
+    transition: all 0.4s ease-in-out;
 }
 
-html
-{
-    --height-spidey-image: 50px;
+.sub-points {
+  padding: 0 10px;
+  list-style-type: ">";
+  display: none;
+  transition: all 2s ease-in-out;
 }
 
-.head, .ru{
- 
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 4px;
-    color: #ffffff;
-    text-transform: uppercase;
+.sub-points-visible {
+  display: block;
 }
 
-.ru{
-    font-size: 1em;
-    color:red;
-}
-
-.rules-content
-{
-  padding: 15vh 0 5vh 0; 
-}
-
-.rules-heading
-{
-    font-size: 72px;
-    text-align-last: center;
-    margin-bottom: 5vh; 
-}
-
-.rules-body
-{
-    padding: 0 10%;
-}
-
-.rule-each-point
-{
-    display: flex;
-    gap: 15px;
-    margin-top:25px;
-}
-
-
-.spidey-pointer
-{
-    height: var(--height-spidey-image);
-    aspect-ratio: 1/1;
-}
-
-.pointer-img
-{
-    height: 100%;
-}
-
-.rule-info
-{
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-    font-weight:300;
-    text-transform:none;
-    text-align: justify;
-    /* border: 2px solid white; */
-}
-
-.rule-info p
-{
-    line-height: var(--height-spidey-image); 
-    cursor: pointer;
-    font-weight: 700;
-}
-
-.sub-points
-{
- /* border: 2px solid white; */
- padding: 0 30px;
- list-style-type: '->';
- display: none;
- /* border: 2px solid white; */
- transition: all 2s ease-in-out;
-}
-
-.sub-points-visible
-{
-    display: block;
-}
-
-.sub-points li
-{
-    padding: 10px; 
-    opacity: 0;
+.sub-points li {
+  padding: 10px;
+  opacity: 0;
+  text-align: left;
 }
 
 @keyframes subOptionsFade {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  from {
+    opacity: 0;
   }
-  
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .rules-body {
+    padding: 0 5%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .rules-body {
+    padding: 0 3%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .rules-body {
+    padding: 0 2%;
+  }
+}
