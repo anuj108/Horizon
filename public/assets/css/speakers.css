@@ -12,9 +12,45 @@
 {
     font-size: 72px;
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%);
     text-align: center;
     width: 100%;
 }
+
+
+.workshop_flex {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    margin-top: 54vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-overflow: ellipsis;
+    overflow: auto;
+  }
+  .workshop_glass {
+    position: relative;
+    width: 70vw;
+    height: 50vh;
+    text-align: center;
+    font-size: 3rem;
+    background: rgba(196, 196, 196, 0.1);
+    box-shadow: inset 63.1333px -63.1333px 63.1333px rgba(149, 149, 149, 0.1),
+      inset -63.1333px 63.1333px 63.1333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(59.27px);
+    -webkit-backdrop-filter: blur(59.27px);
+    color: rgb(255, 254, 254);
+    border-radius: 30px;
+    max-width: 385px;
+    max-height: 515px;
+    margin: auto;
+  }
+
+  /* .workshop_glass:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  } */
+  
