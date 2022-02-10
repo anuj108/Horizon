@@ -11,22 +11,41 @@ html{
 
 .xbox{
     display:flex;
-    flex-direction: row ;
-    flex-wrap: wrap;
     justify-content:space-around;
-    margin-top:10%;
     color: white;
+    margin-top: 2%;
+    flex-wrap: wrap;
   }
   .powers{
    background-image: url("../img/background_powers.png");
    background-repeat: no-repeat;
    background-color: black;
     background-size: cover;
-    min-height: 100vh;
-    min-width: 100vw;
+    padding: 3% 0;
   }
-  
-  
+  .xitem1 .inner{
+    width: 90%;
+    margin: auto;
+    font-size: 14px;    text-align: center;
+  }
+  .xitem2 .inner{
+    width: 90%;
+    margin: auto;
+    font-size: 14px;    text-align: center;
+  }
+  .xitem3 .inner{
+    width: 90%;
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+  }
+  .xitem1,.xitem2,.xitem3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  }
   #xhead{
     text-align: center;
     color: white;
@@ -49,15 +68,6 @@ html{
     
   }
 
-  .xitem1 h3{
-    padding-left:35%;
-  }
-  .xitem2 h3{
-    padding-left:35%;
-  }
-  .xitem3 h3{
-    padding-left:35%;
-  }
   .hoverinfo1{
     display:none;
     position: absolute; 
@@ -125,13 +135,14 @@ html{
 
   .xitem1 h3{
     font-size: 2rem;
+    padding: 20px;
   }
 
   .xitem2 h3{
-    font-size: 2rem;
+    font-size: 2rem;    padding: 20px;
   }
 
   .xitem3 h3{
-    font-size: 2rem;
+    font-size: 2rem;    padding: 20px;
   }
   
