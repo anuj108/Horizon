@@ -1,96 +1,157 @@
-.workshops
-{
-    background-image: url(../img/Workshop.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: fixed;
+.workshops {
+  background-image: url(../img/Workshop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
 }
 
-.speakers-content
-{
-  padding: 10vh 0 10vh 0;
+.speakers-content {
+  padding: 10vh 0 7vh 0;
   width: 100%;
   margin: auto;
 }
 
 /* media query for width */
 
-.workshops-heading
-{
+.workshops-heading {
   font-size: 72px;
   text-align: center;
   width: 100%;
 }
 
-.worshops-container
-{
-  width: 100%;
-  margin-top: 30px;
+.workshop-container {
+  width: 80%;
+  margin: 30px auto;
+  margin-top: 0;
+  /* border: 2px solid white; */
 
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 75px;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
-.workshop-card
+
+
+.workshop-subsection {
+  width: 350px;
+  aspect-ratio: 1/1.3;
+  perspective: 1000px;
+  /* margin: 25px 0; */
+}
+
+@media only screen and (max-width: 665px)
 {
-  height: 300px;
-  width: 250px;
+  .workshop-subsection
+  {
+    width: 45%;
+  }
+}
 
-
+.workshop-container .card {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
   position: relative;
-  z-index: 10;
-  background: linear-gradient(165.17deg, rgba(255, 255, 255, 0.45) -12.54%, rgba(255, 255, 255, 0.18) -12.53%, rgba(255, 255, 255, 0.045) 117.09%);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(5px);
+  transition: all 0.5s linear;
+
+  transform-style: preserve-3d;
+}
+
+.workshop-card,
+.speaker-card {
+  height: 100%;
+  width: 100%;
+  padding: 30px 0;
+  position: absolute;
+
+  background: linear-gradient(
+    165.17deg,
+    rgba(255, 255, 255, 0.45) -12.54%,
+    rgba(255, 255, 255, 0.18) -12.53%,
+    rgba(255, 255, 255, 0.045) 117.09%
+  );
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   border-radius: 25px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
 
-.workshop-card .profile-img
-{
+.workshop-card {
+  z-index: 2;
+  backface-visibility: hidden;
+}
+
+.speaker-card {
+  z-index: 1;
+  transform: rotateY(180deg);
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+.workshop-subsection:hover .card {
+  transform: rotateY(180deg);
+}
+
+.workshop-subsection:hover .speaker-card {
+  opacity: 1;
+}
+.card .profile-img {
   height: 30%;
   aspect-ratio: 1/1;
+}
+
+.card .profile-img img {
+  width: 100%;
   border-radius: 50%;
-  border: 2px solid white;
 }
 
-.workshop-card .profile-img img
-{
-  height: 100%;
-}
-
-.workshop-card .name-details
-{
-
-
-}
-
-.workshop-card .name-details .name, .workshop-card h2
-{
-  font-family: 'Bebas Neue', cursive;
-  font-size: 30px;
+.card .main-heading,
+.card .sub-heading{
+  width: 80%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
-  margin-bottom: 5px;
+  color: #ffffff;
 }
 
-.workshop-card .name-details .designation
-{
-  font-family: Poppins;
+.card .sub-heading {
+  font-weight:400;
   font-size: 10px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #FFFFFF;
-
 }
 
+.btn {
+  padding: 1.3em 3em;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
