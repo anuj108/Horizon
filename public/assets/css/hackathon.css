@@ -133,4 +133,21 @@
 
 }
 
+.problem-statements
+{
+    border:2px solid white;
+}
+
+.prob-stat-heading
+{
+    border: 2px solid white;
+    font-size: 55px;
+    text-align: center;
+}
+
+.prob-stat-main
+{
+    border: 2px solid white;
+    /* write prob-statemenst code here */
+}
  
