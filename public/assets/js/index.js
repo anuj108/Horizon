@@ -6,6 +6,7 @@ const optionsList = document.querySelectorAll('.tab a');
 
 hamburger.addEventListener('click',() =>
 {
+    // const VisInnerList =;
     const lengthList = innerOptionsList.length;
 
     hamburger.classList.toggle('active-ham');
