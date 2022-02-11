@@ -6,19 +6,26 @@ const optionsList = document.querySelectorAll('.tab a');
 
 hamburger.addEventListener('click',() =>
 {
-    // const VisInnerList =;
-    const lengthList = innerOptionsList.length;
+    let visInnerList ;
+    if(screen.width > 620)
+    {
+        visInnerList = innerOptions.querySelectorAll('li:not(.hidden)');
+    }
+    else
+    {
+        visInnerList = innerOptions.querySelectorAll('li');
+    }
+    const lengthList = visInnerList.length;
 
     hamburger.classList.toggle('active-ham');
     innerOptions.classList.toggle('outside');
-    innerOptionsList.forEach((link, index) =>{
+    visInnerList.forEach((link, index) =>{
         if(hamburger.classList!='hamburger active-ham')
             link.style.animation= '';
         else    
-            link.style.animation = `navLinkFade 0.5s ease forwards ${index/lengthList + 0.4}s`;
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index/(lengthList) + 0.6}s`;
     });
 });
-
 
 optionsList.forEach((option) =>
 {
@@ -31,13 +38,7 @@ optionsList.forEach((option) =>
         const activeTab = document.querySelectorAll('.is-active-tab');
         hamburger.classList.remove('active-ham');
         innerOptions.classList.remove('outside');
-        innerOptionsList.forEach((link, index) =>{
-
-            if(link.style.animation)
-                link.style.animation= '';
-            else    
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index/4 + 0.45}s`;
-        });
+        
         // removing the active class
         activePage.classList.remove('is-active-page');
         activeTab.forEach(tab => {
