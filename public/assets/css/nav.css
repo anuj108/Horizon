@@ -191,6 +191,10 @@ html
   }
 }
 
+
+/* outside options dissapear */
+/* inner options are added */
+/* remove .hidden in Js at this viewport width */
 @media only screen and (max-width: 620px)
 {
   html
@@ -200,7 +204,7 @@ html
 
   .inner-options
   {
-    justify-content: center;
+    justify-content: flex-start;
   }
   .outer-options
   {
@@ -211,8 +215,6 @@ html
   {
     display: flex;
   }
-
-
 }
 
 @media only screen and (max-width: 550px)
