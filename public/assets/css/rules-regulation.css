@@ -74,6 +74,16 @@ html {
   gap: 15px;
 }
 
+.rule-info .inner .name
+{
+  transition: all 0.6s ease-in-out;
+}
+
+.red-name
+{
+  color: red;
+}
+
 .indicator
 {
     transform: scale(1, -1);

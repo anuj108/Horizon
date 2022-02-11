@@ -10,37 +10,26 @@
 .opening-page-view {
   min-height: 100vh;
   padding-top: 15vh;
-  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 .spidey-swing-image {
-  height: 100vh;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 0;
-  /* animation */
+  flex:1;
+
   overflow: hidden;
   transform: translatey(0px);
   animation: float 5s ease-in-out infinite;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media only screen and (min-width: 610px) and (max-width: 1040px) {
-  .opening-page-view {
-    height: auto;
-  }
-
-  .spidey-swing-image {
-    height: 60vh;
-    top: 25%;
-  }
-
-  .opening-content-view {
-    padding-bottom: 25px;
-  }
+.spidey-swing-image img
+{
+  width:100%;
 }
 
 @keyframes float {
@@ -55,15 +44,8 @@
   }
 }
 
-.spidey-swing-image img {
-  height: 100%;
-}
-
 .opening-content-view {
-  margin-left: 50%;
-  padding-right: 7%;
-  width: 50%;
-  height: 100%;
+  flex:1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,11 +54,6 @@
 
 .hackathon-heading {
   font-size: 75px;
-}
-
-.hackathon-sub-heading {
-  font-size: 50px;
-  text-align: center;
 }
 
 .opening-info-container {
@@ -88,29 +65,30 @@
   letter-spacing: 0.02em;
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  padding-right: 15%; 
 }
 
-@media only screen and (max-width: 610px) {
-  .opening-page-view {
-    padding: 12vh 0 50px 0;
-    height: auto;
-  }
-  .spidey-swing-image {
+@media only screen and (max-width: 780px)
+{
+  .spidey-swing-image
+  {
     display: none;
   }
-  .opening-info-container {
-    text-align: center;
-    margin: 20px 0;
-  }
-  .opening-content-view {
-    margin-left: 0;
-    padding-right: 0;
-    width: 85%;
-    margin: auto;
-    justify-content: flex-start;
+  .opening-content-view
+  {
     align-items: center;
   }
+  .opening-info-container
+  {
+    text-align: center;
+    padding-right:0;
+    padding: 15px 7%;
+  }
+
 }
+
+
 
 .problem-statements {
   margin: 40px 0;
@@ -161,7 +139,7 @@
 }
 
 .statements:hover {
-  max-height: 250px;
+  max-height: 400px;
   align-items: center;
 }
 

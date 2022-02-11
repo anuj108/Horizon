@@ -118,13 +118,21 @@ heading.forEach(header =>
         // remove all visble indicator
         const visIndicator = document.querySelector('.rotate-indicator');
         if(visIndicator != null)
+        {
+            const visPrevSibling = visIndicator.parentNode.querySelector('.name');
             visIndicator.classList.remove('rotate-indicator');
-
+            visPrevSibling.classList.remove('red-name');
+        }
+        
         // adding class if current point click was not the previous point
         const upDownIndicator = header.querySelector('.indicator');
         if(visIndicator != upDownIndicator)
-        upDownIndicator.classList.toggle('rotate-indicator');
-
+        {
+            const prevSibling = upDownIndicator.parentNode.querySelector('.name');
+            upDownIndicator.classList.toggle('rotate-indicator');
+            prevSibling.classList.toggle('red-name');
+        }
+        
         // actual animation when clicked 
 
         // at a time only one should be visble
