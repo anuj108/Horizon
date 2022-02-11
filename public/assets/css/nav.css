@@ -194,7 +194,7 @@ html
 
 /* outside options dissapear */
 /* inner options are added */
-/* remove .hidden in Js at this viewport width */
+/* edit .hidden in Js at this viewport width */
 @media only screen and (max-width: 620px)
 {
   html
