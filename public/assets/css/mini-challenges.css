@@ -28,16 +28,38 @@
         height: 60%;
         left: 40px;
     }
-    
+    .abc{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    /* .abc::after{
+        content: "";
+        position: absolute;
+        width: 30%;
+        background: white;
+        bottom: 5%;
+        left: 50%;
+        height: 30%;
+        margin-left: -1px;
+    } */
   @media only screen and (max-width: 1000px) {
     .mini .message-box {
         position: absolute;
         top: 0;
       }
+      .mini  .venom {
+        height: 45%;
+        position: absolute;
+        bottom: 0;
+    }
   }
   @media only screen and (max-width: 650px) {
     .mini .message-box img{
       width: 100%;
+    }
+   .mini .message-box {
+        height: 70%;
     }
 }  
 @media only screen and (max-width: 586px) {
