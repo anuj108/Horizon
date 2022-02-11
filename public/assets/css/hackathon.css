@@ -9,7 +9,7 @@
 
 .opening-page-view {
   min-height: 100vh;
-  padding-top: 15vh;
+  padding-top: 10vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -17,7 +17,6 @@
 
 .spidey-swing-image {
   flex:1;
-
   overflow: hidden;
   transform: translatey(0px);
   animation: float 5s ease-in-out infinite;
@@ -88,10 +87,9 @@
 
 }
 
-
-
 .problem-statements {
   margin: 40px 0;
+  margin-top: 20px;
 }
 
 .prob-stat-heading {
