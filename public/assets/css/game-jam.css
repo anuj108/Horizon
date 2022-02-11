@@ -11,18 +11,19 @@
 {
     overflow:hidden;
     justify-content: flex-start;
-}
-
-.game-jam-page-view .image
-{
-    left: 47%;
+    flex-direction: row-reverse;
 }
 
 .game-jam-content
 {
-    margin-left: 0;
-    padding-right:0; 
-    padding-left: 7%;
+    margin: 0;
+    padding:0; 
+    padding-left: 10%;
+}
+
+.game-jam-info
+{
+    padding-right: 0;
 }
 
 @media only screen and (max-width: 780px)
@@ -31,6 +32,11 @@
     {
         padding-left: 0;
         margin:auto;
+    }
+    .game-jam-info
+    {
+        padding: 0;
+        padding: 10px 7%;
     }
 }
 
