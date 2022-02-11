@@ -113,7 +113,7 @@
 }
 
 .problem-statements {
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 
 .prob-stat-heading {
@@ -184,7 +184,71 @@
     text-align: justify;
 }
 
-.statements div li
+.statements li
 {
-    list-style: '* '; 
+  padding-left: 10px;
+  text-align: justify;
+}
+
+.code-of-conduct, .faq-hackathon{
+  margin: 40px 0;
+}
+
+.code-of-conduct div
+{
+  max-width: 1000px;
+  text-align: center;
+  margin: auto;
+  padding: 10px 20px;
+
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.faq-hackathon .each-point
+{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.faq-hackathon .each-point .spidey-pointer
+{
+  align-self:flex-start;
+}
+
+.faq-hackathon .each-point .qna
+{
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.faq-hackathon .each-point .ques
+{
+  font-weight: 500;
+  transition: all 0.6s ease-in-out;
+}
+.faq-hackathon .each-point .ans
+{
+  max-height: 0;
+  overflow: hidden;
+  padding: 5px 7px;
+  transition: all 0.6s ease-in-out;
+}
+
+.faq-hackathon .each-point .qna:hover .ques
+{
+  color: red;
+}
+
+.faq-hackathon .each-point .qna:hover .ans
+{
+  max-height: 300px;
 }
