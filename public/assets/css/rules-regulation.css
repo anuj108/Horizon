@@ -14,7 +14,8 @@ html {
 .head,
 .ru {
   font-family: "Bebas Neue", cursive;
-  letter-spacing: 4px;
+  font-weight: normal;
+  letter-spacing: 1px;
   color: #ffffff;
   text-transform: uppercase;
 }
