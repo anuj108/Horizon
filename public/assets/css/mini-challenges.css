@@ -1,74 +1,114 @@
 .mini {
     position: relative;
-    height: 100vh;
     background: url(../img/peakpx\ 1.png) no-repeat
       center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .mini .message-box img{
-    height: 60%;
-    width: 68%;
-  }
-  .mini .message-box {
-    position: relative;
+    padding: 10vh 0 7vh 0;
+    width: 100%;
     margin: auto;
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-    border-radius: 20px;
-    color: #fff;
+  }
+.clock
+{
+    height: 30vh;
+}
+
+.mini .container, .heading, .clock
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.mini .container
+{
+    height: 50vh;
+   
+
+}
+
+.mini .image
+{
+    width: 25%;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
-  }
-.mini .venom{
+    /* align-self: flex-start; */
+}
+
+.mini .image img
+{
+ 
+    width: 150%;
+}
+
+.mini .content
+{
+    width: 50%;
+    position: relative;
+    font-size:14px;
+    backdrop-filter: blur(26.6541px);
+    background: linear-gradient(165.17deg, rgba(255, 255, 255, 0.45) -12.54%, rgba(255, 255, 255, 0.18) -12.53%, rgba(255, 255, 255, 0.045) 117.09%);
+    padding:10px;
+    border-radius: 5px;
+}
+.content::before{
+    content: '';
     position: absolute;
-    bottom: 0;
-        height: 60%;
-        left: 40px;
-    }
-    .abc{
-        height: 100%;
-        width: 100%;
+    top: 50%;
+    left: -101px;
+    transform: translateY(-50%) rotate(-90deg) scaleX(-1);
+    width:0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid gray;
+
+}
+@media (max-width:600px) {
+    .mini .content
+    {
+        width: 60%;
         position: relative;
+        font-size:8px;
     }
-    /* .abc::after{
-        content: "";
+    .mini .head{
+        font-size: 36px;
+    }
+    .mini .container{
+
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .mini .content::before {
+        content: '';
         position: absolute;
-        width: 30%;
-        background: white;
-        bottom: 5%;
-        left: 50%;
-        height: 30%;
-        margin-left: -1px;
-    } */
-  @media only screen and (max-width: 1000px) {
-    .mini .message-box {
-        position: absolute;
-        top: 0;
-      }
-      .mini  .venom {
-        height: 45%;
-        position: absolute;
-        bottom: 0;
+        left: 39%;
+        top: 110%;
+        transform: translateY(-50%) rotate(-180deg) scaleX(-1);
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 25px solid gray;
     }
-  }
-  @media only screen and (max-width: 650px) {
-    .mini .message-box img{
-      width: 100%;
-    }
-   .mini .message-box {
-        height: 70%;
-    }
-}  
-@media only screen and (max-width: 586px) {
-    .mini .message-box{
-        font-size: 24px !important;
 }
-}
-@media only screen and (max-width: 415px) {
-    .mini .message-box{
-        font-size: 20px !important;
-}
-}
+/* 
+.content::before
+{
+    content:'';
+    position: absolute;
+    top: -1px;
+    left:-1px;
+
+    width: 5px;
+    height: 5px;
+    border-top:50px solid transparent ;
+    border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  
+    border-bottom: 50px solid black;
+    transform: rotateX(90deg);
+} */
