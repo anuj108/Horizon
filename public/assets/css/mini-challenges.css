@@ -1,0 +1,34 @@
+.mini {
+    position: relative;
+    height: 100vh;
+    background: url(../img/peakpx\ 1.png) no-repeat
+      center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mini .message-box img{
+    height: 60%;
+    width: 68%;
+  }
+  @media only screen and (max-width: 1000px) {
+    .mini .message-box {
+        position: absolute;
+        top: 0;
+      }
+  }
+  @media only screen and (max-width: 650px) {
+    .mini .message-box img{
+      width: 100%;
+    }
+}  
+@media only screen and (max-width: 586px) {
+    .mini .message-box{
+        font-size: 24px !important;
+}
+}
+@media only screen and (max-width: 415px) {
+    .mini .message-box{
+        font-size: 20px !important;
+}
+}
