@@ -3,25 +3,6 @@
   padding: 0;
   margin: 0;
 }
-/* .preloader{
-  position:fixed;
-  height:100vh;
-  width:100%;
-  background-color:black;
-  z-index:100;
-}
-
-#background-video {
-width: 100vw;
-height: 100vh;
-object-fit: cover;
-position: fixed;
-left: 0;
-right: 0;
-top: 0;
-bottom: 0;
-z-index: -1;
-} */
 
 html{
   background:black;
