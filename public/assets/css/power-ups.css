@@ -1,9 +1,9 @@
 .powers {
-  background-image: url("../img/background_powers.png");
+  background-image: url(../img/Workshop.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center 50%;
+  background-position: center top;
   padding: 11vh 0;
   /* height: 100vh; */
 }
