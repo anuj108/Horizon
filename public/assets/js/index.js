@@ -63,7 +63,7 @@ optionsList.forEach((option) =>
         const header = document.querySelector('.valorant-heading');
         const button = document.querySelector('.btn-3');
         const audio = document.querySelector('.valo-audio');
-        if(tabNumber == 6)
+        if(tabNumber == 7)
         {
             header.classList.add('appears');
             button.classList.add('visible');
