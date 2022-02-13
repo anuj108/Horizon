@@ -45,60 +45,62 @@
 <body>
 
   <main>
-    <nav class="navbar">
-      <div class="hamburger">
-        <div class="line l1"></div>
-        <div class="line l2"></div>
-        <div class="line l3"></div>
-      </div>
-      <ul class="inner-options">
-        <li class="tab is-active-tab hidden">
-          <a data-switcher data-tab="1">Home</a>
-        </li>
-        <li class="tab hidden">
-          <a data-switcher data-tab="2">Hackathon</a>
-        </li>
-        <li class="tab">
-          <a data-switcher data-tab="3">PowerUps</a>
-        </li>
-        <li class="tab">
-          <a data-switcher data-tab="4">LeaderBoard</a>
-        </li>
-        <li class="tab">
-          <a data-switcher data-tab="5">Rules & Regulations</a>
-        </li>
-        <li class="tab hidden">
-          <a data-switcher data-tab="6">Game Jam</a>
-        </li>
-        <li class="tab hidden">
-          <a data-switcher data-tab="7">Game Night</a>
-        </li>
-        <li class="tab hidden">
-          <a data-switcher data-tab="8">Workshops</a>
-        </li>
-        <!-- <li class="tab op-credits">
-          <a target ="_blank" 
-          href="https://www.youtube.com/">Credits</a>
-        </li> -->
-      </ul>
-      <ul class="outer-options">
-        <li class="tab is-active-tab">
-          <a data-switcher data-tab="1">Home</a>
-        </li>
-        <li class="tab">
-          <a data-switcher data-tab="2">Hackathon</a>
-        </li>
-        <li class="tab">
-          <a data-switcher data-tab="6">Game Jam</a>
-        </li>
-        <li class="tab">
-          <a data-switcher data-tab="7">Game Night</a>
-        </li>
-        <li class="tab">
-          <a data-switcher data-tab="8">Workshops</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="outer-nav change-bg">
+      <nav class="navbar">
+        <div class="hamburger">
+          <div class="line l1"></div>
+          <div class="line l2"></div>
+          <div class="line l3"></div>
+        </div>
+        <ul class="inner-options">
+          <li class="tab is-active-tab hidden">
+            <a data-switcher data-tab="1">Home</a>
+          </li>
+          <li class="tab hidden">
+            <a data-switcher data-tab="2">Hackathon</a>
+          </li>
+          <li class="tab">
+            <a data-switcher data-tab="3">PowerUps</a>
+          </li>
+          <li class="tab">
+            <a data-switcher data-tab="4">Final Standings</a>
+          </li>
+          <li class="tab">
+            <a data-switcher data-tab="5">Rules & Regulations</a>
+          </li>
+          <li class="tab hidden">
+            <a data-switcher data-tab="6">Game Jam</a>
+          </li>
+          <li class="tab hidden">
+            <a data-switcher data-tab="7">Game Night</a>
+          </li>
+          <li class="tab hidden">
+            <a data-switcher data-tab="8">Workshops</a>
+          </li>
+          <li class="tab op-credits">
+            <a target ="_blank" 
+            href="https://www.youtube.com/">Credits</a>
+          </li>
+        </ul>
+        <ul class="outer-options">
+          <li class="tab is-active-tab">
+            <a data-switcher data-tab="1">Home</a>
+          </li>
+          <li class="tab">
+            <a data-switcher data-tab="2">Hackathon</a>
+          </li>
+          <li class="tab">
+            <a data-switcher data-tab="6">Game Jam</a>
+          </li>
+          <li class="tab">
+            <a data-switcher data-tab="7">Game Night</a>
+          </li>
+          <li class="tab">
+            <a data-switcher data-tab="8">Workshops</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <section class="page home is-active-page" data-page="1">
       <div class="home1">
@@ -496,10 +498,10 @@
 
         <h1 id='tabhead'> <span style="color:#FF0000">L</span>EADERBOARD</h1>
         <div class="table">
-          <div class='glass'>
+          <!-- <div class='glass'>
             <h1 id='tabhead2' class='com_soon'> <span style="color:#FF0000">C</span>OMING &nbsp;<span
                 style="color:#FF0000">S</span>OON</h1>
-          </div>
+          </div> -->
           <div class="row">
             <div class='rowitem' id='num'>1 </div>
             <div class='rowitem'>Team Name </div>
@@ -896,7 +898,7 @@
               <span class="text">REGISTER</span>
             </a>
           </button>
-          <audio loop="loop" autoplay="autoplay" class="valo-audio" src="assets/audio/valo.mp3"></audio>
+          <!-- <audio loop="loop" autoplay="autoplay" class="valo-audio" src="assets/audio/valo.mp3"></audio> -->
         </div>
       </div>
     </section>
@@ -1126,8 +1128,7 @@
         <div class="left">
           <h2 class="head"> <span class="ru">A</span>bout <span class="ru">U</span>s</h2>
           <p class="content-footer">Google Developer Student Clubs (GDSC) are community groups for college and
-            university students interested in Google developer technologies. Students from all undergraduate or graduate
-            programs with an interest in growing as a developer are welcome.</p>
+            university students interested in Google developer technologies. </p>
         </div>
         <div class="center">
           <img src="./assets/img/Group 47.png" alt="">

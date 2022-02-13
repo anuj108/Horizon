@@ -26,21 +26,20 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
   padding: 50px 25px;
-
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   background: linear-gradient(
     165.17deg,
     rgba(255, 255, 255, 0.45) -12.54%,
     rgba(255, 255, 255, 0.18) -12.53%,
     rgba(255, 255, 255, 0.045) 117.09%
   );
-  box-shadow: 0px 0.394112px 2.95584px 0.49264px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5px);
 
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .powers-content .item .logo {
@@ -70,7 +69,7 @@
   padding: 0 15px;
 }
 
-@media only screen and (max-width: 950px)
+@media only screen and (max-width: 970px)
 {
   .powers-content
   {
@@ -88,8 +87,8 @@
   .powers-content
   {
     flex-direction: column;
-    width: 70%;
-    gap: 35px;
+    width: 50%;
+    gap: 45px;
   }
   .powers-content .item .inner
   {
@@ -97,14 +96,47 @@
   }
 }
 
-@media only screen and (max-width: 550px)
+
+@media only screen and (max-width: 800px)
 {
   .powers-content
   {
-    width: 95%;
+    width: 60%;
+  }
+  .powers-content .item .inner
+  {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 650px)
+{
+  .powers-content
+  {
+    width: 65%;
+  }
+  .powers-content .item .inner
+  {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 510px)
+{
+  .powers-content
+  {
+    width: 75%;
   }
   .powers-content .item .inner
   {
     padding: 0;
+  }
+}
+
+@media only screen and (max-width: 450px)
+{
+  .powers-content
+  {
+    width: 90%;
   }
 }

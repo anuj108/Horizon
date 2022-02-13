@@ -90,13 +90,13 @@ optionsList.forEach((option) =>
 });
 
 // close sidebar when op-credits is clicked.
-// const credits = document.querySelector('.op-credits');
-// credits.addEventListener('click', () =>
-// {
-//     console.log('drive');
-//     hamburger.classList.remove('active-ham');
-//     innerOptions.classList.remove('outside');
-// }); 
+const credits = document.querySelector('.op-credits');
+credits.addEventListener('click', () =>
+{
+    console.log('drive');
+    hamburger.classList.remove('active-ham');
+    innerOptions.classList.remove('outside');
+}); 
 
 
 //Function to remove open points 
@@ -116,7 +116,7 @@ function removeVisPoint()
 window.addEventListener('scroll', function ()
 {
     let windowPosition =  window.scrollY > 10;
-    navbar.classList.toggle('change-bg', windowPosition);
+    this.document.querySelector('.outer-nav').classList.toggle('change-bg', windowPosition);
 });
 
 // Rules and Regulation

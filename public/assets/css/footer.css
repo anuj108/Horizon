@@ -14,7 +14,10 @@
 
 .footer .upper{
   display: flex;
-  padding: 30px 50px;
+  padding: 30px 0;
+  width: 90%;
+  margin: auto;
+  /* border: 2px solid white; */
 }
 
 .footer .left,
@@ -77,13 +80,12 @@
 
 .footer hr
 {
-   width: 80%;
+   width: 90%;
    margin: 0 auto;
    background-color: white;
-   height: 4px;
+   height: 1px;
    border-radius: 2px;
 }
-
 
 .footer .lower
 {
@@ -106,7 +108,14 @@
   color: white;
   font-size: 30px;
   padding: 6px 0;
+  opacity: 0.5;
 }
+
+.footer .lower .footer-icons i:hover
+{
+  opacity: 1;
+}
+
 
 .footer .lower p{
   color: white;
@@ -116,6 +125,14 @@
   right: 15px;
 }
 
+@media only screen and (max-width: 1000px)
+{
+  .footer .upper .center img
+{
+  width: 85%;
+}
+
+}
 
 @media only screen and (max-width: 640px)
 {

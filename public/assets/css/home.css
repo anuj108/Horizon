@@ -409,8 +409,8 @@ overflow: hidden;
     flex-direction: column;
     height:fit-content;
     background: rgba(196, 196, 196, 0.1);
-box-shadow: inset 63.1333px -63.1333px 63.1333px rgba(149, 149, 149, 0.1), inset -63.1333px 63.1333px 63.1333px rgba(255, 255, 255, 0.1);
-backdrop-filter: blur(59.27px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+backdrop-filter: blur(5px);
 /* Note: backdrop-filter has minimal browser support */
 border-radius: 47px;
 }
