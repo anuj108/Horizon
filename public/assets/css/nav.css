@@ -114,7 +114,7 @@ html
   opacity: 0;
 }
 
-.tab a[data-switcher] {
+.tab a {
   text-decoration: none;
   color: white;
   cursor: pointer;
@@ -126,7 +126,7 @@ html
   text-transform: uppercase;
 }
 
-.inner-options .tab a[data-switcher]
+.inner-options .tab a
 {
   font-size: 24px;
 }
@@ -162,11 +162,11 @@ html
     --inner-width: 40vw;
     --outer-width: 70%;
   }
-  .inner-options .tab a[data-switcher]
+  .inner-options .tab a
   {
     font-size: 18px;
   }
-  .outer-options .tab a[data-switcher] {
+  .outer-options .tab a {
     font-size: 15px;
   }
 }
@@ -186,7 +186,7 @@ html
     --inner-width: 48vw;
     --outer-width: 85%;
   }
-  .outer-options .tab a[data-switcher] {
+  .outer-options .tab a {
     font-size: 13px;
   }
 }

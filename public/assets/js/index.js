@@ -2,7 +2,7 @@ const navbar = document.querySelector('.navbar');
 const hamburger = document.querySelector('.hamburger');
 const innerOptions = document.querySelector('.inner-options');
 const innerOptionsList = document.querySelectorAll('.inner-options li');
-const optionsList = document.querySelectorAll('.tab a');
+const optionsList = document.querySelectorAll('.tab a[data-switcher]');
 
 hamburger.addEventListener('click',() =>
 {
@@ -88,6 +88,16 @@ optionsList.forEach((option) =>
 
     });
 });
+
+// close sidebar when op-credits is clicked.
+const credits = document.querySelector('.op-credits');
+credits.addEventListener('click', () =>
+{
+    console.log('drive');
+    hamburger.classList.remove('active-ham');
+    innerOptions.classList.remove('outside');
+}); 
+
 
 //Function to remove open points 
 function removeVisPoint()

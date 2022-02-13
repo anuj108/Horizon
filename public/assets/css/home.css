@@ -280,10 +280,7 @@ overflow: hidden;
   height:80%;
   margin-left:-1px;
 } */
-body {
-  margin: 0;
-  /* font-family: Arial, Helvetica, sans-serif; */
-}
+
 
 .timeline {
   position: relative;
