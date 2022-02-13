@@ -4,12 +4,17 @@
   margin: 0;
 }
 
+.home2, .home3, .home1
+{
+  border: 2px solid white
+}
+
 html{
   background:black;
 }
 .home1 {
   /* background-color: rgb(222, 30, 44); */
-  height: 100vh;
+  min-height: 100vh;
 overflow: hidden;
   /* box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset; */
   background: url(../img/image\ 11.png) no-repeat center center/cover;
@@ -144,9 +149,7 @@ overflow: hidden;
   }
   .home1 .left .horizonlogo {
     height: 30vh;}
-  .home1{
-    height: 70vh;
-  }
+  
   .home1 .right .img1 {
   }
   .home1 .right .img2 {
@@ -160,9 +163,6 @@ overflow: hidden;
   }
 }
 @media only screen and (max-width: 560px) {
-  .home1 {
-    height:70vh;
-  }
   .home1 .left .container .content {
     position: absolute;
     top: 10%;
@@ -197,9 +197,6 @@ overflow: hidden;
     height: 25vh;
     position: relative;
   }
-  .home1{
-    height: 85vh;
-  }
 }
 @media only screen and (max-width: 350px) {
   .home1 .left .container .content {
@@ -214,7 +211,7 @@ overflow: hidden;
   }
 }
 .home2 {
-  height: 90vh;
+  min-height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -669,18 +666,14 @@ border-radius: 47px;
   height: 50vh;
 }
 
-.home2{
-  height:120vh;
-}
+
 /* Medium devices (tablets, 768px ) */
 
 @media screen and (max-width: 908px) {
   /* .sponsors-container {
     /* width: 80vw; 
   } */
-  .home2{
-    height:70vh;
-  }
+  
   .swiper-slide {
     width: 30vw ;
     height: 30vh;
@@ -699,6 +692,11 @@ border-radius: 47px;
 .sponsors-container{
   width:90vw;
 }
+}
+
+.home2
+{
+  padding-bottom: 50px;
 }
 
 .page.is-active-page {
