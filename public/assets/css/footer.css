@@ -98,6 +98,14 @@
 .footer .lower .footer-icons
 {
   display: inline-block;
+  /* border: 2px solid white; */
+}
+
+.footer .lower .footer-icons i
+{
+  color: white;
+  font-size: 30px;
+  padding: 6px 0;
 }
 
 .footer .lower p{
