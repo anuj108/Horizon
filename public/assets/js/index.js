@@ -90,13 +90,13 @@ optionsList.forEach((option) =>
 });
 
 // close sidebar when op-credits is clicked.
-const credits = document.querySelector('.op-credits');
-credits.addEventListener('click', () =>
-{
-    console.log('drive');
-    hamburger.classList.remove('active-ham');
-    innerOptions.classList.remove('outside');
-}); 
+// const credits = document.querySelector('.op-credits');
+// credits.addEventListener('click', () =>
+// {
+//     console.log('drive');
+//     hamburger.classList.remove('active-ham');
+//     innerOptions.classList.remove('outside');
+// }); 
 
 
 //Function to remove open points 
