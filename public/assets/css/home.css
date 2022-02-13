@@ -4,17 +4,12 @@
   margin: 0;
 }
 
-.home2, .home3, .home1
-{
-  border: 2px solid white
-}
-
 html{
   background:black;
 }
 .home1 {
   /* background-color: rgb(222, 30, 44); */
-  min-height: 100vh;
+  height: 100vh;
 overflow: hidden;
   /* box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset; */
   background: url(../img/image\ 11.png) no-repeat center center/cover;
@@ -144,6 +139,9 @@ overflow: hidden;
 
     color: #ffffff;
   }
+  .home1{
+    height: 80vh;
+  }
   .home1 .left img {
     height: 20%;
   }
@@ -163,6 +161,9 @@ overflow: hidden;
   }
 }
 @media only screen and (max-width: 560px) {
+  .home1 {
+    height:85vh;
+  }
   .home1 .left .container .content {
     position: absolute;
     top: 10%;
