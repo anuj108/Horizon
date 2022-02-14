@@ -181,6 +181,7 @@
   margin: auto;
   padding: 10px 20px;
 
+  backdrop-filter: blur(4px);
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 300;

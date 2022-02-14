@@ -7,7 +7,7 @@
 
 html
 {
-  --inner-width : 33vw;
+  --inner-width : 27vw;
   --outer-width : 56%;
 }
 
@@ -157,7 +157,7 @@ html
 {
   html
   {
-    --inner-width: 37vw;
+    --inner-width: 34vw;
     --outer-width: 75%;
   }
 }
@@ -175,13 +175,13 @@ html
 {
   html
   {
-    --inner-width: 40vw;
+    --inner-width: 39vw;
     --outer-width: 70%;
   }
-  .inner-options .tab a
+  /* .inner-options .tab a
   {
     font-size: 18px;
-  }
+  } */
   .outer-options .tab a {
     font-size: 15px;
   }
@@ -191,11 +191,12 @@ html
 {
   html
   {
+    --inner-width:45vw;
     --outer-width: 78%; 
   }
 }
 
-@media only screen and (max-width: 750px)
+@media only screen and (max-width: 780px)
 {
   html
   {
@@ -208,6 +209,15 @@ html
 }
 
 
+@media only screen and (max-width: 720px)
+{
+  html
+  {
+    --inner-width: 56vw;
+  }
+}
+
+
 /* outside options dissapear */
 /* inner options are added */
 /* edit .hidden in Js at this viewport width */
@@ -215,7 +225,7 @@ html
 {
   html
   {
-    --inner-width: 58vw;
+    --inner-width: 65vw;
   }
 
   .outer-options

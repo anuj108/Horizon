@@ -115,7 +115,7 @@ function removeVisPoint()
 //Navbar darken on scroll
 window.addEventListener('scroll', function ()
 {
-    let windowPosition =  window.scrollY > 10;
+    let windowPosition =  window.scrollY > 100;
     this.document.querySelector('.outer-nav').classList.toggle('change-bg', windowPosition);
 });
 
