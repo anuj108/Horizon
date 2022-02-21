@@ -173,3 +173,21 @@ heading.forEach(header =>
         });
     });
 });
+
+const image = document.querySelector('.preloader img');
+
+image.addEventListener('click', ()=>{
+    const expand = document.querySelector('.preloader .expand');
+    expand.style.transform = 'scale(0)';
+});
+
+function preload(){
+    const preloader = document.querySelector('.preloader');
+    const image = document.querySelector('.preloader img');
+    const expand = document.querySelector('.preloader .expand');
+    expand.style.transform = 'scale(0)';
+    image.style.opacity = '0';
+    expand.addEventListener('transitionend', ()=>{
+        preloader.style.display = 'none';
+    });
+}
