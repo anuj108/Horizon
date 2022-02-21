@@ -1,9 +1,0 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-.speakers1{
-    height: 100vh;
-    background: radial-gradient(rgb(222,30,44), rgb(39,51,123) );
-}
