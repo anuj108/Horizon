@@ -176,10 +176,11 @@ function preload(){
     const expand = document.querySelector('.preloader .expand');
     
     setTimeout(()=>{
+        expand.style.opacity = '0';
         expand.style.transform = 'scale(0)';
         image.style.opacity = '0';
         expand.addEventListener('transitionend', ()=>{
         preloader.style.display = 'none';
     });
-    }, 500);
+    }, 800);
 }   
