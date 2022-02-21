@@ -181,13 +181,18 @@ image.addEventListener('click', ()=>{
     expand.style.transform = 'scale(0)';
 });
 
+// add setTimeout
+//add display none after page load to sections
 function preload(){
     const preloader = document.querySelector('.preloader');
     const image = document.querySelector('.preloader img');
     const expand = document.querySelector('.preloader .expand');
-    expand.style.transform = 'scale(0)';
-    image.style.opacity = '0';
-    expand.addEventListener('transitionend', ()=>{
+    
+    setTimeout(()=>{
+        expand.style.transform = 'scale(0)';
+        image.style.opacity = '0';
+        expand.addEventListener('transitionend', ()=>{
         preloader.style.display = 'none';
     });
-}
+    }, 500);
+}   

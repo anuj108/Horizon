@@ -4,13 +4,13 @@
   margin: 0;
 }
 
-html{
-  background:black;
+html {
+  background: black;
 }
 .home1 {
   /* background-color: rgb(222, 30, 44); */
   height: 100vh;
-overflow: hidden;
+  overflow: hidden;
   /* box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset; */
   background: url(../img/image\ 11.png) no-repeat center center/cover;
   position: relative;
@@ -47,7 +47,7 @@ overflow: hidden;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.02em;
-  font-weight:300;
+  font-weight: 300;
   color: #ffffff;
 }
 .home1 .right {
@@ -57,13 +57,13 @@ overflow: hidden;
   width: 40%;
   height: 110%;
   transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
 }
 .home1 .right .img1 {
   z-index: -1;
   position: absolute;
   left: 100px;
-  width:100%;
+  width: 100%;
   transition: all 0.4s ease-in-out;
 }
 .home1 .right .img2 {
@@ -85,7 +85,6 @@ overflow: hidden;
   }
   .home1 .right .img2 {
     position: absolute;
-
   }
 }
 @media only screen and (max-width: 1150px) {
@@ -95,15 +94,13 @@ overflow: hidden;
     width: 50%;
   } */
   .home1 .right .img1 {
-
   }
   .home1 .left img {
- 
   }
-  .home1::after{
+  .home1::after {
     bottom: -5px;
   }
-  .home1{
+  .home1 {
     height: 70vh;
   }
   .home1 .left .container .content {
@@ -124,7 +121,8 @@ overflow: hidden;
     align-items: center; */
   }
   .home1 .left .horizonlogo {
-    height: 35vh;}
+    height: 35vh;
+  }
 }
 @media only screen and (max-width: 1150px) {
 }
@@ -139,15 +137,16 @@ overflow: hidden;
 
     color: #ffffff;
   }
-  .home1{
+  .home1 {
     height: 80vh;
   }
   .home1 .left img {
     height: 20%;
   }
   .home1 .left .horizonlogo {
-    height: 30vh;}
-  
+    height: 30vh;
+  }
+
   .home1 .right .img1 {
   }
   .home1 .right .img2 {
@@ -162,7 +161,7 @@ overflow: hidden;
 }
 @media only screen and (max-width: 560px) {
   .home1 {
-    height:85vh;
+    height: 85vh;
   }
   .home1 .left .container .content {
     position: absolute;
@@ -188,10 +187,10 @@ overflow: hidden;
   }
   .home1 .left .horizonlogo {
     height: 25vh;
-    padding-left:10%;
+    padding-left: 10%;
     justify-content: center;
   }
-  .home1 .left .horizonlogo img{
+  .home1 .left .horizonlogo img {
     height: 40%;
   }
   .home1 .left .container {
@@ -242,12 +241,12 @@ overflow: hidden;
   margin-top: 10%;
   text-align: center;
   font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 84px;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-    width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 84px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  width: 100%;
 }
 .home3 .container .rectangle {
   left: 50%;
@@ -278,7 +277,6 @@ overflow: hidden;
   height:80%;
   margin-left:-1px;
 } */
-
 
 .timeline {
   position: relative;
@@ -406,13 +404,15 @@ overflow: hidden;
   position: relative;
   border-radius: 10px;
   display: flex;
-    flex-direction: column;
-    height:fit-content;
-    background: rgba(196, 196, 196, 0.1);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-backdrop-filter: blur(5px);
-/* Note: backdrop-filter has minimal browser support */
-border-radius: 47px;
+  flex-direction: column;
+  height: fit-content;
+  background: rgba(196, 196, 196, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 47px;
 }
 
 .contain.right .content {
@@ -488,15 +488,15 @@ border-radius: 47px;
     flex-direction: column;
   }
 }
-@media (max-width: 300.98px){
-  .contain .content{
+@media (max-width: 300.98px) {
+  .contain .content {
     width: 170%;
   }
-  .contain .content h2{
+  .contain .content h2 {
     font-size: 16px;
   }
-  .contain .content p{
-    font-size:14px;
+  .contain .content p {
+    font-size: 14px;
   }
 }
 .home4 {
@@ -584,7 +584,7 @@ border-radius: 47px;
   /* background: radial-gradient(circle, #050606, rgb(70, 1, 1)); */
   border-radius: 10px;
   height: 100%;
-  padding:20px;
+  padding: 20px;
 }
 
 .sponsors-container .head {
@@ -592,11 +592,11 @@ border-radius: 47px;
   text-align: center;
   margin-top: 10px;
   font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: normal;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-    width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  width: 100%;
 }
 
 .swiper-slide {
@@ -648,25 +648,23 @@ border-radius: 47px;
   }
 }
 @media screen and (max-width: 350px) {
-  .home2{
-
+  .home2 {
   }
   .sponsors-container {
     width: 100vw;
   }
   .swiper-slide {
     width: 30vw;
-    height: 30vh ;
+    height: 30vh;
   }
   .sponsors-container h1 {
     font-size: 30px;
   }
 }
 
-.swiper{
+.swiper {
   height: 50vh;
 }
-
 
 /* Medium devices (tablets, 768px ) */
 
@@ -674,9 +672,9 @@ border-radius: 47px;
   /* .sponsors-container {
     /* width: 80vw; 
   } */
-  
+
   .swiper-slide {
-    width: 30vw ;
+    width: 30vw;
     height: 30vh;
   }
   .sponsors-container h1 {
@@ -686,17 +684,16 @@ border-radius: 47px;
     margin-top: 10px;
     color: #fff;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-}
-.swiper{
-  height: 40vh;
-}
-.sponsors-container{
-  width:90vw;
-}
+  }
+  .swiper {
+    height: 40vh;
+  }
+  .sponsors-container {
+    width: 90vw;
+  }
 }
 
-.home2
-{
+.home2 {
   padding-bottom: 50px;
 }
 
@@ -707,8 +704,8 @@ border-radius: 47px;
   display: none;
 }
 
-.preloader
-{
+/* preloader CSS */
+.preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -718,31 +715,28 @@ border-radius: 47px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* display: none; */
 }
 
-.preloader img
-{
+.preloader img {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 5%;
   height: auto;
   animation: rotation 2s infinite linear;
-  transition: all 1.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 @keyframes rotation {
   from {
-    transform: translate(-50%, -50%)  rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   to {
     transform: translate(-50%, -50%) rotate(359deg);
   }
 }
 
-.preloader .bg
-{
+.preloader .bg {
   width: 5%;
   aspect-ratio: 1/1;
   display: flex;
@@ -750,15 +744,14 @@ border-radius: 47px;
   align-items: center;
 }
 
-.preloader .bg .expand
-{
+.preloader .bg .expand {
   position: relative;
-  top:0;
+  top: 0;
   left: 0;
   width: 250vmax;
   height: 250vmax;
   flex-shrink: 0;
   border-radius: 50%;
-  background: #000;
-  transition: all 1.5s ease-in-out;
+  background: rgb(6, 11, 21);
+  transition: transform 0.7s ease-in-out;
 }

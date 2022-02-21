@@ -1,59 +1,50 @@
-.final-standing
-{
-    background-image: url(../img/game-jam-min.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-attachment: fixed;
-    min-height: 100vh;
-    padding: 13vh 0 7vh 0;
+.final-standing {
+  background-image: url(../img/game-jam-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 13vh 0 7vh 0;
 }
 
-.standing-heading
-{
+.standing-heading {
   font-size: 72px;
   text-align: center;
 }
 
-@media only screen and (max-width: 460px)
-{
-  .standing-heading
-  {
+@media only screen and (max-width: 460px) {
+  .standing-heading {
     font-size: 60px;
   }
 }
 
-.standing-content > *
-{
+.standing-content > * {
   width: 50%;
   margin: 50px auto;
 }
 
-.standing-content h2{
+.standing-content h2 {
   text-align: center;
 }
 
-table
-{
+table {
   width: 100%;
 }
 
-
-.standing-content h2
-{
+.standing-content h2 {
   margin: 10px 0;
   color: white;
 }
 
-th, td
-{
+th,
+td {
   background-color: lightgoldenrodyellow;
   margin: 30px;
   border: 2px solid black;
   text-align: center;
 }
 
-.col1
-{
+.col1 {
   width: 25%;
 }
