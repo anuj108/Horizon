@@ -102,8 +102,6 @@ credits.addEventListener('click', () =>
 //Function to remove open points 
 function removeVisPoint()
 {
-    
-
    // at a time only one should be visble
    const visiblePoint = document.querySelector('.visible-yes');
 
@@ -160,17 +158,6 @@ heading.forEach(header =>
         if(visiblePoint != subPointsDiv)
             subPointsDiv.classList.add('visible-yes');
 
-        //getting all the lis of sub-points Node and its length
-        const subPoints = subPointsDiv.querySelectorAll('li');
-        const numSubPoints = subPoints.length;    
-
-        //load animation for each point like in Navbar
-        subPoints.forEach((link, index) =>{
-            if(subPointsDiv.classList != 'sub-points visible-yes')
-                link.style.animation= '';
-            else    
-                link.style.animation = `subOptionsFade 0.5s ease forwards ${index/numSubPoints +0.1 }s`;
-        });
     });
 });
 
